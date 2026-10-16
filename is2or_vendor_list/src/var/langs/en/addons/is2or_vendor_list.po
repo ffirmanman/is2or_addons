@@ -1,0 +1,77 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::block_is2or_vendor_list"
+msgid "is2or: Vendor List"
+msgstr "is2or: Vendor List"
+
+msgctxt "Languages::block_is2or_vendor_list_description"
+msgid "Configurable vendor list with scrolled and grid templates"
+msgstr "Configurable vendor list with scrolled and grid templates"
+
+msgctxt "Languages::block_is2or_vendor_catalog_list"
+msgid "IS2OR: Vendor Catalog List"
+msgstr "IS2OR: Vendor Catalog List"
+
+msgctxt "Languages::is2or_vendor_list.scrolled_list"
+msgid "Scrolled list"
+msgstr "Scrolled list"
+
+msgctxt "Languages::is2or_vendor_list.grid_layout"
+msgid "Grid layout"
+msgstr "Grid layout"
+
+msgctxt "Languages::is2or_vendor_list.limit"
+msgid "Limit"
+msgstr "Limit"
+
+msgctxt "Languages::is2or_vendor_list.limit.tooltip"
+msgid "Set 0 to show all matching vendors."
+msgstr "Set 0 to show all matching vendors."
+
+msgctxt "Languages::is2or_vendor_list.sort"
+msgid "Sort"
+msgstr "Sort"
+
+msgctxt "Languages::is2or_vendor_list.sort.company"
+msgid "Company name"
+msgstr "Company name"
+
+msgctxt "Languages::is2or_vendor_list.category_filter"
+msgid "Vendor categories"
+msgstr "Vendor categories"
+
+msgctxt "Languages::is2or_vendor_list.category_filter.tooltip"
+msgid "Only vendors mapped to one of the selected categories will be shown."
+msgstr "Only vendors mapped to one of the selected categories will be shown."
+
+msgctxt "Languages::is2or_vendor_list.use_block_title"
+msgid "Use block title"
+msgstr "Use block title"
+
+msgctxt "Languages::is2or_vendor_list.use_block_title.tooltip"
+msgid "Show the admin-configured block title instead of the default Selected Sellers heading."
+msgstr "Show the admin-configured block title instead of the default Selected Sellers heading."
+
+msgctxt "Languages::is2or_vendor_list.vendor_categories"
+msgid "Vendor categories"
+msgstr "Vendor categories"
+
+msgctxt "Languages::is2or_vendor_list.vendor_categories.tooltip"
+msgid "These categories are used by the IS2OR vendor list block filter."
+msgstr "These categories are used by the IS2OR vendor list block filter."
+
+msgctxt "Languages::is2or_vendor_list.all_categories"
+msgid "All categories"
+msgstr "All categories"
+
+msgctxt "Languages::is2or_vendor_list.selected_sellers"
+msgid "Selected Sellers"
+msgstr "Selected Sellers"
+
+msgctxt "Languages::is2or_vendor_list.see_all"
+msgid "see all"
+msgstr "see all"

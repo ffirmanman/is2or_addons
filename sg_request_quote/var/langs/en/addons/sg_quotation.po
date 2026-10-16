@@ -1,0 +1,337 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::sg_quotation"
+msgid "Ecartify: Advanced RFQ Manager"
+msgstr "Ecartify: Advanced RFQ Manager"
+
+msgctxt "Addons::description::sg_quotation"
+msgid "Transform your CS-Cart store into a B2B powerhouse with Ecartify: Request Quotation. Customers request custom quotes directly from product pages or bulk order forms, admins review and apply tailored discounts (percentage or fixed), and approved quotations convert to orders through automated checkout links. Complete with email notifications at every step, centralized request management, and full quotation tracking, this addon turns complex wholesale negotiations into smooth, professional transactions. Perfect for businesses serving bulk buyers, corporate clients, and wholesale customers who demand flexible pricing and personalized service."
+msgstr "Transform your CS-Cart store into a B2B powerhouse with Ecartify: Request Quotation. Customers request custom quotes directly from product pages or bulk order forms, admins review and apply tailored discounts (percentage or fixed), and approved quotations convert to orders through automated checkout links. Complete with email notifications at every step, centralized request management, and full quotation tracking, this addon turns complex wholesale negotiations into smooth, professional transactions. Perfect for businesses serving bulk buyers, corporate clients, and wholesale customers who demand flexible pricing and personalized service."
+
+msgctxt "Languages::sg_quotation"
+msgid "Quotation"
+msgstr "Quotation"
+
+msgctxt "SettingsOptions::sg_quotation::sg_email_notification"
+msgid "Send admin quotation email notification"
+msgstr "Send admin quotation email notification"
+
+msgctxt "SettingsOptions::sg_quotation::expire_days"
+msgid "Quotation expiration period (days)"
+msgstr "Quotation expiration period (days)"
+
+msgctxt "SettingsOptions::sg_quotation::allow_vendor_wise_quotation"
+msgid "Allow Vendor wise quotation"
+msgstr "Allow Vendor wise quotation"
+
+msgctxt "SettingsTooltips::sg_quotation::sg_email_notification"
+msgid "Add to automatically send an email to the admin when a new quotation is created."
+msgstr "Add to automatically send an email to the admin when a new quotation is created."
+
+msgctxt "SettingsTooltips::sg_quotation::expire_days"
+msgid "Set the number of days after approved which a quotation will automatically expire."
+msgstr "Set the number of days after approved which a quotation will automatically expire."
+
+msgctxt "SettingsTooltips::sg_quotation::allow_vendor_wise_quotation"
+msgid "Quotation will be created on the basis of vendors product and vendor can manage the quotation on their panels"
+msgstr "Quotation will be created on the basis of vendors product and vendor can manage the quotation on their panels"
+
+msgctxt "Languages::allow_quotation"
+msgid "Allow Quotation"
+msgstr "Allow Quotation"
+
+msgctxt "Languages::create_quotation"
+msgid "Create Quotation"
+msgstr "Create Quotation"
+
+msgctxt "Languages::quotation_requests"
+msgid "Quotation Requests"
+msgstr "Quotation Requests"
+
+msgctxt "Languages::request_quotation"
+msgid "Request Quotation"
+msgstr "Request Quotation"
+
+msgctxt "Languages::quotation_created_subject"
+msgid "Your quotation request has been received"
+msgstr "Your quotation request has been received"
+
+msgctxt "Languages::quotation_created_message"
+msgid "Thank you for submitting your quotation request. Below are your quotation details:"
+msgstr "Thank you for submitting your quotation request. Below are your quotation details:"
+
+msgctxt "Languages::we_will_review_and_get_back"
+msgid "Our team will review your request and contact you shortly."
+msgstr "Our team will review your request and contact you shortly."
+
+msgctxt "Languages::quotation_approved_subject"
+msgid "Good news! Your quotation has been approved. Please complete the payment."
+msgstr "Good news! Your quotation has been approved. Please complete the payment."
+
+msgctxt "Languages::quotation_approved_message"
+msgid "We are pleased to inform you that your quotation request has been approved."
+msgstr "We are pleased to inform you that your quotation request has been approved."
+
+msgctxt "Languages::quotation_approved_next_steps"
+msgid "You can now proceed to confirm and place your order."
+msgstr "You can now proceed to confirm and place your order."
+
+msgctxt "Languages::quotation_declined_subject"
+msgid "Your quotation request has been declined"
+msgstr "Your quotation request has been declined"
+
+msgctxt "Languages::quotation_declined_message"
+msgid "We’re sorry to inform you that your quotation could not be approved at this time."
+msgstr "We’re sorry to inform you that your quotation could not be approved at this time."
+
+msgctxt "Languages::quotation_declined_reason"
+msgid "<b>Reason:</b> [reason]"
+msgstr "<b>Reason:</b> [reason]"
+
+msgctxt "Languages::quotation_contact_support"
+msgid "If you have any questions, please contact our support team."
+msgstr "If you have any questions, please contact our support team."
+
+msgctxt "Languages::hello_name"
+msgid "Hello [name]"
+msgstr "Hello [name]"
+
+msgctxt "Languages::email_template.quotation_approved"
+msgid "Quotation Approved"
+msgstr "Quotation Approved"
+
+msgctxt "Languages::email_template.quotation_created"
+msgid "Quotation Created"
+msgstr "Quotation Created"
+
+msgctxt "Languages::email_template.quotation_declined"
+msgid "Quotation Declined"
+msgstr "Quotation Declined"
+
+msgctxt "Languages::email_template.quotation_created_admin"
+msgid "New Quotation Created"
+msgstr "New Quotation Created"
+
+msgctxt "Languages::quotation_created_subject_admin"
+msgid "New Quotation created"
+msgstr "New Quotation created"
+
+msgctxt "Languages::sg_quotation_list"
+msgid "Quotation List"
+msgstr "Quotation List"
+
+msgctxt "Languages::disapprove_quotation_reason"
+msgid "Disapprove quotation reason"
+msgstr "Disapprove quotation reason"
+
+msgctxt "Languages::quotation_created"
+msgid "Quotation Created"
+msgstr "Quotation Created"
+
+msgctxt "Languages::sg_quotation.quotations"
+msgid "Quotations"
+msgstr "Quotations"
+
+msgctxt "Languages::please_enter_quotation_data"
+msgid "Please enter quotation data"
+msgstr "Please enter quotation data"
+
+msgctxt "Languages::quotation_id"
+msgid "Quotation ID"
+msgstr "Quotation ID"
+
+msgctxt "Languages::quotation_requested"
+msgid "Requested Quotation"
+msgstr "Requested Quotation"
+
+msgctxt "Languages::new_quotation"
+msgid "New quotation"
+msgstr "New quotation"
+
+msgctxt "Languages::new_quotation"
+msgid "New quotation"
+msgstr "New quotation"
+
+msgctxt "Languages::required_qty"
+msgid "Required quantity"
+msgstr "Required quantity"
+
+msgctxt "Languages::quotation_deleted"
+msgid "Quotation deleted"
+msgstr "Quotation deleted"
+
+msgctxt "Languages::quotation_saved"
+msgid "Quotation saved"
+msgstr "Quotation saved"
+
+msgctxt "Languages::view_detail"
+msgid "View Detail"
+msgstr "View Detail"
+
+msgctxt "Languages::apply_discount"
+msgid "Apply discount"
+msgstr "Apply discount"
+
+msgctxt "Languages::we_will_review_and_get_back_admin"
+msgid "Please review the quotation just posted."
+msgstr "Please review the quotation just posted."
+
+msgctxt "Languages::quotation_created_message_admin"
+msgid "New quotation created by the customer"
+msgstr "New quotation created by the customer"
+
+msgctxt "Languages::quotation_created_message"
+msgid "Your quotation is created on our side"
+msgstr "Your quotation is created on our side"
+
+msgctxt "Languages::we_will_review_and_get_back"
+msgid "We will review and get back to you"
+msgstr "We will review and get back to you"
+
+msgctxt "Languages::quotation_approved_message"
+msgid "Quotation approved by admin"
+msgstr "Quotation approved by admin"
+
+msgctxt "Languages::quotation_approved_next_steps"
+msgid "Quotation is approved please proceed to next step by clicking on the link."
+msgstr "Quotation is approved please proceed to next step by clicking on the link."
+
+msgctxt "Languages::quotation_declined_message"
+msgid "Quotation declined by admin."
+msgstr "Quotation declined by admin."
+
+msgctxt "Languages::quotation_contact_support"
+msgid "Please contact our support further queries"
+msgstr "Please contact our support further queries"
+
+msgctxt "Languages::total_cost_price"
+msgid "Total Cost price"
+msgstr "Total Cost price"
+
+msgctxt "Languages::sg_add_quotation"
+msgid "Add Quotation"
+msgstr "Add Quotation"
+
+msgctxt "Languages::sg_quotations"
+msgid "Quotations"
+msgstr "Quotations"
+
+msgctxt "Languages::percentage"
+msgid "percentage"
+msgstr "percentage"
+
+msgctxt "Languages::required_quantity"
+msgid "Required quantity"
+msgstr "Required quantity"
+
+msgctxt "Languages::sg_quotation_note"
+msgid "Quotation note"
+msgstr "Quotation note"
+
+msgctxt "Languages::sg_status.status"
+msgid "Status"
+msgstr "Status"
+
+msgctxt "Languages::discount_price_is_large_foe_cost_price"
+msgid "Disccount price is large than the Cost price"
+msgstr "Disccount price is large than the Cost price"
+
+msgctxt "Languages::quotation_total"
+msgid "Quotation Total"
+msgstr "Quotation Total"
+
+msgctxt "Languages::quotation_status"
+msgid "Quotation Status"
+msgstr "Quotation Status"
+
+msgctxt "Languages::approved_by"
+msgid "Approved By"
+msgstr "Approved By"
+
+msgctxt "Languages::approved_price"
+msgid "Approved Price"
+msgstr "Approved Price"
+
+msgctxt "Languages::please_fill_reason_for_disapprove"
+msgid "Please fill the reason for disapprove"
+msgstr "Please fill the reason for disapprove"
+
+msgctxt "Languages::approved_price"
+msgid "Approved Price"
+msgstr "Approved Price"
+
+msgctxt "Languages::quotation_invalid_or_expiered"
+msgid "Quotation invalid or expired"
+msgstr "Quotation invalid or expired"
+
+msgctxt "Languages::order_alredy_placed_for_quotation"
+msgid "You have already placed this order. Please check your order history for details."
+msgstr "You have already placed this order. Please check your order history for details."
+
+msgctxt "Languages::quotation_created_by"
+msgid "Quotation created by"
+msgstr "Quotation created by"
+
+msgctxt "Languages::no_quotation_available"
+msgid "No Quotation available"
+msgstr "No Quotation available"
+
+msgctxt "Languages::quotation"
+msgid "Quotation"
+msgstr "Quotation"
+
+msgctxt "Languages::cost_price"
+msgid "Cost Price"
+msgstr "Cost Price"
+
+msgctxt "Languages::please_enter_quotation_value"
+msgid "Please enter quotation to get desirable value"
+msgstr "Please enter quotation to get desirable value"
+
+msgctxt "Languages::quotation_details"
+msgid "Quotation Details"
+msgstr "Quotation Details"
+
+msgctxt "Languages::full_name_quotation"
+msgid "Full name"
+msgstr "Full name"
+
+msgctxt "Languages::email_address"
+msgid "Email Address"
+msgstr "Email Address"
+
+msgctxt "Languages::phone_number"
+msgid "Phone number"
+msgstr "Phone number"
+
+msgctxt "Languages::additional_notes"
+msgid "Additional Notes"
+msgstr "Additional Notes"
+
+msgctxt "Languages::discount_applied"
+msgid "Discount applied"
+msgstr "Discount applied"
+
+msgctxt "Languages::discount_too_high"
+msgid "Discount too high"
+msgstr "Discount too high"
+
+msgctxt "Languages::discount_should_be_less_than_total"
+msgid "Discount should be less than total"
+msgstr "Discount should be less than total"
+
+msgctxt "Languages::proceed_to_payment"
+msgid "Proceed to payment"
+msgstr "Proceed to payment"
+
+msgctxt "Languages::please_select_product_first"
+msgid "Please select product first"
+msgstr "Please select product first"
+
+msgctxt "Languages::pay_now"
+msgid "Pay Now"
+msgstr "Pay Now"

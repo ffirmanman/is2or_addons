@@ -1,0 +1,1 @@
+{style src="addons/is2or_currency_sar/styles.less"}

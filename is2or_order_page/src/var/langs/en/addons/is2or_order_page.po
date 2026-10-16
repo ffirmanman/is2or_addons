@@ -1,0 +1,45 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::my_orders"
+msgid "my_orders"
+msgstr "My Orders"
+
+msgctxt "Languages::find_your_order"
+msgid "find_your_order"
+msgstr "Find your order..."
+
+msgctxt "Languages::filter_by_order_date"
+msgid "filter_by_order_date"
+msgstr "Filter by order date"
+
+msgctxt "Languages::ordered"
+msgid "ordered"
+msgstr "Ordered"
+
+msgctxt "Languages::order_again"
+msgid "order_again"
+msgstr "Order Again"
+
+msgctxt "Languages::request_return_refund"
+msgid "request_return_refund"
+msgstr "Request Return/Refund"
+
+msgctxt "Languages::confirm_order"
+msgid "confirm_order"
+msgstr "Confirm Order"
+
+msgctxt "Languages::order_details"
+msgid "order_details"
+msgstr "Order Details"
+
+msgctxt "Languages::text_no_orders"
+msgid "text_no_orders"
+msgstr "No orders found"
+
+msgctxt "Languages::store"
+msgid "store"
+msgstr "Store"

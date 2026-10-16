@@ -1,0 +1,85 @@
+msgid ""
+msgstr "Project-Id-Version: Moyasar-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Moyasar Plugins Support <tech@Moyasar.com>\n"
+"Language: ar_SA"
+
+msgctxt "Languages::cardholder_name"
+msgid "cardholder_name"
+msgstr "اسم حامل البطاقة"
+
+msgctxt "Languages::card_number"
+msgid "card_number"
+msgstr "رقم البطاقة"
+
+msgctxt "Languages::expiry_date"
+msgid "expiry_date"
+msgstr "تاريخ الانتهاء"
+
+msgctxt "Languages::expiry_month"
+msgid "expiry_month"
+msgstr "شهر الانتهاء"
+
+msgctxt "Languages::expiry_year"
+msgid "expiry_year"
+msgstr "سنة الانتهاء"
+
+msgctxt "Languages::cvv"
+msgid "cvv"
+msgstr "رمز التحقق (CVV)"
+
+msgctxt "Languages::text_installation_warning"
+msgid "text_installation_warning"
+msgstr "يجب عليك إعداد مويصار لتفعيلها."
+
+msgctxt "SettingsOptions::moyasar_payment::publicKey"
+msgid "publicKey"
+msgstr "المفتاح العام"
+
+msgctxt "SettingsOptions::moyasar_payment::secretKey"
+msgid "secretKey"
+msgstr "المفتاح السري"
+
+msgctxt "SettingsOptions::moyasar_payment::secretTokenWebhook"
+msgid "secretTokenWebhook"
+msgstr "رمز الويب هوك السري"
+
+msgctxt "Languages::pay_with_card"
+msgid "pay_with_card"
+msgstr "الدفع بالبطاقة"
+
+msgctxt "Languages::pay_with_stcpay"
+msgid "pay_with_stcpay"
+msgstr "الدفع عبر STC Pay"
+
+msgctxt "Languages::stcpay_mobile_number"
+msgid "stcpay_mobile_number"
+msgstr "رقم الجوال STC"
+
+msgctxt "Languages::enter_your_registered_stcpay_number"
+msgid "enter_your_registered_stcpay_number"
+msgstr "أدخل رقم STC Pay المسجل"
+
+msgctxt "Languages::verify"
+msgid "verify"
+msgstr "تحقق"
+
+msgctxt "Languages::stcpay_otp_verification"
+msgid "stcpay_otp_verification"
+msgstr "التحقق من رمز OTP عبر STC Pay"
+
+msgctxt "Languages::please_enter_otp_sent"
+msgid "please_enter_otp_sent"
+msgstr "يرجى إدخال رمز OTP المرسل"
+
+msgctxt "Languages::stcpay.session_expired"
+msgid "stcpay.session_expired"
+msgstr "انتهت صلاحية جلسة STC"
+
+msgctxt "Languages::stcpay.stcpay_otp_verification"
+msgid "stcpay_otp_verification"
+msgstr "التحقق من رمز OTP عبر STC Pay"
+
+msgctxt "Languages::stcpay.invalid_otp_format"
+msgid "stcpay.invalid_otp_format"
+msgstr "صيغة رمز OTP غير صحيحة"

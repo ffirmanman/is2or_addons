@@ -1,0 +1,97 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::tryoto_shipping"
+msgid "Tryoto Shipping"
+msgstr "Tryoto Shipping"
+
+msgctxt "Addons::description::tryoto_shipping"
+msgid "Tryoto: manage shipping and shipment"
+msgstr "Tryoto: manage shipping and shipment"
+
+msgctxt "SettingsOptions::tryoto_shipping::tryoto_access_token"
+msgid "Access Token"
+msgstr "Access Token"
+
+msgctxt "SettingsOptions::tryoto_shipping::tryoto_api_url"
+msgid "API Url"
+msgstr "API Url"
+
+msgctxt "SettingsOptions::tryoto_shipping::tryoto_dev_api_url"
+msgid "Dev API Url"
+msgstr "Dev API Url"
+
+msgctxt "SettingsOptions::tryoto_shipping::tryoto_shipping_mode"
+msgid "Mode"
+msgstr "Mode"
+
+msgctxt "SettingsOptions::tryoto_shipping::tryoto_webhook_secret_key"
+msgid "Webhooks Secret Key"
+msgstr "Webhooks Secret Key"
+
+msgctxt "SettingsOptions::tryoto_shipping::tryoto_cod_payment_method_id"
+msgid "C.O.D. Payment method Id"
+msgstr "C.O.D. Payment method Id"
+
+msgctxt "SettingsVariants::tryoto_shipping::tryoto_shipping_mode::test"
+msgid "Dev (test)"
+msgstr "Dev (test)"
+
+msgctxt "SettingsVariants::tryoto_shipping::tryoto_shipping_mode::live"
+msgid "Live"
+msgstr "Live"
+
+msgctxt "Languages::carrier_tryoto"
+msgid "Tryoto"
+msgstr "Tryoto"
+
+msgctxt "Languages::tryoto_to_customer_doorstep"
+msgid "To Customer Doorstep"
+msgstr "To Customer Doorstep"
+
+msgctxt "Languages::tryoto_pickup_by_customer"
+msgid "Pickup by Customer"
+msgstr "Pickup by Customer"
+
+msgctxt "Languages::tryoto_to_customer_doorstep_or_pickup_by_customer"
+msgid "Customer Doorstep or Pickup by Customer"
+msgstr "Customer Doorstep or Pickup by Customer"
+
+msgctxt "Languages::tryoto_delivery_type"
+msgid "Delivery Type"
+msgstr "Delivery Type"
+
+msgctxt "Languages::tryoto_print_lable"
+msgid "Tryoto Print Label(AWB)"
+msgstr "Tryoto Print Label(AWB)"
+
+msgctxt "Languages::courier_code"
+msgid "Courier code"
+msgstr "Courier code"
+
+msgctxt "SettingsOptions::tryoto_shipping::webhook_delivered"
+msgid "Mapping Status Delivered"
+msgstr "Mapping Status Delivered"
+
+msgctxt "SettingsOptions::tryoto_shipping::webhook_picked_up"
+msgid "Mapping Status PickedUp"
+msgstr "Mapping Status PickedUp"
+
+msgctxt "SettingsOptions::tryoto_shipping::webhook_searching_driver"
+msgid "Mapping Status SearchingDriver"
+msgstr "Mapping Status SearchingDriver"
+
+msgctxt "SettingsOptions::tryoto_shipping::webhook_shipment_created"
+msgid "Mapping Status ShipmentCreated"
+msgstr "Mapping Status ShipmentCreated"
+
+msgctxt "SettingsOptions::tryoto_shipping::webhook_shipment_cancelled"
+msgid "Mapping Status ShipmentCancelled"
+msgstr "Mapping Status ShipmentCancelled"
+
+msgctxt "SettingsOptions::tryoto_shipping::webhook_cancelled"
+msgid "Mapping Status Cancelled"
+msgstr "Mapping Status Cancelled"

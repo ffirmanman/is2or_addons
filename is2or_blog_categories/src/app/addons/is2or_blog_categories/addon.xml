@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_blog_categories</id>
+    <name>IS2OR: Blog Categories</name>
+    <version>1.0</version>
+    <priority>5200</priority>
+    <position>1000</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <compatibility>
+        <dependencies>blog</dependencies>
+    </compatibility>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:blog_categories` (
+                `category_id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                `category` VARCHAR(255) NOT NULL DEFAULT '',
+                PRIMARY KEY (`category_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS `?:blog_categories`;</item>
+
+        <item for="install">ALTER TABLE `?:pages` ADD `category_id` INT(11) UNSIGNED NOT NULL DEFAULT '0';</item>
+        <item for="uninstall">ALTER TABLE `?:pages` DROP `category_id`;</item>
+    </queries>
+</addon>

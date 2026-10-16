@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_elastic_search</id>
+    <name>IS2OR: Elasticsearch Integration</name>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <auto_install>MULTIVENDOR</auto_install>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="es_host">
+                        <type>input</type>
+                        <default_value>localhost</default_value>
+                    </item>
+                    <item id="es_port">
+                        <type>input</type>
+                        <default_value>9200</default_value>
+                    </item>
+                    <item id="es_scheme">
+                        <type>selectbox</type>
+                        <default_value>http</default_value>
+                        <variants>
+                            <item id="http">http</item>
+                            <item id="https">https</item>
+                        </variants>
+                    </item>
+                    <item id="es_index_name">
+                        <type>input</type>
+                        <default_value>cscart_products</default_value>
+                    </item>
+                    <item id="es_auth_header">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>

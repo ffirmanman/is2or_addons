@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_customer_coordinates</id>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <name>IS2OR: Customer Coordinates</name>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <compatibility>
+        <dependencies>geo_maps</dependencies>
+    </compatibility>
+    <queries>
+        <item for="install">
+            ALTER TABLE ?:user_profiles
+            ADD s_latitude DECIMAL(10, 8) NULL,
+            ADD s_longitude DECIMAL(11, 8) NULL,
+            ADD b_latitude DECIMAL(10, 8) NULL,
+            ADD b_longitude DECIMAL(11, 8) NULL;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:user_profiles
+            DROP s_latitude,
+            DROP s_longitude,
+            DROP b_latitude,
+            DROP b_longitude;
+        </item>
+
+        <item for="install">
+            ALTER TABLE ?:companies
+            ADD latitude DECIMAL(10, 8) NULL,
+            ADD longitude DECIMAL(10, 8) NULL;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:companies
+            DROP latitude,
+            DROP longitude;
+        </item>
+    </queries>
+</addon>

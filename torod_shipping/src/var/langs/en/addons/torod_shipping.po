@@ -1,0 +1,129 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::torod_shipping"
+msgid "Torod Shipping"
+msgstr "Torod Shipping"
+
+msgctxt "Addons::description::torod_shipping"
+msgid "Torod: manage shipping and shipment"
+msgstr "Torod: manage shipping and shipment"
+
+msgctxt "SettingsOptions::torod_shipping::torod_client_id"
+msgid "Client ID"
+msgstr "Client ID"
+
+msgctxt "SettingsOptions::torod_shipping::torod_client_secret"
+msgid "Client Secret"
+msgstr "Client Secret"
+
+msgctxt "SettingsOptions::torod_shipping::torod_api_url"
+msgid "Staging API URL"
+msgstr "Staging API URL"
+
+msgctxt "SettingsOptions::torod_shipping::torod_production_api_url"
+msgid "Production API URL"
+msgstr "Production API URL"
+
+msgctxt "SettingsOptions::torod_shipping::torod_mode"
+msgid "Mode"
+msgstr "Mode"
+
+msgctxt "SettingsVariants::torod_shipping::torod_mode::staging"
+msgid "Staging"
+msgstr "Staging"
+
+msgctxt "SettingsVariants::torod_shipping::torod_mode::production"
+msgid "Production"
+msgstr "Production"
+
+msgctxt "SettingsOptions::torod_shipping::torod_webhook_secret_key"
+msgid "Webhook Secret Key"
+msgstr "Webhook Secret Key"
+
+msgctxt "SettingsOptions::torod_shipping::torod_cod_payment_method_id"
+msgid "C.O.D. Payment Method ID"
+msgstr "C.O.D. Payment Method ID"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_ready_for_pickup"
+msgid "Mapping Status Ready For Pickup"
+msgstr "Mapping Status Ready For Pickup"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_in_transit"
+msgid "Mapping Status In Transit"
+msgstr "Mapping Status In Transit"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_delivered"
+msgid "Mapping Status Delivered"
+msgstr "Mapping Status Delivered"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_failed_to_deliver"
+msgid "Mapping Status Failed To Deliver"
+msgstr "Mapping Status Failed To Deliver"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_failed_to_attempt"
+msgid "Mapping Status Failed To Attempt"
+msgstr "Mapping Status Failed To Attempt"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_cancelled"
+msgid "Mapping Status Cancelled"
+msgstr "Mapping Status Cancelled"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_rto"
+msgid "Mapping Status RTO"
+msgstr "Mapping Status RTO"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_damage"
+msgid "Mapping Status Damage"
+msgstr "Mapping Status Damage"
+
+msgctxt "SettingsOptions::torod_shipping::webhook_lost"
+msgid "Mapping Status Lost"
+msgstr "Mapping Status Lost"
+
+msgctxt "Languages::carrier_torod"
+msgid "Torod"
+msgstr "Torod"
+
+msgctxt "Languages::torod_service_type"
+msgid "Service Type"
+msgstr "Service Type"
+
+msgctxt "Languages::torod_normal"
+msgid "Normal"
+msgstr "Normal"
+
+msgctxt "Languages::torod_cold"
+msgid "Cold"
+msgstr "Cold"
+
+msgctxt "Languages::torod_quick"
+msgid "Quick"
+msgstr "Quick"
+
+msgctxt "Languages::torod_print_label"
+msgid "Torod Print Label (AWB)"
+msgstr "Torod Print Label (AWB)"
+
+msgctxt "Languages::torod_print_awb"
+msgid "Print Torod Label (AWB)"
+msgstr "Print Torod Label (AWB)"
+
+msgctxt "Languages::courier_code"
+msgid "Courier Code"
+msgstr "Courier Code"
+
+msgctxt "Languages::torod_missing_warehouse_code"
+msgid "Cannot create Torod shipment: vendor missing warehouse code"
+msgstr "Cannot create Torod shipment: vendor missing warehouse code"
+
+msgctxt "Languages::torod_shipment_already_exists"
+msgid "Torod shipment already exists for this order"
+msgstr "Torod shipment already exists for this order"
+
+msgctxt "Languages::torod_awb_not_found"
+msgid "AWB label not found"
+msgstr "AWB label not found"

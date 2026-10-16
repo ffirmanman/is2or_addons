@@ -1,0 +1,193 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::is2or_size_charts.templates"
+msgid "is2or_size_charts.templates"
+msgstr "Templates"
+
+msgctxt "Languages::is2or_size_charts.template"
+msgid "is2or_size_charts.template"
+msgstr "Template"
+
+msgctxt "Languages::is2or_size_charts.size_charts"
+msgid "is2or_size_charts.size_charts"
+msgstr "Size charts"
+
+msgctxt "Languages::is2or_size_charts.size_chart"
+msgid "is2or_size_charts.size_chart"
+msgstr "Size chart"
+
+msgctxt "Languages::size_chart"
+msgid "size_chart"
+msgstr "Size chart"
+
+msgctxt "Languages::is2or_size_charts.charts"
+msgid "is2or_size_charts.charts"
+msgstr "Size charts"
+
+msgctxt "Languages::is2or_size_charts.title"
+msgid "is2or_size_charts.title"
+msgstr "Title"
+
+msgctxt "Languages::is2or_size_charts.columns"
+msgid "is2or_size_charts.columns"
+msgstr "Columns"
+
+msgctxt "Languages::is2or_size_charts.editing_template"
+msgid "is2or_size_charts.editing_template"
+msgstr "Editing template"
+
+msgctxt "Languages::is2or_size_charts.new_template"
+msgid "is2or_size_charts.new_template"
+msgstr "New template"
+
+msgctxt "Languages::is2or_size_charts.code"
+msgid "is2or_size_charts.code"
+msgstr "Code"
+
+msgctxt "Languages::is2or_size_charts.comment"
+msgid "is2or_size_charts.comment"
+msgstr "Comment"
+
+msgctxt "Languages::is2or_size_charts.variants"
+msgid "is2or_size_charts.variants"
+msgstr "Variants"
+
+msgctxt "Languages::is2or_size_charts.editing_size_chart"
+msgid "is2or_size_charts.editing_size_chart"
+msgstr "Editing size chart"
+
+msgctxt "Languages::is2or_size_charts.new_size_chart"
+msgid "is2or_size_charts.new_size_chart"
+msgstr "New size chart"
+
+msgctxt "Languages::is2or_size_charts.sample_chart"
+msgid "is2or_size_charts.sample_chart"
+msgstr "Sample chart"
+
+msgctxt "Languages::is2or_size_charts.applies"
+msgid "is2or_size_charts.applies"
+msgstr "Applies"
+
+msgctxt "Languages::is2or_size_charts.brands"
+msgid "is2or_size_charts.brands"
+msgstr "Brands"
+
+msgctxt "Languages::is2or_size_charts.all_brands"
+msgid "is2or_size_charts.all_brands"
+msgstr "All brands"
+
+msgctxt "Languages::is2or_size_charts.all_categories"
+msgid "is2or_size_charts.all_categories"
+msgstr "All categories"
+
+msgctxt "Languages::is2or_size_charts.any_product"
+msgid "is2or_size_charts.any_product"
+msgstr "Any product"
+
+msgctxt "Languages::is2or_size_charts.add_brands"
+msgid "is2or_size_charts.add_brands"
+msgstr "Add brands"
+
+msgctxt "Languages::is2or_size_charts.all_brands"
+msgid "is2or_size_charts.all_brands"
+msgstr "All brands"
+
+msgctxt "Languages::is2or_size_charts.add_brands"
+msgid "is2or_size_charts.add_brands"
+msgstr "Add brands"
+
+msgctxt "Languages::is2or_size_charts.add_brands_and_close"
+msgid "is2or_size_charts.add_brands_and_close"
+msgstr "Add brands and close"
+
+msgctxt "Languages::is2or_size_charts.brand_id"
+msgid "is2or_size_charts.brand_id"
+msgstr "Brand ID"
+
+msgctxt "Languages::is2or_size_charts.chart_applies_text"
+msgid "is2or_size_charts.chart_applies_text"
+msgstr "You can set brand, category and specific products that this chart applies. If you set a combination (i.e. brand and category) all must be valid in order the chart to apply. For example if you set brand Adidas and category Shoes, then the chart applies only to Adidas products in the category Shoes."
+
+msgctxt "Languages::is2or_size_charts.applied_size_chart"
+msgid "is2or_size_charts.applied_size_chart"
+msgstr "Applied size chart"
+
+msgctxt "Languages::is2or_size_charts.no_size_chart_applies"
+msgid "is2or_size_charts.no_size_chart_applies"
+msgstr "No size chart applies"
+
+msgctxt "Languages::is2or_size_charts.text_before"
+msgid "is2or_size_charts.text_before"
+msgstr "Text before"
+
+msgctxt "Languages::is2or_size_charts.text_after"
+msgid "is2or_size_charts.text_after"
+msgstr "Text after"
+
+msgctxt "Languages::is2or_size_charts.product_tab_info"
+msgid "is2or_size_charts.product_tab_info"
+msgstr "There is also available in Design->Products Tabs a product tab that you can enable/disable to show Size Chart bellow in product tabs along with features and other information. If you want only the product tab, then in the above select 'none'."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_product_page"
+msgid "Select the location in product page to display size chart."
+msgstr "Select the location in product page to display size chart."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_product_page_type"
+msgid "In case you set a product page location you can select if the chart will be shown in the page or a link to show chart in popup."
+msgstr "In case you set a product page location you can select if the chart will be shown in the page or a link to show chart in popup."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_table_mode_texts"
+msgid "This applies only if chart is shown inside product information and type is table."
+msgstr "This applies only if chart is shown inside product information and type is table."
+
+msgctxt "Languages::is2or_size_charts.shoulder_width"
+msgid "Shoulder width"
+msgstr "Shoulder width"
+
+msgctxt "Languages::is2or_size_charts.chest_bust_size"
+msgid "Chest/Bust size"
+msgstr "Chest/Bust size"
+
+msgctxt "Languages::is2or_size_charts.waist_size"
+msgid "Waist size"
+msgstr "Waist size"
+
+msgctxt "Languages::is2or_size_charts.hips_size"
+msgid "Hips size"
+msgstr "Hips size"
+
+msgctxt "Languages::is2or_size_charts.thigh_size"
+msgid "Thigh size"
+msgstr "Thigh size"
+
+msgctxt "Languages::is2or_size_charts.inseam_length"
+msgid "Inseam length"
+msgstr "Inseam length"
+
+msgctxt "Languages::is2or_size_charts.outseam_length"
+msgid "Outseam length"
+msgstr "Outseam length"
+
+msgctxt "Languages::is2or_size_charts.foot_width"
+msgid "Foot width"
+msgstr "Foot width"
+
+msgctxt "Languages::is2or_size_charts.foot_length"
+msgid "Foot length"
+msgstr "Foot length"
+
+msgctxt "Languages::is2or_size_charts.customer_size_recomendation"
+msgid "Customer size recomendation"
+msgstr "Customer size recomendation"
+
+msgctxt "Languages::is2or_size_charts.my_size"
+msgid "My size"
+msgstr "My size"
+
+msgctxt "Languages::is2or_size_charts.recommended_size"
+msgid "Recommended Size: <strong>[size]</strong>"
+msgstr "Recommended Size: <strong>[size]</strong>"

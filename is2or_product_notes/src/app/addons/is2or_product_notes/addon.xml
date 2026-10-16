@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_product_notes</id>
+    <name>IS2OR: Product's Notes Personalization</name>
+    <version>1.0</version>
+    <priority>5200</priority>
+    <position>0</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <queries>
+        <item for="install">ALTER TABLE ?:order_details ADD `notes` TEXT;</item>
+        <item for="uninstall">ALTER TABLE ?:order_details DROP `notes`;</item>
+        
+        <item for="install">ALTER TABLE ?:products ADD `allow_notes` CHAR(1) NOT NULL DEFAULT 'N';</item>
+        <item for="uninstall">ALTER TABLE ?:products DROP `allow_notes`;</item>
+    </queries>
+    <!-- <settings>
+        <sections>
+            <section id="general">
+                <name>General</name>
+                <items>
+                    <item id="product_personalization">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings> -->
+</addon>

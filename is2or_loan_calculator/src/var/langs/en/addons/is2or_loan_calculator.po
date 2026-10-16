@@ -1,0 +1,47 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::block_is2or_loan_calculator"
+msgid "Loan Calculator"
+msgstr "Loan Calculator"
+
+msgctxt "Languages::is2or_loan_calculator.emi_calculator"
+msgid "EMI Calculator"
+msgstr "EMI Calculator"
+
+msgctxt "Languages::is2or_loan_calculator.block_header"
+msgid "Enter your monthly income, current EMIs (existing loans), and total credit card limit to calculate your maximum EMI."
+msgstr "Enter your monthly income, current EMIs (existing loans), and total credit card limit to calculate your maximum EMI."
+
+msgctxt "Languages::is2or_loan_calculator.monthly_income"
+msgid "Monthly income"
+msgstr "Monthly income"
+
+msgctxt "Languages::is2or_loan_calculator.current_emis"
+msgid "Current EMIs (Existing loans)"
+msgstr "Current EMIs (Existing loans)"
+
+msgctxt "Languages::is2or_loan_calculator.total_card_limit"
+msgid "Total Card Limit (All cards)"
+msgstr "Total Card Limit (All cards)"
+
+msgctxt "Languages::is2or_loan_calculator.calculate_max_emi"
+msgid "Calculate Max EMI"
+msgstr "Calculate Max EMI"
+
+msgctxt "Languages::is2or_loan_calculator.emi_result_text"
+msgid "Based on your monthly income, existing EMIs, and credit card limit, the maximum EMI you can avail is"
+msgstr "Based on your monthly income, existing EMIs, and credit card limit, the maximum EMI you can avail is"
+
+msgctxt "Languages::is2or_loan_calculator.search_based_on_budget"
+msgid "Search Based on Your Budjet"
+msgstr "Search Based on Your Budjet"
+
+msgctxt "Languages::emi_calculator"
+msgid "EMI Calculator"
+msgstr "EMI Calculator"
+
+

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_management_order_status</id>
+    <name>IS2OR: Management Order Status</name>
+    <version>1.0</version>
+    <priority>1000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="status_transitions">
+                        <type>textarea</type>
+                        <name>Status Transitions</name>
+                        <default_value>
+N:O,P,I,D,F,C,B,Y,S,E,G
+O:P,I,D,F
+P:A,D,F,I
+A:E
+E:G
+G:C
+                        </default_value>
+                        <tooltip>Format: Origin Status: Destination1, Destination2. Example: P:Y,D (This means that the Paid status can only be Packing or Declined)</tooltip>
+                    </item>
+
+                    <item id="tab_paid_statuses">
+                        <type>multiple checkboxes</type>
+                    </item>
+                    <item id="tab_packing_statuses">
+                        <type>multiple checkboxes</type>
+                    </item>
+                    <item id="tab_shipping_statuses">
+                        <type>multiple checkboxes</type>
+                    </item>
+                    <item id="tab_delivered_statuses">
+                        <type>multiple checkboxes</type>
+                    </item>
+                    <item id="tab_complete_statuses">
+                        <type>multiple checkboxes</type>
+                    </item>
+                    <item id="tab_declined_statuses">
+                        <type>multiple checkboxes</type>
+                        <default_value>F,D</default_value>
+                    </item>
+                    <item id="tab_cancelled_statuses">
+                        <type>multiple checkboxes</type>
+                    </item>
+                    <item id="tab_return_statuses">
+                        <type>multiple checkboxes</type>
+                    </item>
+                    <item id="paid_status">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="packing_status">
+                        <type>selectbox</type>
+                    </item>
+
+                    <item id="shipping_status">
+                        <type>selectbox</type>
+                    </item>
+
+                    <item id="delivered_status">
+                        <type>selectbox</type>
+                    </item>
+
+                    <item id="complete_status">
+                        <type>selectbox</type>
+                    </item>
+
+                    <item id="declined_status">
+                        <type>selectbox</type>
+                    </item>
+
+                    <item id="cancelled_status">
+                        <type>selectbox</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>

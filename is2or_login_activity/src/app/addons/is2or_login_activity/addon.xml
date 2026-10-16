@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_login_activity</id>
+    <version>1.1</version>
+    <priority>5010</priority>
+    <position>1</position>
+    <status>active</status>
+    <auto_install>MULTIVENDOR</auto_install>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <name>IS2OR: Login Activity</name>
+    <description>IS2OR: Login Activity — shows active sessions and allows users to log out from individual devices or all devices at once.</description>
+    <settings>
+    </settings>
+
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_login_sessions (
+                `id`                  int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `user_id`             int(11) unsigned NOT NULL,
+                `session_id`          varchar(32) NOT NULL DEFAULT '',
+                `device_fingerprint`  varchar(32) NOT NULL DEFAULT '',
+                `user_agent`          varchar(255) NOT NULL DEFAULT '',
+                `device_type`         varchar(20) NOT NULL DEFAULT 'desktop',
+                `device_name`         varchar(150) NOT NULL DEFAULT '',
+                `browser`             varchar(50) NOT NULL DEFAULT '',
+                `os`                  varchar(50) NOT NULL DEFAULT '',
+                `ip_address`          varchar(45) NOT NULL DEFAULT '',
+                `login_at`            int(11) unsigned NOT NULL DEFAULT '0',
+                `last_active_at`      int(11) unsigned NOT NULL DEFAULT '0',
+                `logged_out_at`       int(11) unsigned NULL DEFAULT NULL,
+                `is_active`           tinyint(1) unsigned NOT NULL DEFAULT '1',
+                PRIMARY KEY (`id`),
+                UNIQUE KEY `uniq_user_fingerprint` (`user_id`, `device_fingerprint`),
+                KEY `idx_user_active` (`user_id`, `is_active`),
+                KEY `idx_session_id` (`session_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="upgrade" version="1.1">
+            CREATE TABLE IF NOT EXISTS ?:is2or_login_sessions (
+                `id`                  int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `user_id`             int(11) unsigned NOT NULL,
+                `session_id`          varchar(32) NOT NULL DEFAULT '',
+                `device_fingerprint`  varchar(32) NOT NULL DEFAULT '',
+                `user_agent`          varchar(255) NOT NULL DEFAULT '',
+                `device_type`         varchar(20) NOT NULL DEFAULT 'desktop',
+                `device_name`         varchar(150) NOT NULL DEFAULT '',
+                `browser`             varchar(50) NOT NULL DEFAULT '',
+                `os`                  varchar(50) NOT NULL DEFAULT '',
+                `ip_address`          varchar(45) NOT NULL DEFAULT '',
+                `login_at`            int(11) unsigned NOT NULL DEFAULT '0',
+                `last_active_at`      int(11) unsigned NOT NULL DEFAULT '0',
+                `logged_out_at`       int(11) unsigned NULL DEFAULT NULL,
+                `is_active`           tinyint(1) unsigned NOT NULL DEFAULT '1',
+                PRIMARY KEY (`id`),
+                UNIQUE KEY `uniq_user_fingerprint` (`user_id`, `device_fingerprint`),
+                KEY `idx_user_active` (`user_id`, `is_active`),
+                KEY `idx_session_id` (`session_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_login_sessions;</item>
+    </queries>
+</addon>

@@ -1,0 +1,94 @@
+.is2or-ie__container {
+    .buy-credit {
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+    .is2or-ie__section {
+        display: flex;
+        justify-content: space-between;
+
+        .is2or-ie__img {
+            width: 50%;
+        }
+
+        .is2or-ie__buttons {
+            width: 45%;
+        }
+    }
+
+    .is2or-ie__button {
+        button {
+            display: inline-block;
+            width: ~"calc(100% - 23px)";
+            margin-right: 3px;
+        }
+
+        + .is2or-ie__button {
+            margin-top: 10px;
+        }
+    }
+
+    .is2or-ie__img-wrapper {
+        width: 100%;
+        position: relative;
+        border: 1px solid #d1d1d1;
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 22.5%;
+            width: 55%;
+            transform: translateY(-50%);
+
+            &:not(.hidden) {
+                display: inline-block;
+            }
+        }
+
+        &:hover {
+            .is2or-ie__image-actions:not(.hidden) {
+                display: block;
+            }
+        }
+
+        .is2or-ie__image-actions {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+
+            >div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            a {
+                display: inline-block;
+                color: #fff;
+
+                + a {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .is2or-ie__past-result {
+            cursor: pointer;
+        }
+
+        + .is2or-ie__img-wrapper {
+            margin-top: 10px;
+        }
+    }
+}

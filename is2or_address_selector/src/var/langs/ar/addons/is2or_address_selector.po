@@ -1,0 +1,93 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Arabic\n"
+"Language: ar_SA"
+
+msgctxt "Addons::name::is2or_address_selector"
+msgid "IS2OR: Address Selector"
+msgstr "IS2OR: محدد العناوين"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "العربية"
+
+msgctxt "Addons::description::is2or_address_selector"
+msgid "Lets customers manage saved delivery addresses and use them as their active location."
+msgstr "يتيح للعملاء إدارة عناوين التوصيل المحفوظة واستخدامها كموقع نشط."
+
+msgctxt "Languages::is2or_address_selector.addresses"
+msgid "is2or_address_selector.addresses"
+msgstr "العناوين"
+
+msgctxt "Languages::is2or_address_selector.manage_addresses"
+msgid "is2or_address_selector.manage_addresses"
+msgstr "إدارة العناوين"
+
+msgctxt "Languages::is2or_address_selector.add_address"
+msgid "is2or_address_selector.add_address"
+msgstr "إضافة عنوان"
+
+msgctxt "Languages::is2or_address_selector.edit_address"
+msgid "is2or_address_selector.edit_address"
+msgstr "تعديل العنوان"
+
+msgctxt "Languages::is2or_address_selector.saved_addresses"
+msgid "is2or_address_selector.saved_addresses"
+msgstr "العناوين المحفوظة"
+
+msgctxt "Languages::is2or_address_selector.selected_address"
+msgid "is2or_address_selector.selected_address"
+msgstr "المحدد"
+
+msgctxt "Languages::is2or_address_selector.primary_address"
+msgid "is2or_address_selector.primary_address"
+msgstr "الرئيسي"
+
+msgctxt "Languages::is2or_address_selector.use_this_address"
+msgid "is2or_address_selector.use_this_address"
+msgstr "استخدام هذا العنوان"
+
+msgctxt "Languages::is2or_address_selector.complete_address_to_select"
+msgid "is2or_address_selector.complete_address_to_select"
+msgstr "أكمل حقول الشحن المطلوبة قبل استخدام هذا العنوان."
+
+msgctxt "Languages::is2or_address_selector.delivery_address_selected"
+msgid "is2or_address_selector.delivery_address_selected"
+msgstr "تم اختيار عنوان التوصيل."
+
+msgctxt "Languages::is2or_address_selector.address_saved"
+msgid "is2or_address_selector.address_saved"
+msgstr "تم حفظ العنوان."
+
+msgctxt "Languages::is2or_address_selector.address_deleted"
+msgid "is2or_address_selector.address_deleted"
+msgstr "تم حذف العنوان."
+
+msgctxt "Languages::is2or_address_selector.cannot_delete_primary"
+msgid "is2or_address_selector.cannot_delete_primary"
+msgstr "لا يمكن حذف العنوان الرئيسي."
+
+msgctxt "Languages::is2or_address_selector.no_address_details"
+msgid "is2or_address_selector.no_address_details"
+msgstr "أضف تفاصيل العنوان ليصبح هذا الملف قابلا للاستخدام."
+
+msgctxt "Languages::is2or_address_selector.manage_your_addresses"
+msgid "is2or_address_selector.manage_your_addresses"
+msgstr "اختر العنوان الذي يجب أن يحدد موقع التوصيل والـ checkout."
+
+msgctxt "Languages::is2or_address_selector.back_to_addresses"
+msgid "is2or_address_selector.back_to_addresses"
+msgstr "العودة إلى العناوين"
+
+msgctxt "Languages::is2or_address_selector.address_label"
+msgid "is2or_address_selector.address_label"
+msgstr "اسم العنوان"
+
+msgctxt "Languages::is2or_address_selector.manage_from_account"
+msgid "is2or_address_selector.manage_from_account"
+msgstr "الإدارة من الحساب"
+
+msgctxt "Languages::is2or_address_selector.incomplete_address"
+msgid "is2or_address_selector.incomplete_address"
+msgstr "يحتاج إلى استكمال"

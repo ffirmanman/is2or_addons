@@ -1,0 +1,1 @@
+{style src="addons/is2or_product_notes/styles.less"}

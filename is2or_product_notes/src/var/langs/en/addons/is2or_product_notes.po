@@ -1,0 +1,22 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsOptions::is2or_product_notes::product_personalization"
+msgid "Allow product personalization"
+msgstr "Allow product personalization"
+
+msgctxt "Languages::is2or_product_notes.create_notes"
+msgid "Create notes"
+msgstr "Create notes"
+
+msgctxt "Languages::is2or_product_notes.edit_notes"
+msgid "Edit notes"
+msgstr "Edit notes"
+
+msgctxt "Languages::is2or_product_notes.allow_notes"
+msgid "Allow notes"
+msgstr "Allow notes"
+

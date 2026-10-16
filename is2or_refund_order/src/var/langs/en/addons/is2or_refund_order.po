@@ -1,0 +1,10 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+
+msgctxt "SettingsOptions::is2or_refund_order::tab_refunded_statuses"
+msgid "tab_refunded_statuses"
+msgstr "Allowed Refund Statuses"

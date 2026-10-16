@@ -1,0 +1,93 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_login_activity\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "Languages::block_is2or_login_activity"
+msgid "IS2OR: Login Activity"
+msgstr "IS2OR: نشاط تسجيل الدخول"
+
+msgctxt "Languages::block_is2or_login_activity_description"
+msgid "Shows active login sessions for the current user with options to log out individual devices or all devices at once."
+msgstr "يعرض جلسات تسجيل الدخول النشطة للمستخدم الحالي مع إمكانية تسجيل الخروج من جهاز معين أو من جميع الأجهزة دفعة واحدة."
+
+msgctxt "Languages::is2or_login_activity.template_name"
+msgid "Login Activity"
+msgstr "نشاط تسجيل الدخول"
+
+msgctxt "Languages::is2or_login_activity.title"
+msgid "Login Activity"
+msgstr "نشاط تسجيل الدخول"
+
+msgctxt "Languages::is2or_login_activity.notice"
+msgid "If you see unfamiliar activity, click \"Log out\" and change your password immediately."
+msgstr "إذا لاحظت نشاطًا غير مألوف، فانقر على \"تسجيل الخروج\" وقم بتغيير كلمة المرور فورًا."
+
+msgctxt "Languages::is2or_login_activity.current_activity"
+msgid "Current login activity"
+msgstr "نشاط تسجيل الدخول الحالي"
+
+msgctxt "Languages::is2or_login_activity.active_now"
+msgid "Active now"
+msgstr "نشط الآن"
+
+msgctxt "Languages::is2or_login_activity.last_active"
+msgid "Last active"
+msgstr "آخر نشاط"
+
+msgctxt "Languages::is2or_login_activity.logout"
+msgid "Log out"
+msgstr "تسجيل الخروج"
+
+msgctxt "Languages::is2or_login_activity.logout_all"
+msgid "Log out from all devices"
+msgstr "تسجيل الخروج من جميع الأجهزة"
+
+msgctxt "Languages::is2or_login_activity.no_sessions"
+msgid "No active sessions found."
+msgstr "لم يتم العثور على أي جلسات نشطة."
+
+msgctxt "Languages::is2or_login_activity.session_removed"
+msgid "Device has been logged out successfully."
+msgstr "تم تسجيل الخروج من الجهاز بنجاح."
+
+msgctxt "Languages::is2or_login_activity.session_remove_failed"
+msgid "Could not log out from that device. The session may have already expired."
+msgstr "تعذر تسجيل الخروج من هذا الجهاز. ربما انتهت صلاحية الجلسة بالفعل."
+
+msgctxt "Languages::is2or_login_activity.all_sessions_removed"
+msgid "[count] other device(s) have been logged out."
+msgstr "تم تسجيل الخروج من [count] جهاز(أجهزة) أخرى."
+
+msgctxt "Languages::is2or_login_activity.not_logged_in"
+msgid "You must be logged in to manage your sessions."
+msgstr "يجب تسجيل الدخول لإدارة جلساتك."
+
+msgctxt "Languages::is2or_login_activity.unknown_device"
+msgid "Unknown device"
+msgstr "جهاز غير معروف"
+
+msgctxt "Languages::is2or_login_activity.unknown_os"
+msgid "Unknown OS"
+msgstr "نظام تشغيل غير معروف"
+
+msgctxt "Languages::is2or_login_activity.unknown_browser"
+msgid "Unknown Browser"
+msgstr "متصفح غير معروف"
+
+msgctxt "Languages::is2or_login_activity.on"
+msgid "on"
+msgstr "على"
+
+msgctxt "Languages::danger_zone"
+msgid "danger_zone"
+msgstr "منطقة الخطر"
+
+msgctxt "Languages::danger_zone_description"
+msgid "danger_zone_description"
+msgstr "بمجرد حذف حسابك، لن تتمكن من استعادته. يرجى التأكد قبل المتابعة."
+
+msgctxt "Languages::delete_my_account_short_description"
+msgid "delete_my_account_short_description"
+msgstr "احذف حسابك وجميع بياناتك نهائيًا"

@@ -1,0 +1,1 @@
+<option value="J" {if $field.field_type === 'J'}selected{/if}>{__('is2or_spl_integration.spl_short_address')}</option>

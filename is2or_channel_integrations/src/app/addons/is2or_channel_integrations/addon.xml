@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_channel_integrations</id>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <status>active</status>
+    <auto_install>MULTIVENDOR</auto_install>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <name>IS2OR: Channel Integration</name>
+    <description>IS2OR: Channel Integration — integration with other channel app.</description>
+   
+    <settings layout="separate">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="sync_service_base_url">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="internal_hmac_secret">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="category_api_base_url">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="category_api_token">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_sync_history (
+                `id`            int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `company_id`    int(11) unsigned NOT NULL,
+                `platform`      varchar(20) NOT NULL DEFAULT 'salla',
+                `job_id`        int(11) unsigned NOT NULL,
+                `status`        varchar(50) NOT NULL DEFAULT 'pending',
+                `attempt_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `success_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `failure_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `completed_at`  int(11) unsigned NULL DEFAULT NULL,
+                `created_at`    int(11) unsigned NOT NULL DEFAULT '0',
+                PRIMARY KEY (`id`),
+                KEY `idx_company_channel` (`company_id`, `platform`),
+                KEY `idx_job_id` (`job_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_connections (
+                `connection_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `company_id` int(11) unsigned NOT NULL,
+                `platform` varchar(16) NOT NULL,
+                `external_store_id` varchar(128) DEFAULT NULL,
+                `external_store_name` varchar(255) DEFAULT NULL,
+                `status` varchar(32) NOT NULL,
+                `sync_mode` varchar(32) NOT NULL DEFAULT 'timeline_release',
+                `allow_product_sync` char(1) NOT NULL DEFAULT 'Y',
+                `allow_inventory_sync` char(1) NOT NULL DEFAULT 'Y',
+                `allow_price_sync` char(1) NOT NULL DEFAULT 'Y',
+                `allow_order_status_sync_back` char(1) NOT NULL DEFAULT 'Y',
+                `last_successful_sync_at` int(11) unsigned DEFAULT NULL,
+                `last_error_at` int(11) unsigned DEFAULT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                `created_by` int(11) unsigned DEFAULT NULL,
+                `updated_by` int(11) unsigned DEFAULT NULL,
+                PRIMARY KEY (`connection_id`),
+                UNIQUE KEY `uq_connection` (`company_id`,`platform`,`external_store_id`),
+                KEY `idx_company_platform_status` (`company_id`,`platform`,`status`),
+                KEY `idx_status_sync` (`status`,`last_successful_sync_at`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_credentials (
+                `credential_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned NOT NULL,
+                `key_id` varchar(64) NOT NULL,
+                `encrypted_access_token` mediumtext NOT NULL,
+                `encrypted_refresh_token` mediumtext,
+                `token_expires_at` int(11) unsigned DEFAULT NULL,
+                `refresh_expires_at` int(11) unsigned DEFAULT NULL,
+                `scopes` text,
+                `status` varchar(32) NOT NULL,
+                `last_refresh_attempt_at` int(11) unsigned DEFAULT NULL,
+                `last_refresh_success_at` int(11) unsigned DEFAULT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`credential_id`),
+                UNIQUE KEY `uq_connection` (`connection_id`),
+                KEY `idx_status_expires` (`status`,`token_expires_at`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_inventory_outbox (
+                `outbox_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned DEFAULT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `product_id` int(11) unsigned NOT NULL,
+                `variant_mapping_id` bigint(20) unsigned DEFAULT NULL,
+                `event_source` varchar(32) NOT NULL,
+                `source_order_id` int(11) unsigned DEFAULT NULL,
+                `source_webhook_event_id` bigint(20) unsigned DEFAULT NULL,
+                `target_stock` int(11) NOT NULL,
+                `status` varchar(32) NOT NULL DEFAULT 'pending',
+                `attempt_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `next_attempt_at` int(11) unsigned NOT NULL,
+                `last_error` text,
+                `idempotency_key` varchar(128) NOT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`outbox_id`),
+                UNIQUE KEY `uq_idempotency` (`idempotency_key`),
+                KEY `idx_status_attempt` (`status`,`next_attempt_at`),
+                KEY `idx_company_product` (`company_id`,`product_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_oauth_states (
+                `state_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `state_token_hash` char(64) NOT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `platform` varchar(16) NOT NULL,
+                `return_url` varchar(1024) NOT NULL,
+                `requested_by` int(11) unsigned DEFAULT NULL,
+                `expires_at` int(11) unsigned NOT NULL,
+                `used_at` int(11) unsigned DEFAULT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`state_id`),
+                UNIQUE KEY `uq_state_token` (`state_token_hash`),
+                KEY `idx_company_platform_expires` (`company_id`,`platform`,`expires_at`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_order_mappings (
+                `order_mapping_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned NOT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `order_id` int(11) unsigned NOT NULL,
+                `platform` varchar(16) NOT NULL,
+                `external_order_id` varchar(128) NOT NULL,
+                `external_order_number` varchar(128) DEFAULT NULL,
+                `external_order_url` varchar(1024) DEFAULT NULL,
+                `source_status` varchar(64) DEFAULT NULL,
+                `source_payment_status` varchar(64) DEFAULT NULL,
+                `source_fulfillment_status` varchar(64) DEFAULT NULL,
+                `last_webhook_event_at` int(11) unsigned DEFAULT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`order_mapping_id`),
+                UNIQUE KEY `uq_connection_external_order` (`connection_id`,`external_order_id`),
+                UNIQUE KEY `uq_order` (`order_id`),
+                KEY `idx_company_platform` (`company_id`,`platform`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_order_status_outbox (
+                `outbox_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned NOT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `order_id` int(11) unsigned NOT NULL,
+                `order_mapping_id` bigint(20) unsigned NOT NULL,
+                `event_source` varchar(32) NOT NULL,
+                `target_order_status` varchar(64) DEFAULT NULL,
+                `target_shipping_status` varchar(64) DEFAULT NULL,
+                `tracking_number` varchar(255) DEFAULT NULL,
+                `carrier_code` varchar(64) DEFAULT NULL,
+                `payload_hash` char(64) NOT NULL,
+                `status` varchar(32) NOT NULL DEFAULT 'pending',
+                `attempt_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `next_attempt_at` int(11) unsigned NOT NULL,
+                `last_error` text,
+                `idempotency_key` varchar(128) NOT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`outbox_id`),
+                UNIQUE KEY `uq_idempotency` (`idempotency_key`),
+                KEY `idx_status_attempt` (`status`,`next_attempt_at`),
+                KEY `idx_connection_order` (`connection_id`,`order_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_product_mappings (
+                `mapping_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned NOT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `product_id` int(11) unsigned NOT NULL,
+                `external_product_id` varchar(128) NOT NULL,
+                `external_sku` varchar(255) DEFAULT NULL,
+                `external_updated_at` varchar(64) DEFAULT NULL,
+                `external_admin_url` varchar(1024) DEFAULT NULL,
+                `mapping_status` varchar(32) NOT NULL,
+                `drift_status` varchar(32) NOT NULL DEFAULT 'none',
+                `last_pulled_at` int(11) unsigned DEFAULT NULL,
+                `last_pushed_at` int(11) unsigned DEFAULT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`mapping_id`),
+                UNIQUE KEY `uq_connection_external` (`connection_id`,`external_product_id`),
+                UNIQUE KEY `uq_connection_product` (`connection_id`,`product_id`),
+                KEY `idx_company_product` (`company_id`,`product_id`),
+                KEY `idx_connection_sku` (`connection_id`,`external_sku`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_product_outbox (
+                `outbox_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned DEFAULT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `product_id` int(11) unsigned NOT NULL,
+                `event_source` varchar(32) NOT NULL,
+                `change_hash` char(64) NOT NULL,
+                `target_action` varchar(32) NOT NULL,
+                `status` varchar(32) NOT NULL DEFAULT 'pending',
+                `attempt_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `next_attempt_at` int(11) unsigned NOT NULL,
+                `last_error` text,
+                `idempotency_key` varchar(128) NOT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`outbox_id`),
+                UNIQUE KEY `uq_idempotency` (`idempotency_key`),
+                KEY `idx_status_attempt` (`status`,`next_attempt_at`),
+                KEY `idx_company_product` (`company_id`,`product_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_status_mappings (
+                `status_mapping_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `platform` varchar(16) NOT NULL,
+                `company_id` int(11) unsigned DEFAULT NULL,
+                `cscart_status` char(1) NOT NULL,
+                `provider_order_status` varchar(64) DEFAULT NULL,
+                `provider_shipping_status` varchar(64) DEFAULT NULL,
+                `enabled` char(1) NOT NULL DEFAULT 'Y',
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`status_mapping_id`),
+                UNIQUE KEY `uq_platform_company_status` (`platform`,`company_id`,`cscart_status`),
+                KEY `idx_platform_enabled` (`platform`,`enabled`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_sync_issues (
+                `issue_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned DEFAULT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `platform` varchar(16) NOT NULL,
+                `issue_type` varchar(64) NOT NULL,
+                `severity` varchar(16) NOT NULL,
+                `affected_object_type` varchar(64) DEFAULT NULL,
+                `affected_object_id` varchar(128) DEFAULT NULL,
+                `product_id` int(11) unsigned DEFAULT NULL,
+                `order_id` int(11) unsigned DEFAULT NULL,
+                `message` text NOT NULL,
+                `required_action` varchar(64) DEFAULT NULL,
+                `status` varchar(32) NOT NULL,
+                `first_seen_at` int(11) unsigned NOT NULL,
+                `last_seen_at` int(11) unsigned NOT NULL,
+                `resolved_at` int(11) unsigned DEFAULT NULL,
+                `resolved_by` int(11) unsigned DEFAULT NULL,
+                PRIMARY KEY (`issue_id`),
+                KEY `idx_company_status_severity` (`company_id`,`status`,`severity`),
+                KEY `idx_connection_type_status` (`connection_id`,`issue_type`,`status`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_sync_job_items (
+                `job_item_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `job_id` bigint(20) unsigned NOT NULL,
+                `connection_id` bigint(20) unsigned DEFAULT NULL,
+                `object_type` varchar(64) NOT NULL,
+                `object_id` varchar(128) DEFAULT NULL,
+                `product_id` int(11) unsigned DEFAULT NULL,
+                `order_id` int(11) unsigned DEFAULT NULL,
+                `status` varchar(32) NOT NULL,
+                `message` text,
+                `payload_hash` char(64) DEFAULT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`job_item_id`),
+                KEY `idx_job_status` (`job_id`,`status`),
+                KEY `idx_connection_object` (`connection_id`,`object_type`,`object_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_sync_jobs (
+                `job_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned DEFAULT NULL,
+                `company_id` int(11) unsigned DEFAULT NULL,
+                `job_type` varchar(64) NOT NULL,
+                `status` varchar(32) NOT NULL,
+                `lease_owner` varchar(128) DEFAULT NULL,
+                `lease_expires_at` int(11) unsigned DEFAULT NULL,
+                `cursor_json` text,
+                `total_count` int(11) unsigned DEFAULT NULL,
+                `success_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `warning_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `failure_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `attempt_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `next_attempt_at` int(11) unsigned DEFAULT NULL,
+                `safe_error_summary` text,
+                `created_by` int(11) unsigned DEFAULT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `started_at` int(11) unsigned DEFAULT NULL,
+                `completed_at` int(11) unsigned DEFAULT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`job_id`),
+                KEY `idx_type_status_attempt` (`job_type`,`status`,`next_attempt_at`),
+                KEY `idx_connection_type` (`connection_id`,`job_type`,`created_at`),
+                KEY `idx_lease` (`lease_owner`,`lease_expires_at`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_variant_mappings (
+                `variant_mapping_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `product_mapping_id` bigint(20) unsigned NOT NULL,
+                `connection_id` bigint(20) unsigned NOT NULL,
+                `company_id` int(11) unsigned NOT NULL,
+                `product_id` int(11) unsigned NOT NULL,
+                `combination_hash` varchar(64) DEFAULT NULL,
+                `variation_product_id` int(11) unsigned DEFAULT NULL,
+                `external_variant_id` varchar(128) DEFAULT NULL,
+                `external_stock_id` varchar(128) DEFAULT NULL,
+                `external_sku` varchar(255) DEFAULT NULL,
+                `last_known_channel_stock` int(11) DEFAULT NULL,
+                `last_inventory_pushed_at` int(11) unsigned DEFAULT NULL,
+                `mapping_status` varchar(32) NOT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                `updated_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY (`variant_mapping_id`),
+                UNIQUE KEY `uq_connection_variant` (`connection_id`,`external_variant_id`),
+                UNIQUE KEY `uq_connection_stock` (`connection_id`,`external_stock_id`),
+                KEY `idx_connection_product` (`connection_id`,`product_id`),
+                KEY `idx_product_mapping` (`product_mapping_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_channel_webhook_events (
+                `webhook_event_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                `connection_id` bigint(20) unsigned DEFAULT NULL,
+                `platform` varchar(16) NOT NULL,
+                `event_type` varchar(128) NOT NULL,
+                `external_event_id` varchar(128) DEFAULT NULL,
+                `external_object_id` varchar(128) DEFAULT NULL,
+                `payload_hash` char(64) NOT NULL,
+                `payload_storage` varchar(32) NOT NULL DEFAULT 'db',
+                `payload_json` longtext,
+                `headers_json` text,
+                `signature_valid` char(1) NOT NULL DEFAULT 'N',
+                `processing_status` varchar(32) NOT NULL,
+                `attempt_count` int(11) unsigned NOT NULL DEFAULT '0',
+                `next_attempt_at` int(11) unsigned DEFAULT NULL,
+                `safe_error_summary` text,
+                `received_at` int(11) unsigned NOT NULL,
+                `processed_at` int(11) unsigned DEFAULT NULL,
+                PRIMARY KEY (`webhook_event_id`),
+                UNIQUE KEY `uq_platform_event_id` (`platform`,`external_event_id`),
+                UNIQUE KEY `uq_platform_payload` (`platform`,`event_type`,`external_object_id`,`payload_hash`),
+                KEY `idx_processing_status` (`processing_status`,`next_attempt_at`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_sync_history;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_connections;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_credentials;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_inventory_outbox;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_oauth_states;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_order_mappings;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_order_status_outbox;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_product_mappings;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_product_outbox;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_status_mappings;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_sync_issues;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_sync_job_items;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_sync_jobs;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_variant_mappings;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:is2or_channel_webhook_events;</item>
+    </queries>
+</addon>

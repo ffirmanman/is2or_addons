@@ -1,0 +1,257 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsSections::is2or_claid_ai::general"
+msgid "General"
+msgstr "General"
+
+msgctxt "SettingsSections::is2or_claid_ai::image_enhancer"
+msgid "Image Enhancer"
+msgstr "Image Enhancer"
+
+msgctxt "SettingsSections::is2or_claid_ai::credit_costs"
+msgid "Credit Price & Costs"
+msgstr "Credit Price & Costs"
+
+msgctxt "SettingsOptions::is2or_claid_ai::api_key"
+msgid "Api key"
+msgstr "Api key"
+
+msgctxt "SettingsOptions::is2or_claid_ai::tnc"
+msgid "Terms and conditions"
+msgstr "Terms and conditions"
+
+msgctxt "SettingsOptions::is2or_claid_ai::hdr"
+msgid "HDR"
+msgstr "HDR"
+
+msgctxt "SettingsOptions::is2or_claid_ai::sharpness"
+msgid "Sharpness"
+msgstr "Sharpness"
+
+msgctxt "SettingsOptions::is2or_claid_ai::remove_background_cost"
+msgid "Remove background"
+msgstr "Remove background"
+
+msgctxt "SettingsOptions::is2or_claid_ai::enhance_image_cost"
+msgid "Enhance image"
+msgstr "Enhance image"
+
+msgctxt "SettingsOptions::is2or_claid_ai::generate_background_cost"
+msgid "Generate background"
+msgstr "Generate background"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer"
+msgid "Image enhancer"
+msgstr "Image enhancer"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_credits"
+msgid "Image enhancer credits"
+msgstr "Image enhancer credits"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_title"
+msgid "Enhance your images for better visibility and performance."
+msgstr "Enhance your images for better visibility and performance."
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_subtitle"
+msgid "Automatically remove backgrounds, fix lighting, and add AI-generated backdrops."
+msgstr "Automatically remove backgrounds, fix lighting, and add AI-generated backdrops."
+
+msgctxt "Languages::is2or_claid_ai.remaining_credits"
+msgid "Remaining credits: <strong>[credit]</strong>"
+msgstr "Remaining credits: <strong>[credit]</strong>"
+
+msgctxt "Languages::is2or_claid_ai.buy_credit"
+msgid "Buy credit"
+msgstr "Buy credit"
+
+msgctxt "Languages::is2or_claid_ai.buy_more_credit"
+msgid "Buy more credit"
+msgstr "Buy more credit"
+
+msgctxt "Languages::is2or_claid_ai.source_image"
+msgid "Source image"
+msgstr "Source image"
+
+msgctxt "Languages::is2or_claid_ai.remove_background"
+msgid "Remove background"
+msgstr "Remove background"
+
+msgctxt "Languages::is2or_claid_ai.enhance_image"
+msgid "Enhance image"
+msgstr "Enhance image"
+
+msgctxt "Languages::is2or_claid_ai.generate_background"
+msgid "Generate background"
+msgstr "Generate background"
+
+msgctxt "Languages::is2or_claid_ai.remove_background_tooltip"
+msgid "Automatically removes the existing background, isolating the main subject for a clean and transparent result."
+msgstr "Automatically removes the existing background, isolating the main subject for a clean and transparent result."
+
+msgctxt "Languages::is2or_claid_ai.enhance_image_tooltip"
+msgid "Instantly improves image quality by automatically adjusting brightness, color balance, and sharpness."
+msgstr "Instantly improves image quality by automatically adjusting brightness, color balance, and sharpness."
+
+msgctxt "Languages::is2or_claid_ai.generate_background_tooltip"
+msgid "Creates a new AI-generated background based on your text prompt to create realistic product or lifestyle scenes."
+msgstr "Creates a new AI-generated background based on your text prompt to create realistic product or lifestyle scenes."
+
+msgctxt "Languages::is2or_claid_ai.generate_background_prompt"
+msgid "Enter a prompt to generate background"
+msgstr "Enter a prompt to generate background"
+
+msgctxt "Languages::is2or_claid_ai.generate"
+msgid "Generate"
+msgstr "Generate"
+
+msgctxt "Languages::is2or_claid_ai.credits"
+msgid "Credits"
+msgstr "Credits"
+
+msgctxt "Languages::is2or_claid_ai.upload_image"
+msgid "Upload image"
+msgstr "Upload image"
+
+msgctxt "Languages::is2or_claid_ai.credits_added_by_admin"
+msgid "[credit] credits added by Admin"
+msgstr "[credit] credits added by Admin"
+
+msgctxt "Languages::is2or_claid_ai.credits_deducted_by_admin"
+msgid "[credit] credits deducted by Admin"
+msgstr "[credit] credits deducted by Admin"
+
+msgctxt "Languages::is2or_claid_ai.insufficient_credit"
+msgid "Insufficient credit"
+msgstr "Insufficient credit"
+
+msgctxt "Languages::is2or_claid_ai.source_image_empty"
+msgid "Source image is empty"
+msgstr "Source image is empty"
+
+msgctxt "Languages::is2or_claid_ai.result"
+msgid "Result"
+msgstr "Result"
+
+msgctxt "Languages::is2or_claid_ai.add_as_product_image"
+msgid "Add as product image"
+msgstr "Add as product image"
+
+msgctxt "Languages::is2or_claid_ai.regenerate"
+msgid "Regenerate"
+msgstr "Regenerate"
+
+msgctxt "Languages::is2or_claid_ai.reuse_image"
+msgid "Reuse image"
+msgstr "Reuse image"
+
+msgctxt "Languages::is2or_claid_ai.reuse_image_tooltip"
+msgid "Sets the generated image as the new source so you can continue editing or layering new effects."
+msgstr "Sets the generated image as the new source so you can continue editing or layering new effects."
+
+msgctxt "Languages::is2or_claid_ai.past_results"
+msgid "Past result"
+msgstr "Past result"
+
+msgctxt "Languages::is2or_claid_ai.text_remove_background_success"
+msgid "Background removed successfully"
+msgstr "Background removed successfully"
+
+msgctxt "Languages::is2or_claid_ai.text_enhance_image_success"
+msgid "Image enhanced successfully"
+msgstr "Image enhanced successfully"
+
+msgctxt "Languages::is2or_claid_ai.text_generate_background_success"
+msgid "Background generated successfully"
+msgstr "Background generated successfully"
+
+msgctxt "Languages::is2or_claid_ai.text_remove_background_failed"
+msgid "Failed to remove background"
+msgstr "Failed to remove background"
+
+msgctxt "Languages::is2or_claid_ai.text_enhance_image_failed"
+msgid "Failed to enhance image"
+msgstr "Failed to enhance image"
+
+msgctxt "Languages::is2or_claid_ai.text_generate_background_failed"
+msgid "Failed to generate background"
+msgstr "Failed to generate background"
+
+msgctxt "Languages::is2or_claid_ai.prompt_empty"
+msgid "Prompt is required"
+msgstr "Prompt is required"
+
+msgctxt "Languages::is2or_claid_ai.text_add_product_image_success"
+msgid "Product's image added successfully"
+msgstr "Product's image added successfully"
+
+msgctxt "Languages::is2or_claid_ai.text_add_product_image_failed"
+msgid "Failed to add product's image"
+msgstr "Failed to add product's image"
+
+msgctxt "Languages::is2or_claid_ai.read_terms_and_conditions"
+msgid "Read terms and conditions"
+msgstr "Read terms and conditions"
+
+msgctxt "Languages::is2or_claid_ai.terms_and_conditions"
+msgid "Terms and conditions"
+msgstr "Terms and conditions"
+
+msgctxt "Languages::is2or_claid_ai.credit_price"
+msgid "Credit price"
+msgstr "Credit price"
+
+msgctxt "Languages::is2or_claid_ai.max_credit_purchased"
+msgid "Max credit purchased"
+msgstr "Max credit purchased"
+
+msgctxt "Languages::is2or_claid_ai.min_credit_purchased"
+msgid "Min credit purchased"
+msgstr "Min credit purchased"
+
+msgctxt "Languages::is2or_claid_ai.tryon"
+msgid "Try-On"
+msgstr "Try-On"
+
+msgctxt "Languages::is2or_claid_ai.enable_tryon"
+msgid "Enable Try-On"
+msgstr "Enable Try-On"
+
+msgctxt "Languages::is2or_claid_ai.add_garment"
+msgid "Add garment"
+msgstr "Add garment"
+
+msgctxt "Languages::is2or_claid_ai.edit_garment"
+msgid "Edit garment"
+msgstr "Edit garment"
+
+msgctxt "Languages::is2or_claid_ai.text_garment_deleted"
+msgid "Garment has been deleted"
+msgstr "Garment has been deleted"
+
+msgctxt "Languages::is2or_claid_ai.tryon_models"
+msgid "Try-on models"
+msgstr "Try-on models"
+
+msgctxt "Languages::is2or_claid_ai.add_model"
+msgid "Add model"
+msgstr "Add model"
+
+msgctxt "Languages::is2or_claid_ai.text_model_deleted"
+msgid "Model has been deleted"
+msgstr "Model has been deleted"
+
+msgctxt "Languages::is2or_claid_ai.choose_model"
+msgid "Choose model"
+msgstr "Choose model"
+
+msgctxt "Languages::is2or_claid_ai.image_generated"
+msgid "Image generated"
+msgstr "Image generated"
+
+msgctxt "Languages::is2or_claid_ai.failed_to_generate_image"
+msgid "Failed to generate image"
+msgstr "Failed to generate image"

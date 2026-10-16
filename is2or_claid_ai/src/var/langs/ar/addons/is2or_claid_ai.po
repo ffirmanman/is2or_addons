@@ -1,0 +1,257 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_claid_ai\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "SettingsSections::is2or_claid_ai::general"
+msgid "General"
+msgstr "عام"
+
+msgctxt "SettingsSections::is2or_claid_ai::image_enhancer"
+msgid "Image Enhancer"
+msgstr "محسن الصور"
+
+msgctxt "SettingsSections::is2or_claid_ai::credit_costs"
+msgid "Credit Price & Costs"
+msgstr "سعر الرصيد والتكاليف"
+
+msgctxt "SettingsOptions::is2or_claid_ai::api_key"
+msgid "Api key"
+msgstr "مفتاح واجهة برمجة التطبيقات (API Key)"
+
+msgctxt "SettingsOptions::is2or_claid_ai::tnc"
+msgid "Terms and conditions"
+msgstr "الشروط والأحكام"
+
+msgctxt "SettingsOptions::is2or_claid_ai::hdr"
+msgid "HDR"
+msgstr "المدى الديناميكي العالي (HDR)"
+
+msgctxt "SettingsOptions::is2or_claid_ai::sharpness"
+msgid "Sharpness"
+msgstr "الحدة"
+
+msgctxt "SettingsOptions::is2or_claid_ai::remove_background_cost"
+msgid "Remove background"
+msgstr "إزالة الخلفية"
+
+msgctxt "SettingsOptions::is2or_claid_ai::enhance_image_cost"
+msgid "Enhance image"
+msgstr "تحسين الصورة"
+
+msgctxt "SettingsOptions::is2or_claid_ai::generate_background_cost"
+msgid "Generate background"
+msgstr "إنشاء خلفية"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer"
+msgid "Image enhancer"
+msgstr "محسن الصور"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_credits"
+msgid "Image enhancer credits"
+msgstr "رصيد محسن الصور"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_title"
+msgid "Enhance your images for better visibility and performance."
+msgstr "قم بتحسين صورك لزيادة وضوحها وفعاليتها."
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_subtitle"
+msgid "Automatically remove backgrounds, fix lighting, and add AI-generated backdrops."
+msgstr "قم بإزالة الخلفيات تلقائياً، وإصلاح الإضاءة، وإضافة خلفيات منشأة بالذكاء الاصطناعي."
+
+msgctxt "Languages::is2or_claid_ai.remaining_credits"
+msgid "Remaining credits: <strong>[credit]</strong>"
+msgstr "الرصيد المتبقي: <strong>[credit]</strong>"
+
+msgctxt "Languages::is2or_claid_ai.buy_credit"
+msgid "Buy credit"
+msgstr "شراء رصيد"
+
+msgctxt "Languages::is2or_claid_ai.buy_more_credit"
+msgid "Buy more credit"
+msgstr "شراء المزيد من الرصيد"
+
+msgctxt "Languages::is2or_claid_ai.source_image"
+msgid "Source image"
+msgstr "الصورة المصدر"
+
+msgctxt "Languages::is2or_claid_ai.remove_background"
+msgid "Remove background"
+msgstr "إزالة الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.enhance_image"
+msgid "Enhance image"
+msgstr "تحسين الصورة"
+
+msgctxt "Languages::is2or_claid_ai.generate_background"
+msgid "Generate background"
+msgstr "إنشاء خلفية"
+
+msgctxt "Languages::is2or_claid_ai.remove_background_tooltip"
+msgid "Automatically removes the existing background, isolating the main subject for a clean and transparent result."
+msgstr "يزيل الخلفية الحالية تلقائياً، ويعزل العنصر الأساسي للحصول على نتيجة نظيفة وشفافة."
+
+msgctxt "Languages::is2or_claid_ai.enhance_image_tooltip"
+msgid "Instantly improves image quality by automatically adjusting brightness, color balance, and sharpness."
+msgstr "يحسن جودة الصورة فوراً عبر ضبط السطوع، وتوازن الألوان، والحدة تلقائياً."
+
+msgctxt "Languages::is2or_claid_ai.generate_background_tooltip"
+msgid "Creates a new AI-generated background based on your text prompt to create realistic product or lifestyle scenes."
+msgstr "ينشئ خلفية جديدة بالذكاء الاصطناعي بناءً على وصفك النصي لإنشاء مشاهد واقعية للمنتجات."
+
+msgctxt "Languages::is2or_claid_ai.generate_background_prompt"
+msgid "Enter a prompt to generate background"
+msgstr "أدخل وصفاً لإنشاء الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.generate"
+msgid "Generate"
+msgstr "إنشاء"
+
+msgctxt "Languages::is2or_claid_ai.credits"
+msgid "Credits"
+msgstr "الرصيد"
+
+msgctxt "Languages::is2or_claid_ai.upload_image"
+msgid "Upload image"
+msgstr "تحميل صورة"
+
+msgctxt "Languages::is2or_claid_ai.credits_added_by_admin"
+msgid "[credit] credits added by Admin"
+msgstr "تمت إضافة [credit] رصيد من قبل المسؤول"
+
+msgctxt "Languages::is2or_claid_ai.credits_deducted_by_admin"
+msgid "[credit] credits deducted by Admin"
+msgstr "تم خصم [credit] رصيد من قبل المسؤول"
+
+msgctxt "Languages::is2or_claid_ai.insufficient_credit"
+msgid "Insufficient credit"
+msgstr "رصيد غير كافٍ"
+
+msgctxt "Languages::is2or_claid_ai.source_image_empty"
+msgid "Source image is empty"
+msgstr "الصورة المصدر فارغة"
+
+msgctxt "Languages::is2or_claid_ai.result"
+msgid "Result"
+msgstr "النتيجة"
+
+msgctxt "Languages::is2or_claid_ai.add_as_product_image"
+msgid "Add as product image"
+msgstr "إضافة كصورة للمنتج"
+
+msgctxt "Languages::is2or_claid_ai.regenerate"
+msgid "Regenerate"
+msgstr "إعادة الإنشاء"
+
+msgctxt "Languages::is2or_claid_ai.reuse_image"
+msgid "Reuse image"
+msgstr "إعادة استخدام الصورة"
+
+msgctxt "Languages::is2or_claid_ai.reuse_image_tooltip"
+msgid "Sets the generated image as the new source so you can continue editing or layering new effects."
+msgstr "يعين الصورة المنشأة كمصدر جديد لتتمكن من مواصلة التعديل أو إضافة تأثيرات جديدة."
+
+msgctxt "Languages::is2or_claid_ai.past_results"
+msgid "Past result"
+msgstr "النتائج السابقة"
+
+msgctxt "Languages::is2or_claid_ai.text_remove_background_success"
+msgid "Background removed successfully"
+msgstr "تمت إزالة الخلفية بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_enhance_image_success"
+msgid "Image enhanced successfully"
+msgstr "تم تحسين الصورة بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_generate_background_success"
+msgid "Background generated successfully"
+msgstr "تم إنشاء الخلفية بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_remove_background_failed"
+msgid "Failed to remove background"
+msgstr "فشل في إزالة الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.text_enhance_image_failed"
+msgid "Failed to enhance image"
+msgstr "فشل في تحسين الصورة"
+
+msgctxt "Languages::is2or_claid_ai.text_generate_background_failed"
+msgid "Failed to generate background"
+msgstr "فشل في إنشاء الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.prompt_empty"
+msgid "Prompt is required"
+msgstr "الوصف النصي مطلوب"
+
+msgctxt "Languages::is2or_claid_ai.text_add_product_image_success"
+msgid "Product's image added successfully"
+msgstr "تمت إضافة صورة المنتج بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_add_product_image_failed"
+msgid "Failed to add product's image"
+msgstr "فشل في إضافة صورة المنتج"
+
+msgctxt "Languages::is2or_claid_ai.read_terms_and_conditions"
+msgid "Read terms and conditions"
+msgstr "اقرأ الشروط والأحكام"
+
+msgctxt "Languages::is2or_claid_ai.terms_and_conditions"
+msgid "Terms and conditions"
+msgstr "الشروط والأحكام"
+
+msgctxt "Languages::is2or_claid_ai.credit_price"
+msgid "Credit price"
+msgstr "سعر الرصيد"
+
+msgctxt "Languages::is2or_claid_ai.max_credit_purchased"
+msgid "Max credit purchased"
+msgstr "الحد الأقصى للرصيد المشتري"
+
+msgctxt "Languages::is2or_claid_ai.min_credit_purchased"
+msgid "Min credit purchased"
+msgstr "الحد الأدنى للرصيد المشتري"
+
+msgctxt "Languages::is2or_claid_ai.tryon"
+msgid "Try-On"
+msgstr "تجربة القياس"
+
+msgctxt "Languages::is2or_claid_ai.enable_tryon"
+msgid "Enable Try-On"
+msgstr "تفعيل تجربة القياس"
+
+msgctxt "Languages::is2or_claid_ai.add_garment"
+msgid "Add garment"
+msgstr "إضافة قطعة ملابس"
+
+msgctxt "Languages::is2or_claid_ai.edit_garment"
+msgid "Edit garment"
+msgstr "تعديل قطعة الملابس"
+
+msgctxt "Languages::is2or_claid_ai.text_garment_deleted"
+msgid "Garment has been deleted"
+msgstr "تم حذف قطعة الملابس"
+
+msgctxt "Languages::is2or_claid_ai.tryon_models"
+msgid "Try-on models"
+msgstr "عارضي تجربة القياس"
+
+msgctxt "Languages::is2or_claid_ai.add_model"
+msgid "Add model"
+msgstr "إضافة عارض"
+
+msgctxt "Languages::is2or_claid_ai.text_model_deleted"
+msgid "Model has been deleted"
+msgstr "تم حذف العارض"
+
+msgctxt "Languages::is2or_claid_ai.choose_model"
+msgid "Choose model"
+msgstr "اختر العارض"
+
+msgctxt "Languages::is2or_claid_ai.image_generated"
+msgid "Image generated"
+msgstr "تم إنشاء الصورة"
+
+msgctxt "Languages::is2or_claid_ai.failed_to_generate_image"
+msgid "Failed to generate image"
+msgstr "فشل في إنشاء الصورة"

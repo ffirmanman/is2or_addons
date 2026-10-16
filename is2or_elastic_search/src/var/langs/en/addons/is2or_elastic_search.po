@@ -1,0 +1,37 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_host"
+msgid "es_host"
+msgstr "Elasticsearch Host"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_port"
+msgid "es_port"
+msgstr "Port"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_scheme"
+msgid "es_scheme"
+msgstr "Connection Scheme"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_index_name"
+msgid "es_index_name"
+msgstr "Index Name"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_auth_header"
+msgid "es_auth_header"
+msgstr "Auth Header (API Key)"
+
+msgctxt "SettingsTooltip::is2or_elastic_search::es_host"
+msgid "es_host"
+msgstr "Example: localhost or your server IP address."
+
+msgctxt "SettingsVariants::is2or_elastic_search::es_scheme::http"
+msgid "http"
+msgstr "HTTP"
+
+msgctxt "SettingsVariants::is2or_elastic_search::es_scheme::https"
+msgid "https"
+msgstr "HTTPS"

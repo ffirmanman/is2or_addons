@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_vendor_payout</id>
+    <name>IS2OR: Vendor Payout Payment</name>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_vendor_banks` (
+                `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `company_id` int(11) unsigned NOT NULL default '0',
+                `country` char(2) NOT NULL default '',
+                `city` varchar(255) NOT NULL default '',
+                `bank_name` varchar(255) NOT NULL default '',
+                `account_name` varchar(255) NOT NULL default '',
+                `account_number` varchar(255) NOT NULL default '',
+                `swift_code` varchar(255) NOT NULL default '',
+                `iban` varchar(255) NOT NULL default '',
+                `mobile` varchar(255) NOT NULL default '',
+                `status` char(1) NOT NULL default 'A',
+                PRIMARY KEY  (`id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_vendor_payout_payments` (
+                `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `name` varchar(255) NOT NULL default '',
+                `addon` varchar(255) NOT NULL default '',
+                PRIMARY KEY  (`id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_payout_receipt` (
+                `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `payout_id` int(11) unsigned NOT NULL DEFAULT '0',
+                `order_id` int(11) unsigned NOT NULL DEFAULT '0',
+                `company_id` int(11) unsigned NOT NULL DEFAULT '0',
+                `bank_name` varchar(255) NOT NULL DEFAULT '',
+                `account_name` varchar(255) NOT NULL DEFAULT '',
+                `iban` varchar(255) NOT NULL DEFAULT '',
+                `transaction_value` decimal(12,2) NOT NULL DEFAULT '0.00',
+                `comment` text NOT NULL,
+                `receipt_image` varchar(255) NOT NULL DEFAULT '',
+                `created_at` int(11) unsigned NOT NULL DEFAULT '0',
+                `updated_at` int(11) unsigned NOT NULL DEFAULT '0',
+                PRIMARY KEY (`id`),
+                UNIQUE KEY `payout_id` (`payout_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+
+        </queries>
+</addon>

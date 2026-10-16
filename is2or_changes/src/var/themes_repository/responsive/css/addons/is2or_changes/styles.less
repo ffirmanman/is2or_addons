@@ -1,0 +1,23 @@
+// Login popup width fix
+.ty-login-popup {
+    max-width: unset !important;
+}
+
+// Fix modal z-index stacking when login popup is open
+html.js_modal_-open body > .ui-dialog.ui-widget {
+    z-index: 10003 !important;
+}
+
+html.js_modal_-open body > .ui-dialog.ui-widget + .ui-widget-overlay {
+    z-index: 9999 !important;
+}
+
+// Remove extra top margin on horizontal filters
+.ut2-hz-filters {
+    margin-top: 0 !important;
+}
+
+// Vendor search grid spacing
+.vendor-search-grid {
+    margin-bottom: 25px;
+}

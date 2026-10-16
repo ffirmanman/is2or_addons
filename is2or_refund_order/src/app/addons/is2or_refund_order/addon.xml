@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_refund_order</id>
+    <name>IS2OR: Refund Order Evidence</name>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <auto_install>MULTIVENDOR</auto_install>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="tab_refunded_statuses">
+                        <type>multiple checkboxes</type>
+                        <default_value>I,D</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:is2or_refund_order (
+                `file_return_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `return_id` int(11) unsigned NOT NULL,
+                `order_id` int(11) unsigned NOT NULL,
+                `user_id` int(11) unsigned NOT NULL,
+                `filename` varchar(255) NOT NULL,
+                `file_type` varchar(10) NOT NULL,
+                PRIMARY KEY (`file_return_id`),
+                KEY `return_id` (`return_id`),
+                KEY `order_id` (`order_id`),
+                KEY `user_id` (`user_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        
+        <item for="uninstall">
+            DROP TABLE IF EXISTS ?:is2or_refund_order;
+        </item>
+    </queries>
+
+    <content>
+        <item>
+            <section>frontend</section>
+            <type>less</type>
+            <name>is2or_styles.less</name>
+        </item>
+        <item>
+            <section>admin</section>
+            <type>less</type>
+            <name>is2or_admin_styles.less</name>
+        </item>
+    </content>
+</addon>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_changes</id>
+    <version>1.1</version>
+    <priority>1</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <name>IS2OR: Custom Changes</name>
+    <description>Master addon for IS2OR shared cross-addon changes and compatibility fixes. Includes: list_price required enforcement, login popup UI fixes, and social login button overrides. Keep this enabled so related customizations across multiple addons continue to work.</description>
+    <supplier>IS2OR</supplier>
+</addon>

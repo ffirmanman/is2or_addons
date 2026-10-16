@@ -1,0 +1,1 @@
+{style src="addons/is2or_refund_order/is2or_styles.less"}

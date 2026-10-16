@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_cart_reminder</id>
+    <name>IS2OR: Abandoned Cart Reminder</name>
+    <version>1.0</version>
+    <priority>1</priority>
+    <position>1000</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="email">
+                <items>
+                    <item id="cc_email">
+                        <type>input</type>
+                    </item>
+                    <item id="cc_email_name">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+            <section id="cron">
+                <items>
+                    <item id="cron_tpl">
+                        <type>template</type>
+                        <default_value>cron.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <email_templates type="file">resources/email_templates.xml</email_templates>
+</addon>

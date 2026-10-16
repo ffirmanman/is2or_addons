@@ -1,0 +1,17 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_checkout_page\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "Languages::is2or_vendor_blog.blog"
+msgid "is2or_vendor_blog.blog"
+msgstr "المدونة"
+
+msgctxt "Languages::is2or_vendor_blog.addon_name"
+msgid "is2or_vendor_blog.addon_name"
+msgstr "مدونة البائع"
+
+msgctxt "Languages::is2or_vendor_blog.addon_description"
+msgid "is2or_vendor_blog.addon_description"
+msgstr "يسمح للبائعين بإدارة منشورات المدونة الخاصة بهم من لوحة تحكم البائع."

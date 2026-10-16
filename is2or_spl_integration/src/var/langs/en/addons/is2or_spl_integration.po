@@ -1,0 +1,126 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsOptions::is2or_spl_integration::api_key"
+msgid "Api Key"
+msgstr "Api Key"
+
+msgctxt "SettingsOptions::is2or_spl_integration::s_address"
+msgid "Address"
+msgstr "Address"
+
+msgctxt "SettingsOptions::is2or_spl_integration::s_country"
+msgid "Country"
+msgstr "Country"
+
+msgctxt "SettingsOptions::is2or_spl_integration::s_state"
+msgid "State"
+msgstr "State"
+
+msgctxt "SettingsOptions::is2or_spl_integration::s_city"
+msgid "City"
+msgstr "City"
+
+msgctxt "SettingsOptions::is2or_spl_integration::s_zipcode"
+msgid "Zip code"
+msgstr "Zip code"
+
+msgctxt "SettingsOptions::is2or_spl_integration::b_address"
+msgid "Address"
+msgstr "Address"
+
+msgctxt "SettingsOptions::is2or_spl_integration::b_country"
+msgid "Country"
+msgstr "Country"
+
+msgctxt "SettingsOptions::is2or_spl_integration::b_state"
+msgid "State"
+msgstr "State"
+
+msgctxt "SettingsOptions::is2or_spl_integration::b_city"
+msgid "City"
+msgstr "City"
+
+msgctxt "SettingsOptions::is2or_spl_integration::b_zipcode"
+msgid "Zip code"
+msgstr "Zip code"
+
+msgctxt "Languages::is2or_spl_integration.spl_short_address"
+msgid "SPL short address"
+msgstr "SPL short address"
+
+msgctxt "Languages::is2or_spl_integration.generate_address"
+msgid "Generate address"
+msgstr "Generate address"
+
+msgctxt "Languages::is2or_spl_integration.short_address_is_required"
+msgid "Short address is required"
+msgstr "Short address is required"
+
+msgctxt "Languages::is2or_spl_integration.address_generated_successfully"
+msgid "Address generated successfully"
+msgstr "Address generated successfully"
+
+msgctxt "Languages::is2or_spl_integration.building_no"
+msgid "Building No."
+msgstr "Building No."
+
+msgctxt "Languages::is2or_spl_integration.street"
+msgid "Street"
+msgstr "Street"
+
+msgctxt "Languages::is2or_spl_integration.district"
+msgid "District"
+msgstr "District"
+
+msgctxt "Languages::is2or_spl_integration.additional_number"
+msgid "Additional Number"
+msgstr "Additional Number"
+
+msgctxt "Languages::is2or_spl_integration.verification_status"
+msgid "is2or_spl_integration.verification_status"
+msgstr "Address Verification"
+
+msgctxt "Languages::is2or_spl_integration.status_verified"
+msgid "is2or_spl_integration.status_verified"
+msgstr "Verified"
+
+msgctxt "Languages::is2or_spl_integration.status_failed"
+msgid "is2or_spl_integration.status_failed"
+msgstr "Failed"
+
+msgctxt "Languages::is2or_spl_integration.status_overridden"
+msgid "is2or_spl_integration.status_overridden"
+msgstr "Overridden"
+
+msgctxt "Languages::is2or_spl_integration.status_pending"
+msgid "is2or_spl_integration.status_pending"
+msgstr "Pending"
+
+msgctxt "Languages::is2or_spl_integration.verified_at"
+msgid "is2or_spl_integration.verified_at"
+msgstr "Verified At"
+
+msgctxt "Languages::is2or_spl_integration.verification_message"
+msgid "is2or_spl_integration.verification_message"
+msgstr "Details"
+
+msgctxt "Languages::is2or_spl_integration.reverify"
+msgid "is2or_spl_integration.reverify"
+msgstr "Re-verify"
+
+msgctxt "Languages::is2or_spl_integration.override_publish"
+msgid "is2or_spl_integration.override_publish"
+msgstr "Override & Publish"
+
+msgctxt "Languages::is2or_spl_integration.clear_override"
+msgid "is2or_spl_integration.clear_override"
+msgstr "Clear Override"
+
+msgctxt "Languages::is2or_spl_integration.spl_status"
+msgid "is2or_spl_integration.spl_status"
+msgstr "SPL Status"
+

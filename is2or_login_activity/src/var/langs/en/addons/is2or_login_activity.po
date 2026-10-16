@@ -1,0 +1,93 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::block_is2or_login_activity"
+msgid "IS2OR: Login Activity"
+msgstr "IS2OR: Login Activity"
+
+msgctxt "Languages::block_is2or_login_activity_description"
+msgid "Shows active login sessions for the current user with options to log out individual devices or all devices at once."
+msgstr "Shows active login sessions for the current user with options to log out individual devices or all devices at once."
+
+msgctxt "Languages::is2or_login_activity.template_name"
+msgid "Login Activity"
+msgstr "Login Activity"
+
+msgctxt "Languages::is2or_login_activity.title"
+msgid "Login Activity"
+msgstr "Login Activity"
+
+msgctxt "Languages::is2or_login_activity.notice"
+msgid "If you see unfamiliar activity, click \"Log out\" and change your password immediately."
+msgstr "If you see unfamiliar activity, click \"Log out\" and change your password immediately."
+
+msgctxt "Languages::is2or_login_activity.current_activity"
+msgid "Current login activity"
+msgstr "Current login activity"
+
+msgctxt "Languages::is2or_login_activity.active_now"
+msgid "Active now"
+msgstr "Active now"
+
+msgctxt "Languages::is2or_login_activity.last_active"
+msgid "Last active"
+msgstr "Last active"
+
+msgctxt "Languages::is2or_login_activity.logout"
+msgid "Log out"
+msgstr "Log out"
+
+msgctxt "Languages::is2or_login_activity.logout_all"
+msgid "Log out from all devices"
+msgstr "Log out from all devices"
+
+msgctxt "Languages::is2or_login_activity.no_sessions"
+msgid "No active sessions found."
+msgstr "No active sessions found."
+
+msgctxt "Languages::is2or_login_activity.session_removed"
+msgid "Device has been logged out successfully."
+msgstr "Device has been logged out successfully."
+
+msgctxt "Languages::is2or_login_activity.session_remove_failed"
+msgid "Could not log out from that device. The session may have already expired."
+msgstr "Could not log out from that device. The session may have already expired."
+
+msgctxt "Languages::is2or_login_activity.all_sessions_removed"
+msgid "[count] other device(s) have been logged out."
+msgstr "[count] other device(s) have been logged out."
+
+msgctxt "Languages::is2or_login_activity.not_logged_in"
+msgid "You must be logged in to manage your sessions."
+msgstr "You must be logged in to manage your sessions."
+
+msgctxt "Languages::is2or_login_activity.unknown_device"
+msgid "Unknown device"
+msgstr "Unknown device"
+
+msgctxt "Languages::is2or_login_activity.unknown_os"
+msgid "Unknown OS"
+msgstr "Unknown OS"
+
+msgctxt "Languages::is2or_login_activity.unknown_browser"
+msgid "Unknown Browser"
+msgstr "Unknown Browser"
+
+msgctxt "Languages::is2or_login_activity.on"
+msgid "on"
+msgstr "on"
+
+msgctxt "Languages::danger_zone"
+msgid "danger_zone"
+msgstr "Danger Zone"
+
+msgctxt "Languages::danger_zone_description"
+msgid "danger_zone_description"
+msgstr "Once you delete your account, there is no going back. Please be certain."
+
+msgctxt "Languages::delete_my_account_short_description"
+msgid "delete_my_account_short_description"
+msgstr "Permanently remove your account and all data"

@@ -1,0 +1,139 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsOptions::sync_service_base_url"
+msgid "Sync Service Base Url"
+msgstr "Sync Service Base Url"
+
+msgctxt "SettingsOptions::internal_hmac_secret"
+msgid "Internal HMAC Secret"
+msgstr "Internal HMAC Secret"
+
+msgctxt "Languages::is2or_channel_integrations.channel_integrations"
+msgid "Channel Integrations"
+msgstr "Channel Integrations"
+
+msgctxt "Languages::channel_integrations"
+msgid "Channel Integrations"
+msgstr "Channel Integrations"
+
+
+msgctxt "Languages::is2or_channel_integrations.integration_page_description"
+msgid "Manage your e-commerce product and stock integrations with third-party platforms from this page."
+msgstr "Manage your e-commerce product and stock integrations with third-party platforms from this page."
+
+msgctxt "Languages::is2or_channel_integrations.salla_channel"
+msgid "Salla Channel"
+msgstr "Salla Channel"
+
+msgctxt "Languages::is2or_channel_integrations.salla_channel_description"
+msgid "Automatic integration for products, stock, and orders with Salla Store."
+msgstr "Automatic integration for products, stock, and orders with Salla Store."
+
+msgctxt "Languages::is2or_channel_integrations.connected"
+msgid "Connected"
+msgstr "Connected"
+
+msgctxt "Languages::is2or_channel_integrations.initial_sync"
+msgid "Initial Sync"
+msgstr "Initial Sync"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_from_salla"
+msgid "Import Products from Salla"
+msgstr "Import Products from Salla"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_description"
+msgid "Click to import all active products from your Salla store into your IS2OR catalog."
+msgstr "Click to import all active products from your Salla store into your IS2OR catalog."
+
+msgctxt "Languages::is2or_channel_integrations.import_products_description_zid"
+msgid "Click to import all active products from your Zid store into your IS2OR catalog."
+msgstr "Click to import all active products from your Zid store into your IS2OR catalog."
+
+msgctxt "Languages::is2or_channel_integrations.connect_salla"
+msgid "Connect Salla"
+msgstr "Connect Salla"
+
+msgctxt "Languages::is2or_channel_integrations.loading"
+msgid "Loading..."
+msgstr "Loading..."
+
+msgctxt "Languages::is2or_channel_integrations.failed_get_authorize_url"
+msgid "Failed to retrieve authorization URL from Integration Service."
+msgstr "Failed to retrieve authorization URL from Integration Service."
+
+msgctxt "Languages::is2or_channel_integrations.internal_server_error"
+msgid "An internal bridge server error occurred."
+msgstr "An internal bridge server error occurred."
+
+msgctxt "Languages::is2or_channel_integrations.sync_settings"
+msgid "Sync Settings"
+msgstr "Sync Settings"
+
+msgctxt "Languages::is2or_channel_integrations.disconnect"
+msgid "Disconnect"
+msgstr "Disconnect"
+
+msgctxt "Languages::is2or_channel_integrations.zid_channel"
+msgid "Zid Channel"
+msgstr "Zid Channel"
+
+msgctxt "Languages::is2or_channel_integrations.coming_soon"
+msgid "Coming Soon"
+msgstr "Coming Soon"
+
+msgctxt "Languages::is2or_channel_integrations.zid_channel_description"
+msgid "Automatic integration for products, stock, and orders with Zid Store."
+msgstr "Automatic integration for products, stock, and orders with Zid Store."
+
+msgctxt "Languages::is2or_channel_integrations.connect_zid"
+msgid "Connect Zid"
+msgstr "Connect Zid"
+
+
+msgctxt "Languages::is2or_channel_integrations.disconnected"
+msgid "Disconnected"
+msgstr "Disconnected"
+
+msgctxt "Languages::is2or_channel_integrations.sync_history"
+msgid "Sync History"
+msgstr "Sync History"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_from_zid"
+msgid "Import Products from Zid"
+msgstr "Import Products from Zid"
+
+msgctxt "Languages::is2or_channel_integrations.delete_product"
+msgid "The product has been deleted successfully. The deletion is being synchronized with external channels in the background."
+msgstr "The product has been deleted successfully. The deletion is being synchronized with external channels in the background."
+
+msgctxt "Languages::is2or_channel_integrations.noon_channel"
+msgid "Noon Channel"
+msgstr "Noon Channel"
+
+msgctxt "Languages::is2or_channel_integrations.noon_channel_description"
+msgid "Automatic integration for products, stock, and orders with Noon Store."
+msgstr "Automatic integration for products, stock, and orders with Noon Store."
+
+msgctxt "Languages::is2or_channel_integrations.connect_noon"
+msgid "Connect Noon"
+msgstr "Connect Noon"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_from_noon"
+msgid "Import Products from Noon"
+msgstr "Import Products from Noon"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_description_noon"
+msgid "Click to import all active products from your Noon store into your IS2OR catalog."
+msgstr "Click to import all active products from your Noon store into your IS2OR catalog."
+
+msgctxt "SettingsOptions::category_api_base_url"
+msgid "API AI Base Url"
+msgstr "API AI Base Url"
+
+msgctxt "SettingsOptions::category_api_token"
+msgid "API AI Token"
+msgstr "API AI Token"

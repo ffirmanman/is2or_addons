@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_categories_interest</id>
+    <name>IS2OR: Categories of Interest</name>
+    <version>1.0</version>
+    <priority>5200</priority>
+    <position>1000</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:categories_interest` (
+                `user_id` int(11) UNSIGNED NOT NULL,
+                `category_id` int(11) UNSIGNED NOT NULL
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:tags_interest` (
+                `user_id` int(11) UNSIGNED NOT NULL,
+                `tag_id` int(11) UNSIGNED NOT NULL
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:tags_groups` (
+                `group_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                `group_name` varchar(100) NOT NULL DEFAULT '',
+                `tags_ids` varchar(255) NULL,
+                PRIMARY KEY(`group_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:tags_group_interest` (
+                `user_id` int(11) UNSIGNED NOT NULL,
+                `group_id` int(11) UNSIGNED NOT NULL
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+    </queries>
+</addon>

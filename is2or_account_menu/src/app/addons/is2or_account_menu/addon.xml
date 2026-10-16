@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_account_menu</id>
+    <version>1.0</version>
+    <priority>1000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <name>IS2OR: Account Menu</name>
+    <description>Update all pages in account menu with new design</description>
+    <supplier>IS2OR</supplier>
+</addon>

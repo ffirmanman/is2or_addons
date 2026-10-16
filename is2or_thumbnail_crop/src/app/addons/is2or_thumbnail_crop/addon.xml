@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_thumbnail_crop</id>
+    <name>IS2OR: Thumbnail Crop</name>
+    <version>1.0</version>
+    <priority>3500</priority>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <auto_install>MULTIVENDOR</auto_install>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="outbound_object_types">
+                        <type>multiple checkboxes</type>
+                        <default_value>product,detailed</default_value>
+                        <variants>
+                            <item id="product">Product images</item>
+                            <item id="detailed">Detailed (popup) images</item>
+                            <item id="category">Category images</item>
+                            <item id="blog">Blog images</item>
+                            <item id="news">News images</item>
+                        </variants>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>

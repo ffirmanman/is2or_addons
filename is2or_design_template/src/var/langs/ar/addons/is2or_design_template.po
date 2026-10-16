@@ -1,0 +1,470 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_design_template\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+
+msgctxt "Languages::abt__ut2_mv.total_products"
+msgid "إجمالي المنتجات"
+msgstr "إجمالي المنتجات"
+
+msgctxt "Languages::abt__ut2_mv.sell_on"
+msgid "يبيع على [marketplace] منذ"
+msgstr "يبيع على [marketplace] منذ"
+
+msgctxt "Languages::abt__ut2_mv.vendor_location"
+msgid "موقع البائع"
+msgstr "موقع البائع"
+
+msgctxt "Languages::view"
+msgid "عرض"
+msgstr "عرض"
+
+msgctxt "Languages::abt__ut2_mv.n_years"
+msgid "[0] سنة"
+msgstr "[0] سنة"
+
+msgctxt "Languages::abt__ut2_mv.n_months"
+msgid "[0] شهر"
+msgstr "[0] شهر"
+
+msgctxt "Languages::abt__ut2_mv.n_days"
+msgid "[0] شهر"
+msgstr "[0] يوم"
+
+
+
+msgctxt "Languages::is2or_size_charts.templates"
+msgid "is2or_size_charts.templates"
+msgstr "القوالب"
+
+msgctxt "Languages::is2or_size_charts.template"
+msgid "is2or_size_charts.template"
+msgstr "قالب"
+
+msgctxt "Languages::is2or_size_charts.size_charts"
+msgid "is2or_size_charts.size_charts"
+msgstr "جداول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.size_chart"
+msgid "is2or_size_charts.size_chart"
+msgstr "جدول المقاسات"
+
+msgctxt "Languages::size_chart"
+msgid "size_chart"
+msgstr "جدول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.charts"
+msgid "is2or_size_charts.charts"
+msgstr "جداول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.title"
+msgid "is2or_size_charts.title"
+msgstr "العنوان"
+
+msgctxt "Languages::is2or_size_charts.columns"
+msgid "is2or_size_charts.columns"
+msgstr "الأعمدة"
+
+msgctxt "Languages::is2or_size_charts.editing_template"
+msgid "is2or_size_charts.editing_template"
+msgstr "تعديل القالب"
+
+msgctxt "Languages::is2or_size_charts.new_template"
+msgid "is2or_size_charts.new_template"
+msgstr "قالب جديد"
+
+msgctxt "Languages::is2or_size_charts.code"
+msgid "is2or_size_charts.code"
+msgstr "الكود"
+
+msgctxt "Languages::is2or_size_charts.comment"
+msgid "is2or_size_charts.comment"
+msgstr "تعليق"
+
+msgctxt "Languages::is2or_size_charts.variants"
+msgid "is2or_size_charts.variants"
+msgstr "الأنواع / المتغيرات"
+
+msgctxt "Languages::is2or_size_charts.editing_size_chart"
+msgid "is2or_size_charts.editing_size_chart"
+msgstr "تعديل جدول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.new_size_chart"
+msgid "is2or_size_charts.new_size_chart"
+msgstr "جدول مقاسات جديد"
+
+msgctxt "Languages::is2or_size_charts.sample_chart"
+msgid "is2or_size_charts.sample_chart"
+msgstr "نموذج الجدول"
+
+msgctxt "Languages::is2or_size_charts.applies"
+msgid "is2or_size_charts.applies"
+msgstr "ينطبق على"
+
+msgctxt "Languages::is2or_size_charts.brands"
+msgid "is2or_size_charts.brands"
+msgstr "العلامات التجارية"
+
+msgctxt "Languages::is2or_size_charts.all_brands"
+msgid "is2or_size_charts.all_brands"
+msgstr "جميع العلامات التجارية"
+
+msgctxt "Languages::is2or_size_charts.all_categories"
+msgid "is2or_size_charts.all_categories"
+msgstr "جميع الفئات"
+
+msgctxt "Languages::is2or_size_charts.any_product"
+msgid "is2or_size_charts.any_product"
+msgstr "أي منتج"
+
+msgctxt "Languages::is2or_size_charts.add_brands"
+msgid "is2or_size_charts.add_brands"
+msgstr "إضافة علامات تجارية"
+
+msgctxt "Languages::is2or_size_charts.add_brands_and_close"
+msgid "is2or_size_charts.add_brands_and_close"
+msgstr "إضافة علامات تجارية وإغلاق"
+
+msgctxt "Languages::is2or_size_charts.brand_id"
+msgid "is2or_size_charts.brand_id"
+msgstr "معرف العلامة التجارية"
+
+msgctxt "Languages::is2or_size_charts.chart_applies_text"
+msgid "is2or_size_charts.chart_applies_text"
+msgstr "يمكنك تحديد العلامة التجارية، الفئة، ومنتجات معينة ينطبق عليها هذا الجدول. إذا اخترت مزيجاً (مثلاً: العلامة التجارية والفئة)، فيجب أن تكون جميعها صالحة حتى يتم تطبيق الجدول. على سبيل المثال، إذا اخترت ماركة Adidas وفئة الأحذية، فسيتم تطبيق الجدول فقط على منتجات Adidas ضمن فئة الأحذية."
+
+msgctxt "Languages::is2or_size_charts.applied_size_chart"
+msgid "is2or_size_charts.applied_size_chart"
+msgstr "جدول المقاسات المطبق"
+
+msgctxt "Languages::is2or_size_charts.no_size_chart_applies"
+msgid "is2or_size_charts.no_size_chart_applies"
+msgstr "لا يوجد جدول مقاسات منطبق"
+
+msgctxt "Languages::is2or_size_charts.text_before"
+msgid "is2or_size_charts.text_before"
+msgstr "النص قبل"
+
+msgctxt "Languages::is2or_size_charts.text_after"
+msgid "is2or_size_charts.text_after"
+msgstr "النص بعد"
+
+msgctxt "Languages::is2or_size_charts.product_tab_info"
+msgid "is2or_size_charts.product_tab_info"
+msgstr "يوجد أيضاً خيار متاح في (التصميم -> تبويبات المنتجات) لتمكين أو تعطيل تبويب جدول المقاسات ليظهر في الأسفل مع الميزات والمعلومات الأخرى. إذا كنت ترغب في التبويب فقط، فاختر 'لا شيء' في الإعداد أعلاه."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_product_page"
+msgid "Select the location in product page to display size chart."
+msgstr "اختر موقع العرض في صفحة المنتج لإظهار جدول المقاسات."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_product_page_type"
+msgid "In case you set a product page location you can select if the chart will be shown in the page or a link to show chart in popup."
+msgstr "في حال قمت بتحديد موقع في صفحة المنتج، يمكنك اختيار ما إذا كان الجدول سيظهر مباشرة في الصفحة أو كرابط يفتح الجدول في نافذة منبثقة (Popup)."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_table_mode_texts"
+msgid "This applies only if chart is shown inside product information and type is table."
+msgstr "ينطبق هذا فقط إذا كان الجدول معروضاً داخل معلومات المنتج ونوعه 'جدول'."
+
+msgctxt "Languages::is2or_size_charts.shoulder_width"
+msgid "Shoulder width"
+msgstr "عرض الكتف"
+
+msgctxt "Languages::is2or_size_charts.chest_bust_size"
+msgid "Chest/Bust size"
+msgstr "مقاس الصدر"
+
+msgctxt "Languages::is2or_size_charts.waist_size"
+msgid "Waist size"
+msgstr "مقاس الخصر"
+
+msgctxt "Languages::is2or_size_charts.hips_size"
+msgid "Hips size"
+msgstr "مقاس الأرداف"
+
+msgctxt "Languages::is2or_size_charts.thigh_size"
+msgid "Thigh size"
+msgstr "مقاس الفخذ"
+
+msgctxt "Languages::is2or_size_charts.inseam_length"
+msgid "Inseam length"
+msgstr "طول الدرز الداخلي"
+
+msgctxt "Languages::is2or_size_charts.outseam_length"
+msgid "Outseam length"
+msgstr "طول الدرز الخارجي"
+
+msgctxt "Languages::is2or_size_charts.foot_width"
+msgid "Foot width"
+msgstr "عرض القدم"
+
+msgctxt "Languages::is2or_size_charts.foot_length"
+msgid "Foot length"
+msgstr "طول القدم"
+
+msgctxt "Languages::is2or_size_charts.customer_size_recomendation"
+msgid "Customer size recomendation"
+msgstr "توصية المقاس للعميل"
+
+msgctxt "Languages::is2or_size_charts.my_size"
+msgid "My size"
+msgstr "مقاسي"
+
+msgctxt "Languages::is2or_size_charts.recommended_size"
+msgid "Recommended Size: <strong>[size]</strong>"
+msgstr "المقاس الموصى به: <strong>[size]</strong>"
+
+
+
+msgctxt "SettingsSections::is2or_claid_ai::general"
+msgid "General"
+msgstr "عام"
+
+msgctxt "SettingsSections::is2or_claid_ai::image_enhancer"
+msgid "Image Enhancer"
+msgstr "محسن الصور"
+
+msgctxt "SettingsSections::is2or_claid_ai::credit_costs"
+msgid "Credit Price & Costs"
+msgstr "سعر الرصيد والتكاليف"
+
+msgctxt "SettingsOptions::is2or_claid_ai::api_key"
+msgid "Api key"
+msgstr "مفتاح واجهة برمجة التطبيقات (API Key)"
+
+msgctxt "SettingsOptions::is2or_claid_ai::tnc"
+msgid "Terms and conditions"
+msgstr "الشروط والأحكام"
+
+msgctxt "SettingsOptions::is2or_claid_ai::hdr"
+msgid "HDR"
+msgstr "المدى الديناميكي العالي (HDR)"
+
+msgctxt "SettingsOptions::is2or_claid_ai::sharpness"
+msgid "Sharpness"
+msgstr "الحدة"
+
+msgctxt "SettingsOptions::is2or_claid_ai::remove_background_cost"
+msgid "Remove background"
+msgstr "إزالة الخلفية"
+
+msgctxt "SettingsOptions::is2or_claid_ai::enhance_image_cost"
+msgid "Enhance image"
+msgstr "تحسين الصورة"
+
+msgctxt "SettingsOptions::is2or_claid_ai::generate_background_cost"
+msgid "Generate background"
+msgstr "إنشاء خلفية"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer"
+msgid "Image enhancer"
+msgstr "محسن الصور"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_credits"
+msgid "Image enhancer credits"
+msgstr "رصيد محسن الصور"
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_title"
+msgid "Enhance your images for better visibility and performance."
+msgstr "قم بتحسين صورك لزيادة وضوحها وفعاليتها."
+
+msgctxt "Languages::is2or_claid_ai.image_enhancer_subtitle"
+msgid "Automatically remove backgrounds, fix lighting, and add AI-generated backdrops."
+msgstr "قم بإزالة الخلفيات تلقائياً، وإصلاح الإضاءة، وإضافة خلفيات منشأة بالذكاء الاصطناعي."
+
+msgctxt "Languages::is2or_claid_ai.remaining_credits"
+msgid "Remaining credits: <strong>[credit]</strong>"
+msgstr "الرصيد المتبقي: <strong>[credit]</strong>"
+
+msgctxt "Languages::is2or_claid_ai.buy_credit"
+msgid "Buy credit"
+msgstr "شراء رصيد"
+
+msgctxt "Languages::is2or_claid_ai.buy_more_credit"
+msgid "Buy more credit"
+msgstr "شراء المزيد من الرصيد"
+
+msgctxt "Languages::is2or_claid_ai.source_image"
+msgid "Source image"
+msgstr "الصورة المصدر"
+
+msgctxt "Languages::is2or_claid_ai.remove_background"
+msgid "Remove background"
+msgstr "إزالة الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.enhance_image"
+msgid "Enhance image"
+msgstr "تحسين الصورة"
+
+msgctxt "Languages::is2or_claid_ai.generate_background"
+msgid "Generate background"
+msgstr "إنشاء خلفية"
+
+msgctxt "Languages::is2or_claid_ai.remove_background_tooltip"
+msgid "Automatically removes the existing background, isolating the main subject for a clean and transparent result."
+msgstr "يزيل الخلفية الحالية تلقائياً، ويعزل العنصر الأساسي للحصول على نتيجة نظيفة وشفافة."
+
+msgctxt "Languages::is2or_claid_ai.enhance_image_tooltip"
+msgid "Instantly improves image quality by automatically adjusting brightness, color balance, and sharpness."
+msgstr "يحسن جودة الصورة فوراً عبر ضبط السطوع، وتوازن الألوان، والحدة تلقائياً."
+
+msgctxt "Languages::is2or_claid_ai.generate_background_tooltip"
+msgid "Creates a new AI-generated background based on your text prompt to create realistic product or lifestyle scenes."
+msgstr "ينشئ خلفية جديدة بالذكاء الاصطناعي بناءً على وصفك النصي لإنشاء مشاهد واقعية للمنتجات."
+
+msgctxt "Languages::is2or_claid_ai.generate_background_prompt"
+msgid "Enter a prompt to generate background"
+msgstr "أدخل وصفاً لإنشاء الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.generate"
+msgid "Generate"
+msgstr "إنشاء"
+
+msgctxt "Languages::is2or_claid_ai.credits"
+msgid "Credits"
+msgstr "الرصيد"
+
+msgctxt "Languages::is2or_claid_ai.upload_image"
+msgid "Upload image"
+msgstr "تحميل صورة"
+
+msgctxt "Languages::is2or_claid_ai.credits_added_by_admin"
+msgid "[credit] credits added by Admin"
+msgstr "تمت إضافة [credit] رصيد من قبل المسؤول"
+
+msgctxt "Languages::is2or_claid_ai.credits_deducted_by_admin"
+msgid "[credit] credits deducted by Admin"
+msgstr "تم خصم [credit] رصيد من قبل المسؤول"
+
+msgctxt "Languages::is2or_claid_ai.insufficient_credit"
+msgid "Insufficient credit"
+msgstr "رصيد غير كافٍ"
+
+msgctxt "Languages::is2or_claid_ai.source_image_empty"
+msgid "Source image is empty"
+msgstr "الصورة المصدر فارغة"
+
+msgctxt "Languages::is2or_claid_ai.result"
+msgid "Result"
+msgstr "النتيجة"
+
+msgctxt "Languages::is2or_claid_ai.add_as_product_image"
+msgid "Add as product image"
+msgstr "إضافة كصورة للمنتج"
+
+msgctxt "Languages::is2or_claid_ai.regenerate"
+msgid "Regenerate"
+msgstr "إعادة الإنشاء"
+
+msgctxt "Languages::is2or_claid_ai.reuse_image"
+msgid "Reuse image"
+msgstr "إعادة استخدام الصورة"
+
+msgctxt "Languages::is2or_claid_ai.reuse_image_tooltip"
+msgid "Sets the generated image as the new source so you can continue editing or layering new effects."
+msgstr "يعين الصورة المنشأة كمصدر جديد لتتمكن من مواصلة التعديل أو إضافة تأثيرات جديدة."
+
+msgctxt "Languages::is2or_claid_ai.past_results"
+msgid "Past result"
+msgstr "النتائج السابقة"
+
+msgctxt "Languages::is2or_claid_ai.text_remove_background_success"
+msgid "Background removed successfully"
+msgstr "تمت إزالة الخلفية بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_enhance_image_success"
+msgid "Image enhanced successfully"
+msgstr "تم تحسين الصورة بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_generate_background_success"
+msgid "Background generated successfully"
+msgstr "تم إنشاء الخلفية بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_remove_background_failed"
+msgid "Failed to remove background"
+msgstr "فشل في إزالة الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.text_enhance_image_failed"
+msgid "Failed to enhance image"
+msgstr "فشل في تحسين الصورة"
+
+msgctxt "Languages::is2or_claid_ai.text_generate_background_failed"
+msgid "Failed to generate background"
+msgstr "فشل في إنشاء الخلفية"
+
+msgctxt "Languages::is2or_claid_ai.prompt_empty"
+msgid "Prompt is required"
+msgstr "الوصف النصي مطلوب"
+
+msgctxt "Languages::is2or_claid_ai.text_add_product_image_success"
+msgid "Product's image added successfully"
+msgstr "تمت إضافة صورة المنتج بنجاح"
+
+msgctxt "Languages::is2or_claid_ai.text_add_product_image_failed"
+msgid "Failed to add product's image"
+msgstr "فشل في إضافة صورة المنتج"
+
+msgctxt "Languages::is2or_claid_ai.read_terms_and_conditions"
+msgid "Read terms and conditions"
+msgstr "اقرأ الشروط والأحكام"
+
+msgctxt "Languages::is2or_claid_ai.terms_and_conditions"
+msgid "Terms and conditions"
+msgstr "الشروط والأحكام"
+
+msgctxt "Languages::is2or_claid_ai.credit_price"
+msgid "Credit price"
+msgstr "سعر الرصيد"
+
+msgctxt "Languages::is2or_claid_ai.max_credit_purchased"
+msgid "Max credit purchased"
+msgstr "الحد الأقصى للرصيد المشتري"
+
+msgctxt "Languages::is2or_claid_ai.min_credit_purchased"
+msgid "Min credit purchased"
+msgstr "الحد الأدنى للرصيد المشتري"
+
+msgctxt "Languages::is2or_claid_ai.tryon"
+msgid "Try-On"
+msgstr "تجربة القياس"
+
+msgctxt "Languages::is2or_claid_ai.enable_tryon"
+msgid "Enable Try-On"
+msgstr "تفعيل تجربة القياس"
+
+msgctxt "Languages::is2or_claid_ai.add_garment"
+msgid "Add garment"
+msgstr "إضافة قطعة ملابس"
+
+msgctxt "Languages::is2or_claid_ai.edit_garment"
+msgid "Edit garment"
+msgstr "تعديل قطعة الملابس"
+
+msgctxt "Languages::is2or_claid_ai.text_garment_deleted"
+msgid "Garment has been deleted"
+msgstr "تم حذف قطعة الملابس"
+
+msgctxt "Languages::is2or_claid_ai.tryon_models"
+msgid "Try-on models"
+msgstr "عارضي تجربة القياس"
+
+msgctxt "Languages::is2or_claid_ai.add_model"
+msgid "Add model"
+msgstr "إضافة عارض"
+
+msgctxt "Languages::is2or_claid_ai.text_model_deleted"
+msgid "Model has been deleted"
+msgstr "تم حذف العارض"
+
+msgctxt "Languages::is2or_claid_ai.choose_model"
+msgid "Choose model"
+msgstr "اختر العارض"
+
+msgctxt "Languages::is2or_claid_ai.image_generated"
+msgid "Image generated"
+msgstr "تم إنشاء الصورة"
+
+msgctxt "Languages::is2or_claid_ai.failed_to_generate_image"
+msgid "Failed to generate image"
+msgstr "فشل في إنشاء الصورة"

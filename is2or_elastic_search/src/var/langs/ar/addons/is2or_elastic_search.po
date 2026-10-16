@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_host"
+msgid "es_host"
+msgstr "مضيف Elasticsearch"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_port"
+msgid "es_port"
+msgstr "المنفذ (Port)"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_scheme"
+msgid "es_scheme"
+msgstr "بروتوكول الاتصال"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_index_name"
+msgid "es_index_name"
+msgstr "اسم المؤشر (Index)"
+
+msgctxt "SettingsOptions::is2or_elastic_search::es_auth_header"
+msgid "es_auth_header"
+msgstr "رأس المصادقة (API Key)"
+
+msgctxt "SettingsTooltip::is2or_elastic_search::es_host"
+msgid "es_host"
+msgstr "مثال: localhost أو عنوان IP الخاص بالخادم."

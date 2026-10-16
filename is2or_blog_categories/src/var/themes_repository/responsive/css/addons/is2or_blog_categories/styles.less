@@ -1,0 +1,30 @@
+ul.page-categories {
+    list-style-type: none;
+    margin: 0 0 24px 0;
+
+    li.page-categories__item {
+        display: inline-block;
+        padding: 10px 15px;
+
+        a {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &.active a {
+            color: #4fbe31;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul.page-categories {
+        margin: 0 0 24px 0;
+    
+        li.page-categories__item {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}

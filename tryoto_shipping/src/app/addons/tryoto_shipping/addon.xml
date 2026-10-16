@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>tryoto_shipping</id>
+    <version>1.0</version>
+    <priority>60000</priority>
+    <position>0</position>
+    <status>disabled</status>
+    <supplier>IS2OR</supplier>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <settings edition_type="ROOT,STOREFRONT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="tryoto_access_token">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="tryoto_api_url">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="tryoto_dev_api_url">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="tryoto_shipping_mode">
+                        <type>selectbox</type>
+                        <default_value>test</default_value>
+                        <variants>
+                            <item id="test">
+                            </item>
+                            <item id="live">
+                            </item>
+                        </variants>
+                    </item>
+                    <item id="tryoto_webhook_secret_key">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="tryoto_cod_payment_method_id">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="webhook_shipment_created">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_searching_driver">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_picked_up">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_delivered">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_shipment_cancelled">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_cancelled">
+                        <type>selectbox</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <functions>
+        <item for="install">fn_tryoto_shipping_install</item>
+        <item for="uninstall">fn_tryoto_shipping_uninstall</item>
+    </functions>
+    <queries>
+        <item>DROP TABLE IF EXISTS ?:tryoto_shipments;</item>
+        <item>
+            CREATE TABLE `?:tryoto_shipments` (
+            `id` int(11) unsigned NOT NULL auto_increment,
+            `shipment_id` int(12) NOT NULL default 0,
+            `order_id` int(12) NOT NULL,
+            `company_id` int(12) NOT NULL,
+            `tryoto_id` varchar(255) NOT NULL,
+            `tryoto_shipping_id` varchar(255) NOT NULL default '',
+            `total_value` decimal(8,2) NOT NULL default 0,
+            `delivery_company` varchar(64) NOT NULL default '',
+            `awb_url` varchar(255) NOT NULL default '',
+            `delivery_tracking_url` varchar(255) NOT NULL default '',
+            `status` varchar(32) NOT NULL default '',
+            PRIMARY KEY  (`id`)
+            )Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:tryoto_shipments;</item>
+    </queries>
+
+</addon>

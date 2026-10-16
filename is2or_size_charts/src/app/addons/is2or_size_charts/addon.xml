@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_size_charts</id>
+    <name>IS2OR: Size charts</name>
+    <version>1.3</version>
+    <priority>5200</priority>
+    <position>0</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="appearance">
+                <items>
+                    <item id="show_in_product_page">
+                        <name>Location in product page</name>
+                        <type>selectbox</type>
+                        <variants>
+                            <item id="N"><name>None</name></item>
+                            <item id="L1"><name>After price</name></item>
+                            <item id="L2"><name>After before product code</name></item>
+                        </variants>
+                        <default_value>L2</default_value>
+                    </item>
+                    <item id="product_tab_info">
+                        <type>template</type>
+                        <default_value>product_tab_info.tpl</default_value>
+                    </item>
+                    <item id="show_in_product_page_type">
+                        <name>In product page show</name>
+                        <type>selectbox</type>
+                        <variants>
+                            <item id="link"><name>Link</name></item>
+                            <item id="table"><name>Table</name></item>
+                        </variants>
+                        <default_value>table</default_value>
+                    </item>
+                    <item id="show_in_table_mode_texts">
+                        <name>Show in table mode texts</name>
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item for="install">
+            CREATE TABLE if not exists ?:size_chart_templates (
+            `template_id` int(11) NOT NULL AUTO_INCREMENT,
+            `title` varchar(100) DEFAULT NULL,
+            `columns` mediumtext,
+            PRIMARY KEY (`template_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+        </item>
+        <item for="install">
+            CREATE TABLE if not exists ?:size_charts (
+            `chart_id` int(11) NOT NULL AUTO_INCREMENT,
+            `title` varchar(200) DEFAULT NULL,
+            `comment` varchar(200) DEFAULT NULL,
+            `template_id` int(11) DEFAULT NULL,
+            `variants` mediumtext,
+            `applies` mediumtext,
+            `customer_sizes` mediumtext,
+            `status` char(1) DEFAULT 'A',
+            `company_id` int(11) DEFAULT '0',
+            PRIMARY KEY (`chart_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+        </item>
+        <item for="install">
+            CREATE TABLE if not exists ?:size_chart_descriptions (
+            `chart_id` int(11) NOT NULL,
+            `lang_code` char(2) NOT NULL,
+            `text_before` mediumtext,
+            `text_after` mediumtext,
+            PRIMARY KEY (`chart_id`,`lang_code`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+        </item>
+
+        <item for="install">ALTER TABLE ?:users ADD `is2or_sizes` MEDIUMTEXT;</item>
+        <item for="uninstall">ALTER TABLE ?:users DROP `is2or_sizes`;</item>
+    </queries>
+</addon>

@@ -1,0 +1,65 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::is2or_thumbnail_crop"
+msgid "IS2OR: Thumbnail Crop"
+msgstr "IS2OR: Thumbnail Crop"
+
+msgctxt "Addons::description::is2or_thumbnail_crop"
+msgid "Regenerates selected CS-Cart thumbnail types using cover/crop behavior to remove whitespace padding."
+msgstr "Regenerates selected CS-Cart thumbnail types using cover/crop behavior to remove whitespace padding."
+
+msgctxt "SettingsSections::is2or_thumbnail_crop::general"
+msgid "general"
+msgstr "General"
+
+msgctxt "SettingsOptions::is2or_thumbnail_crop::outbound_object_types"
+msgid "outbound_object_types"
+msgstr "Thumbnail types to crop"
+
+msgctxt "SettingsVariants::is2or_thumbnail_crop::outbound_object_types::product"
+msgid "product"
+msgstr "Product images"
+
+msgctxt "SettingsVariants::is2or_thumbnail_crop::outbound_object_types::detailed"
+msgid "detailed"
+msgstr "Detailed (popup) images"
+
+msgctxt "SettingsVariants::is2or_thumbnail_crop::outbound_object_types::category"
+msgid "category"
+msgstr "Category images"
+
+msgctxt "SettingsVariants::is2or_thumbnail_crop::outbound_object_types::blog"
+msgid "blog"
+msgstr "Blog images"
+
+msgctxt "SettingsVariants::is2or_thumbnail_crop::outbound_object_types::news"
+msgid "news"
+msgstr "News images"
+
+msgctxt "Languages::is2or_thumbnail_crop.repair_settings"
+msgid "is2or_thumbnail_crop.repair_settings"
+msgstr "Repair settings"
+
+msgctxt "Languages::is2or_thumbnail_crop.clear_thumbnails"
+msgid "is2or_thumbnail_crop.clear_thumbnails"
+msgstr "Clear thumbnails"
+
+msgctxt "Languages::is2or_thumbnail_crop.text_settings_repaired"
+msgid "is2or_thumbnail_crop.text_settings_repaired"
+msgstr "Thumbnail crop settings repaired. Reload the add-on page to confirm the settings tab now shows the checkbox list."
+
+msgctxt "Languages::is2or_thumbnail_crop.text_settings_repair_failed"
+msgid "is2or_thumbnail_crop.text_settings_repair_failed"
+msgstr "Failed to repair the thumbnail crop settings. Check the add-on installation logs and CS-Cart notifications for details."
+
+msgctxt "Languages::is2or_thumbnail_crop.text_thumbnails_cleared"
+msgid "is2or_thumbnail_crop.text_thumbnails_cleared"
+msgstr "Thumbnail cache cleared. Product pages will regenerate thumbnails on the next request."
+
+msgctxt "Languages::is2or_thumbnail_crop.text_thumbnails_clear_failed"
+msgid "is2or_thumbnail_crop.text_thumbnails_clear_failed"
+msgstr "Failed to clear the thumbnail cache."

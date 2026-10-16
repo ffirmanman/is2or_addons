@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_whatsapp_notification</id>
+    <name>IS2OR: Whatsapp Notification</name>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="api">
+                <name>API</name>
+                <items>
+                    <item id="api_key">
+                        <type>input</type>
+                    </item>
+
+                    <item id="phone_number_id">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_wa_templates` (
+            `status_id` varchar(128) NOT NULL,
+            `receiver` char(1) NOT NULL,
+            `wa_template_name` varchar(128) DEFAULT NULL,
+            `content` text,
+            PRIMARY KEY (`status_id`, `receiver`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS `?:is2or_wa_templates`;</item>
+    </queries>
+</addon>

@@ -1,0 +1,385 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsOptions::api_base_url"
+msgid "API Base Url"
+msgstr "API Base Url"
+
+msgctxt "SettingsOptions::api_token"
+msgid "API Token"
+msgstr "API Token"
+
+msgctxt "SettingsOptions::search_limit"
+msgid "Search Limit"
+msgstr "Search Limit"
+
+msgctxt "SettingsOptions::debug_mode"
+msgid "Debug Mode"
+msgstr "Debug Mode"
+
+msgctxt "SettingsOptions::listing_timeout"
+msgid "listing_timeout"
+msgstr "Timeout (sec)"
+
+msgctxt "Languages::is2or_ai_integration.channel_integrations"
+msgid "Channel Integrations"
+msgstr "Channel Integrations"
+
+msgctxt "Languages::is2or_ai_integration.api_base_url"
+msgid "is2or_ai_integration.api_base_url"
+msgstr "AI Service Base URL"
+
+msgctxt "Languages::is2or_ai_integration.api_base_url_tooltip"
+msgid "is2or_ai_integration.api_base_url_tooltip"
+msgstr "The base URL of the IS2OR AI service"
+
+msgctxt "Languages::is2or_ai_integration.api_token"
+msgid "is2or_ai_integration.api_token"
+msgstr "API Bearer Token"
+
+msgctxt "Languages::is2or_ai_integration.api_token_tooltip"
+msgid "is2or_ai_integration.api_token_tooltip"
+msgstr "The shared bearer token used to authenticate requests to the AI service."
+
+msgctxt "Languages::is2or_ai_integration.search_limit"
+msgid "is2or_ai_integration.search_limit"
+msgstr "Search Result Limit"
+
+msgctxt "Languages::is2or_ai_integration.search_limit_tooltip"
+msgid "is2or_ai_integration.search_limit_tooltip"
+msgstr "Maximum number of products to request from the AI search API. Default: 10."
+
+msgctxt "Languages::is2or_ai_integration.debug_mode"
+msgid "is2or_ai_integration.debug_mode"
+msgstr "Debug Mode"
+
+msgctxt "Languages::is2or_ai_integration.debug_mode_tooltip"
+msgid "is2or_ai_integration.debug_mode_tooltip"
+msgstr "When enabled, logs AI search events (queries, response times, fallbacks) to the CS-Cart event log."
+
+msgctxt "Languages::is2or_ai_integration.listing_timeout_tooltip"
+msgid "is2or_ai_integration.listing_timeout_tooltip"
+msgstr "Maximum time (in seconds) to wait for the AI service when generating product title/description content. Default: 20."
+
+msgctxt "Languages::is2or_ai_integration.error_not_configured"
+msgid "is2or_ai_integration.error_not_configured"
+msgstr "AI service is not configured yet. Please set the API URL and token in the addon settings."
+
+msgctxt "Languages::is2or_ai_integration.error_name_required"
+msgid "is2or_ai_integration.error_name_required"
+msgstr "Product name is required to generate AI content."
+
+msgctxt "Languages::is2or_ai_integration.error_connection"
+msgid "is2or_ai_integration.error_connection"
+msgstr "Could not reach the AI service. Please try again."
+
+msgctxt "Languages::is2or_ai_integration.error_bad_response"
+msgid "is2or_ai_integration.error_bad_response"
+msgstr "The AI service returned an unexpected response."
+
+msgctxt "Languages::is2or_ai_integration.error_empty_output"
+msgid "is2or_ai_integration.error_empty_output"
+msgstr "The AI service did not return any content for this product."
+
+msgctxt "Languages::is2or_ai_integration.error_forbidden"
+msgid "is2or_ai_integration.error_forbidden"
+msgstr "You do not have permission to perform this action."
+
+msgctxt "Languages::is2or_ai_integration.similar_products"
+msgid "is2or_ai_integration.similar_products"
+msgstr "Similar Products"
+
+msgctxt "Languages::is2or_ai_integration.similar_products_description"
+msgid "is2or_ai_integration.similar_products_description"
+msgstr "Explore more similar products"
+
+msgctxt "Languages::is2or_ai_integration.people_also_bought"
+msgid "is2or_ai_integration.people_also_bought"
+msgstr "People Also Bought"
+
+msgctxt "Languages::is2or_ai_integration.also_bought_products_description"
+msgid "is2or_ai_integration.also_bought_products_description"
+msgstr "Explore more products you might like"
+
+msgctxt "Languages::is2or_ai_integration.for_customer_products"
+msgid "is2or_ai_integration.for_customer_products"
+msgstr "Just for You"
+
+msgctxt "Languages::is2or_ai_integration.for_customer_products_description"
+msgid "is2or_ai_integration.for_customer_products_description"
+msgstr "Personalized picks based on your shopping activity"
+
+msgctxt "Languages::is2or_ai_integration.is2or_for_customer_products"
+msgid "is2or_for_customer_products"
+msgstr "Just for You (AI Recommendation)"
+
+msgctxt "Languages::is2or_ai_integration.risky_listings"
+msgid "is2or_ai_integration.risky_listings"
+msgstr "Risky Listings"
+
+msgctxt "Languages::is2or_ai_integration.risk"
+msgid "is2or_ai_integration.risk"
+msgstr "Risk"
+
+msgctxt "Languages::is2or_ai_integration.suggested_action"
+msgid "is2or_ai_integration.suggested_action"
+msgstr "Suggested Action"
+
+msgctxt "Languages::is2or_ai_integration.reason"
+msgid "is2or_ai_integration.reason"
+msgstr "Reason"
+
+msgctxt "Languages::is2or_ai_integration.review_saved"
+msgid "is2or_ai_integration.review_saved"
+msgstr "Review decision saved."
+
+msgctxt "Languages::is2or_ai_integration.review_error"
+msgid "is2or_ai_integration.review_error"
+msgstr "Could not reach the moderation service."
+
+msgctxt "Languages::is2or_ai_integration.risk_high"
+msgid "is2or_ai_integration.risk_high"
+msgstr "High"
+
+msgctxt "Languages::is2or_ai_integration.risk_medium"
+msgid "is2or_ai_integration.risk_medium"
+msgstr "Medium"
+
+msgctxt "Languages::is2or_ai_integration.risk_low"
+msgid "is2or_ai_integration.risk_low"
+msgstr "Low"
+
+msgctxt "Languages::is2or_ai_integration.action_block"
+msgid "is2or_ai_integration.action_block"
+msgstr "Block"
+
+msgctxt "Languages::is2or_ai_integration.action_review"
+msgid "is2or_ai_integration.action_review"
+msgstr "Review"
+
+msgctxt "Languages::is2or_ai_integration.action_allow"
+msgid "is2or_ai_integration.action_allow"
+msgstr "Allow"
+
+msgctxt "Languages::is2or_ai_integration.no_risky_listings"
+msgid "is2or_ai_integration.no_risky_listings"
+msgstr "No risky listings pending review."
+
+msgctxt "Languages::is2or_ai_integration.status_pending_review"
+msgid "is2or_ai_integration.status_pending_review"
+msgstr "Pending Review"
+
+msgctxt "Languages::is2or_ai_integration.status_approved"
+msgid "is2or_ai_integration.status_approved"
+msgstr "Approved"
+
+msgctxt "Languages::is2or_ai_integration.status_rejected"
+msgid "is2or_ai_integration.status_rejected"
+msgstr "Rejected"
+
+msgctxt "Languages::is2or_ai_integration.generate_product_features_tooltip"
+msgid "is2or_ai_integration.generate_product_features_tooltip"
+msgstr "Automatically generates product details in 'features' tab"
+
+msgctxt "Languages::is2or_ai_integration.generate_product_features"
+msgid "is2or_ai_integration.generate_product_features"
+msgstr "Generate Product Features"
+
+msgctxt "Languages::is2or_ai_integration.generate_ai_product_detail"
+msgid "is2or_ai_integration.generate_ai_product_detail"
+msgstr "Generate AI Product Detail"
+
+msgctxt "Languages::is2or_ai_integration.risky_listing_warning"
+msgid "is2or_ai_integration.risky_listing_warning"
+msgstr "Warning: This product has been flagged"
+
+msgctxt "Languages::is2or_ai_integration.chat_title"
+msgid "is2or_ai_integration.chat_title"
+msgstr "Shopping Assistant"
+
+msgctxt "Languages::is2or_ai_integration.chat_placeholder"
+msgid "is2or_ai_integration.chat_placeholder"
+msgstr "Ask me anything..."
+
+msgctxt "Languages::is2or_ai_integration.chat_send"
+msgid "is2or_ai_integration.chat_send"
+msgstr "Send"
+
+msgctxt "Languages::is2or_ai_integration.chat_open"
+msgid "is2or_ai_integration.chat_open"
+msgstr "Open chat"
+
+msgctxt "Languages::is2or_ai_integration.draft_reply"
+msgid "is2or_ai_integration.draft_reply"
+msgstr "Draft Reply (AI)"
+
+msgctxt "Languages::is2or_ai_integration.drafting"
+msgid "is2or_ai_integration.drafting"
+msgstr "Generating draft..."
+
+msgctxt "Languages::is2or_ai_integration.draft_ready"
+msgid "is2or_ai_integration.draft_ready"
+msgstr "Draft added. Please review before sending."
+
+msgctxt "Languages::is2or_ai_integration.needs_human"
+msgid "is2or_ai_integration.needs_human"
+msgstr "AI could not generate a confident reply for this case. Please respond manually."
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo_title"
+msgid "is2or_ai_integration.tidy_photo_title"
+msgstr "Tidy Photos"
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo"
+msgid "is2or_ai_integration.tidy_photo"
+msgstr "Tidy Photo"
+
+msgctxt "Languages::is2or_ai_integration.use_this"
+msgid "is2or_ai_integration.use_this"
+msgstr "Use This"
+
+msgctxt "Languages::is2or_ai_integration.keep_original"
+msgid "is2or_ai_integration.keep_original"
+msgstr "Keep Original"
+
+msgctxt "Languages::is2or_ai_integration.tidying"
+msgid "is2or_ai_integration.tidying"
+msgstr "Tidying photo..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_ready"
+msgid "is2or_ai_integration.tidy_ready"
+msgstr "Photo is ready for review."
+
+msgctxt "Languages::is2or_ai_integration.tidy_failed"
+msgid "is2or_ai_integration.tidy_failed"
+msgstr "Failed to tidy the photo."
+
+msgctxt "Languages::is2or_ai_integration.saving"
+msgid "is2or_ai_integration.saving"
+msgstr "Saving..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo_title"
+msgid "is2or_ai_integration.tidy_photo_title"
+msgstr "Photo Tidy-up"
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo"
+msgid "is2or_ai_integration.tidy_photo"
+msgstr "Tidy Photo"
+
+msgctxt "Languages::is2or_ai_integration.use_this"
+msgid "is2or_ai_integration.use_this"
+msgstr "Use This"
+
+msgctxt "Languages::is2or_ai_integration.keep_original"
+msgid "is2or_ai_integration.keep_original"
+msgstr "Keep Original"
+
+msgctxt "Languages::is2or_ai_integration.error_bad_response"
+msgid "is2or_ai_integration.error_bad_response"
+msgstr "Something went wrong. Please try again."
+
+msgctxt "Languages::is2or_ai_integration.tidying"
+msgid "is2or_ai_integration.tidying"
+msgstr "Tidying photo..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_failed"
+msgid "is2or_ai_integration.tidy_failed"
+msgstr "Failed to tidy the photo."
+
+msgctxt "Languages::is2or_ai_integration.tidy_ready"
+msgid "is2or_ai_integration.tidy_ready"
+msgstr "Photo is ready for review."
+
+msgctxt "Languages::is2or_ai_integration.saving"
+msgid "is2or_ai_integration.saving"
+msgstr "Saving..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_no_pair"
+msgid "is2or_ai_integration.tidy_no_pair"
+msgstr "Image pair is not available."
+
+msgctxt "Languages::is2or_ai_integration.preview"
+msgid "is2or_ai_integration.preview"
+msgstr "Preview"
+
+msgctxt "Languages::is2or_ai_integration.load_preview"
+msgid "is2or_ai_integration.load_preview"
+msgstr "Load Preview"
+
+msgctxt "Languages::is2or_ai_integration.loading"
+msgid "is2or_ai_integration.loading"
+msgstr "Loading..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_expired"
+msgid "is2or_ai_integration.tidy_expired"
+msgstr "The preview has expired or is no longer available."
+
+msgctxt "Languages::is2or_ai_integration.photo_cleanup_queue"
+msgid "is2or_ai_integration.photo_cleanup_queue"
+msgstr "Photo Cleanup Queue"
+
+msgctxt "Languages::is2or_ai_integration.documents_verification"
+msgid "is2or_ai_integration.documents_verification"
+msgstr "Documents Verification"
+
+msgctxt "Languages::is2or_ai_integration.document_type"
+msgid "is2or_ai_integration.document_type"
+msgstr "Document Type"
+
+msgctxt "Languages::is2or_ai_integration.legible"
+msgid "is2or_ai_integration.legible"
+msgstr "Legible"
+
+msgctxt "Languages::is2or_ai_integration.fields_found"
+msgid "is2or_ai_integration.fields_found"
+msgstr "Fields Found"
+
+msgctxt "Languages::is2or_ai_integration.mismatches"
+msgid "is2or_ai_integration.mismatches"
+msgstr "Mismatches"
+
+msgctxt "Languages::is2or_ai_integration.expected"
+msgid "is2or_ai_integration.expected"
+msgstr "Expected"
+
+msgctxt "Languages::is2or_ai_integration.found"
+msgid "is2or_ai_integration.found"
+msgstr "Found"
+
+msgctxt "Languages::is2or_ai_integration.match"
+msgid "is2or_ai_integration.match"
+msgstr "Match"
+
+msgctxt "Languages::is2or_ai_integration.documents_verification_note"
+msgid "is2or_ai_integration.documents_verification_note"
+msgstr "Documents Verification Note"
+
+msgctxt "Languages::is2or_ai_integration.document_verification_synced"
+msgid "is2or_ai_integration.document_verification_synced"
+msgstr "Document Verification Synced"
+
+msgctxt "Languages::is2or_ai_integration.error_record_not_found"
+msgid "is2or_ai_integration.error_record_not_found"
+msgstr "Record Not Found"
+
+msgctxt "Languages::is2or_ai_integration.error_engine_sync_failed"
+msgid "is2or_ai_integration.error_engine_sync_failed"
+msgstr "Engine Sync Failed"
+
+msgctxt "Languages::is2or_ai_integration.document_checks"
+msgid "is2or_ai_integration.document_checks"
+msgstr "Document Checks"
+
+msgctxt "Languages::is2or_ai_integration.status_failed"
+msgid "is2or_ai_integration.status_failed"
+msgstr "Failed"
+
+msgctxt "Languages::is2or_ai_integration.status_synced_approved"
+msgid "is2or_ai_integration.status_synced_approved"
+msgstr "Synced Approved"
+
+msgctxt "Languages::is2or_ai_integration.status_synced_rejected"
+msgid "is2or_ai_integration.status_synced_rejected"
+msgstr "Synced Rejected"

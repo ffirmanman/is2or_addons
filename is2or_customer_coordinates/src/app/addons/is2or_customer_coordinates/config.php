@@ -1,0 +1,6 @@
+<?php 
+
+if (!defined('BOOTSTRAP')) { die('Access denied'); }
+
+define('IS2OR_CUSTOMER_COORDINATES_DEFAULT_LATITUDE', '24.774265');
+define('IS2OR_CUSTOMER_COORDINATES_DEFAULT_LONGITUDE', '46.738586');

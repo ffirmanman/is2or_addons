@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_address_selector</id>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <name>IS2OR: Address Selector</name>
+    <supplier>IS2OR</supplier>
+    <compatibility>
+        <dependencies>geo_maps</dependencies>
+    </compatibility>
+
+    <queries>
+        <item for="install">
+            ALTER TABLE ?:users ADD COLUMN active_address_profile_id INT UNSIGNED NULL DEFAULT NULL;
+        </item>
+
+        <item for="uninstall">ALTER TABLE ?:users DROP COLUMN active_address_profile_id;</item>
+    </queries>
+</addon>

@@ -1,0 +1,104 @@
+.is2or-models__box {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    min-height: 100px;
+    box-sizing: border-box;
+    
+    .is2or-models {
+        width: 100%;
+        min-height: 180px;
+        border: 1px solid #e5e5e5;
+        position: relative;
+
+        &:hover {
+            .is2or-model__actions {
+                display: block;
+            }
+        }
+
+        .is2or-model__actions {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            display: none;
+
+            >div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                .ty-btn {
+                    background: white;
+                    border-radius: 4px;
+                }
+
+                .ty-icon {
+                    color: black;
+                    margin: 0;
+                }
+
+                .delete .ty-icon {
+                    color: red;
+                }
+
+            }
+        }
+    }
+
+    .is2or-models__empty {
+        background: #FDEFE7;
+
+        .ty-icon {
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.is2or-tryon__models {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    grid-auto-flow: row dense;
+
+    @media screen and (max-width: 368px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .is2or-tryon__model {
+        border: 3px solid #e5e5e5;
+        position: relative;
+        cursor: pointer;
+
+        &.is2or-tryon__model--active {
+            border-color: @primary_color;
+        }
+
+        &.is2or-tryon__add-model {
+            a {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}

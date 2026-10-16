@@ -1,0 +1,137 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_design_template\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "SettingsOptions::sync_service_base_url"
+msgid "Sync Service Base Url"
+msgstr "عنوان URL الأساسي لخدمة المزامنة"
+
+msgctxt "SettingsOptions::internal_hmac_secret"
+msgid "Internal HMAC Secret"
+msgstr "مفتاح HMAC السري الداخلي"
+
+msgctxt "Languages::is2or_channel_integrations.channel_integrations"
+msgid "Channel Integrations"
+msgstr "تكاملات القنوات"
+
+msgctxt "Languages::channel_integrations"
+msgid "Channel Integrations"
+msgstr "تكاملات القنوات"
+
+msgctxt "Languages::is2or_channel_integrations.integration_page_description"
+msgid "Manage your e-commerce product and stock integrations with third-party platforms from this page."
+msgstr "يمكنك إدارة تكاملات منتجات ومخزون التجارة الإلكترونية مع المنصات الخارجية من هذه الصفحة."
+
+msgctxt "Languages::is2or_channel_integrations.salla_channel"
+msgid "Salla Channel"
+msgstr "قناة سلة"
+
+msgctxt "Languages::is2or_channel_integrations.salla_channel_description"
+msgid "Automatic integration for products, stock, and orders with Salla Store."
+msgstr "تكامل تلقائي للمنتجات والمخزون والطلبات مع متجر سلة."
+
+msgctxt "Languages::is2or_channel_integrations.connected"
+msgid "Connected"
+msgstr "متصل"
+
+msgctxt "Languages::is2or_channel_integrations.initial_sync"
+msgid "Initial Sync"
+msgstr "المزامنة الأولية"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_from_salla"
+msgid "Import Products from Salla"
+msgstr "استيراد المنتجات من سلة"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_description"
+msgid "Click to import all active products from your Salla store into your IS2OR catalog."
+msgstr "انقر لاستيراد جميع المنتجات النشطة من متجر سلة الخاص بك إلى كتالوج IS2OR."
+
+msgctxt "Languages::is2or_channel_integrations.import_products_description_zid"
+msgid "Click to import all active products from your Zid store into your IS2OR catalog."
+msgstr "انقر لاستيراد جميع المنتجات النشطة من متجر زد الخاص بك إلى كتالوج IS2OR."
+
+msgctxt "Languages::is2or_channel_integrations.connect_salla"
+msgid "Connect Salla"
+msgstr "ربط سلة"
+
+msgctxt "Languages::is2or_channel_integrations.loading"
+msgid "Loading..."
+msgstr "جارٍ التحميل..."
+
+msgctxt "Languages::is2or_channel_integrations.failed_get_authorize_url"
+msgid "Failed to retrieve authorization URL from Integration Service."
+msgstr "تعذر الحصول على عنوان URL للتفويض من خدمة التكامل."
+
+msgctxt "Languages::is2or_channel_integrations.internal_server_error"
+msgid "An internal bridge server error occurred."
+msgstr "حدث خطأ داخلي في خادم الجسر."
+
+msgctxt "Languages::is2or_channel_integrations.sync_settings"
+msgid "Sync Settings"
+msgstr "إعدادات المزامنة"
+
+msgctxt "Languages::is2or_channel_integrations.disconnect"
+msgid "Disconnect"
+msgstr "قطع الاتصال"
+
+msgctxt "Languages::is2or_channel_integrations.zid_channel"
+msgid "Zid Channel"
+msgstr "قناة زد"
+
+msgctxt "Languages::is2or_channel_integrations.coming_soon"
+msgid "Coming Soon"
+msgstr "قريبًا"
+
+msgctxt "Languages::is2or_channel_integrations.zid_channel_description"
+msgid "Automatic integration for products, stock, and orders with Zid Store."
+msgstr "تكامل تلقائي للمنتجات والمخزون والطلبات مع متجر زد."
+
+msgctxt "Languages::is2or_channel_integrations.connect_zid"
+msgid "Connect Zid"
+msgstr "ربط زد"
+
+msgctxt "Languages::is2or_channel_integrations.disconnected"
+msgid "Disconnected"
+msgstr "غير متصل"
+
+msgctxt "Languages::is2or_channel_integrations.sync_history"
+msgid "Sync History"
+msgstr "سجل المزامنة"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_from_zid"
+msgid "Import Products from Zid"
+msgstr "استيراد المنتجات من زد"
+
+msgctxt "Languages::is2or_channel_integrations.delete_product"
+msgid "The product has been deleted successfully. The deletion is being synchronized with external channels in the background."
+msgstr "تم حذف المنتج بنجاح. تتم مزامنة عملية الحذف مع القنوات الخارجية في الخلفية."
+
+msgctxt "Languages::is2or_channel_integrations.noon_channel"
+msgid "Noon Channel"
+msgstr "قناة نون"
+
+msgctxt "Languages::is2or_channel_integrations.noon_channel_description"
+msgid "Automatic integration for products, stock, and orders with Noon Store."
+msgstr "تكامل تلقائي للمنتجات والمخزون والطلبات مع متجر نون."
+
+msgctxt "Languages::is2or_channel_integrations.connect_noon"
+msgid "Connect Noon"
+msgstr "ربط نون"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_from_noon"
+msgid "Import Products from Noon"
+msgstr "استيراد المنتجات من نون"
+
+msgctxt "Languages::is2or_channel_integrations.import_products_description_noon"
+msgid "Click to import all active products from your Noon store into your IS2OR catalog."
+msgstr "انقر لاستيراد جميع المنتجات النشطة من متجر نون الخاص بك إلى كتالوج IS2OR."
+
+msgctxt "SettingsOptions::category_api_base_url"
+msgid "API AI Base Url"
+msgstr "عنوان URL الأساسي لواجهة برمجة تطبيقات الذكاء الاصطناعي"
+
+msgctxt "SettingsOptions::category_api_token"
+msgid "API AI Token"
+msgstr "رمز واجهة برمجة تطبيقات الذكاء الاصطناعي"

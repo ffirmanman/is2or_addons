@@ -1,0 +1,37 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::is2or_categories_interest.categories_interest"
+msgid "Categories of interest"
+msgstr "Categories of interest"
+
+msgctxt "Languages::block_suggestion_products"
+msgid "IS2OR: Suggestion products"
+msgstr "IS2OR: Suggestion products"
+
+msgctxt "Languages::block_suggestion_products_description"
+msgid "Show products based on categories of interest"
+msgstr "Show products based on categories of interest"
+
+msgctxt "Languages::is2or_categories_interest.tags_groups"
+msgid "Tags of interest"
+msgstr "Tags of interest"
+
+msgctxt "Languages::is2or_categories_interest.tags_groups"
+msgid "Tags groups"
+msgstr "Tags groups"
+
+msgctxt "Languages::is2or_categories_interest.group_id"
+msgid "Group ID"
+msgstr "Group ID"
+
+msgctxt "Languages::is2or_categories_interest.group_name"
+msgid "Group name"
+msgstr "Group name"
+
+msgctxt "Languages::is2or_categories_interest.add_group"
+msgid "Add group"
+msgstr "Add group"

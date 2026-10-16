@@ -1,0 +1,138 @@
+/* ==========================================================
+   1. PREVIEW CSS (Create Refund Page)
+   ========================================================== */
+.is2or-preview-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.is2or-preview-item {
+    position: relative;
+    width: 150px !important;
+    height: 150px !important;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden !important;
+    background: #f4f4f4;
+}
+
+.is2or-preview-item img, 
+.is2or-preview-item video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.is2or-preview-item .remove-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.is2or-hidden-input {
+    display: none !important;
+}
+
+.is2or-btn-upload {
+    display: inline-flex;
+    align-items: center;
+    background-color: #44b621;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    border: none;
+}
+
+.is2or-btn-upload:hover {
+    background-color: #389e1a;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.is2or-btn-upload i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.is2or-preview-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #000;
+}
+
+.is2or-preview-item video:hover {
+    object-fit: contain;
+}
+
+/* ==========================================================
+   2. GALLERY CSS (RMA Detail Page)
+   ========================================================== */
+.ty-rma-evidence-gallery {
+    display: grid;
+    /* Using 160px for better image visibility on desktop */
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.ty-rma-evidence-item {
+    text-align: center;
+}
+
+.ty-rma-evidence-item img, 
+.ty-rma-evidence-item video {
+    width: 100%;
+    height: 140px; /* Uniform height for consistent alignment */
+    object-fit: cover; 
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.ty-rma-evidence-item img:hover {
+    transform: scale(1.05);
+}
+
+.ty-rma-video-wrapper {
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* ==========================================================
+   3. RESPONSIVE (Mobile Devices)
+   ========================================================== */
+@media screen and (max-width: 480px) {
+    .ty-rma-evidence-gallery {
+        /* Smaller columns for mobile to fit 2 images side-by-side */
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 10px;
+    }
+    
+    .ty-rma-evidence-item img, 
+    .ty-rma-evidence-item video {
+        height: 100px; /* Shorter height for mobile screens */
+    }
+}
+

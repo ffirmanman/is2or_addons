@@ -1,0 +1,385 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_ai_integration\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "SettingsOptions::api_base_url"
+msgid "API Base Url"
+msgstr "عنوان واجهة برمجة التطبيقات الأساسي"
+
+msgctxt "SettingsOptions::api_token"
+msgid "API Token"
+msgstr "رمز واجهة برمجة التطبيقات"
+
+msgctxt "SettingsOptions::search_limit"
+msgid "Search Limit"
+msgstr "حد نتائج البحث"
+
+msgctxt "SettingsOptions::listing_timeout"
+msgid "listing_timeout"
+msgstr "مهلة الانتظار (بالثواني)"
+
+msgctxt "SettingsOptions::debug_mode"
+msgid "Debug Mode"
+msgstr "وضع التصحيح"
+
+msgctxt "Languages::is2or_ai_integration.channel_integrations"
+msgid "Channel Integrations"
+msgstr "تكاملات القنوات"
+
+msgctxt "Languages::is2or_ai_integration.api_base_url"
+msgid "is2or_ai_integration.api_base_url"
+msgstr "عنوان خدمة الذكاء الاصطناعي الأساسي"
+
+msgctxt "Languages::is2or_ai_integration.api_base_url_tooltip"
+msgid "is2or_ai_integration.api_base_url_tooltip"
+msgstr "عنوان URL الأساسي لخدمة الذكاء الاصطناعي الخاصة بـ IS2OR"
+
+msgctxt "Languages::is2or_ai_integration.api_token"
+msgid "is2or_ai_integration.api_token"
+msgstr "رمز API Bearer"
+
+msgctxt "Languages::is2or_ai_integration.api_token_tooltip"
+msgid "is2or_ai_integration.api_token_tooltip"
+msgstr "رمز Bearer المشترك المستخدم لمصادقة الطلبات إلى خدمة الذكاء الاصطناعي."
+
+msgctxt "Languages::is2or_ai_integration.search_limit"
+msgid "is2or_ai_integration.search_limit"
+msgstr "الحد الأقصى لنتائج البحث"
+
+msgctxt "Languages::is2or_ai_integration.search_limit_tooltip"
+msgid "is2or_ai_integration.search_limit_tooltip"
+msgstr "الحد الأقصى لعدد المنتجات المطلوب من واجهة برمجة تطبيقات البحث بالذكاء الاصطناعي. القيمة الافتراضية: 10."
+
+msgctxt "Languages::is2or_ai_integration.debug_mode"
+msgid "is2or_ai_integration.debug_mode"
+msgstr "وضع التصحيح"
+
+msgctxt "Languages::is2or_ai_integration.debug_mode_tooltip"
+msgid "is2or_ai_integration.debug_mode_tooltip"
+msgstr "عند التفعيل، يتم تسجيل أحداث بحث الذكاء الاصطناعي (طلبات البحث، وأوقات الاستجابة، وآليات الرجوع) في سجل أحداث CS-Cart."
+
+msgctxt "Languages::is2or_ai_integration.listing_timeout_tooltip"
+msgid "is2or_ai_integration.listing_timeout_tooltip"
+msgstr "الحد الأقصى للوقت (بالثواني) لانتظار خدمة الذكاء الاصطناعي عند إنشاء عنوان المنتج أو وصفه. القيمة الافتراضية: 20."
+
+msgctxt "Languages::is2or_ai_integration.error_not_configured"
+msgid "is2or_ai_integration.error_not_configured"
+msgstr "لم يتم إعداد خدمة الذكاء الاصطناعي بعد. يرجى تعيين عنوان API والرمز المميز في إعدادات الإضافة."
+
+msgctxt "Languages::is2or_ai_integration.error_name_required"
+msgid "is2or_ai_integration.error_name_required"
+msgstr "اسم المنتج مطلوب لإنشاء المحتوى باستخدام الذكاء الاصطناعي."
+
+msgctxt "Languages::is2or_ai_integration.error_connection"
+msgid "is2or_ai_integration.error_connection"
+msgstr "تعذر الاتصال بخدمة الذكاء الاصطناعي. يرجى المحاولة مرة أخرى."
+
+msgctxt "Languages::is2or_ai_integration.error_bad_response"
+msgid "is2or_ai_integration.error_bad_response"
+msgstr "أعادت خدمة الذكاء الاصطناعي استجابة غير متوقعة."
+
+msgctxt "Languages::is2or_ai_integration.error_empty_output"
+msgid "is2or_ai_integration.error_empty_output"
+msgstr "لم تُرجع خدمة الذكاء الاصطناعي أي محتوى لهذا المنتج."
+
+msgctxt "Languages::is2or_ai_integration.error_forbidden"
+msgid "is2or_ai_integration.error_forbidden"
+msgstr "ليس لديك إذن لتنفيذ هذا الإجراء."
+
+msgctxt "Languages::is2or_ai_integration.similar_products"
+msgid "is2or_ai_integration.similar_products"
+msgstr "منتجات مشابهة"
+
+msgctxt "Languages::is2or_ai_integration.similar_products_description"
+msgid "is2or_ai_integration.similar_products_description"
+msgstr "اكتشف المزيد من المنتجات المشابهة"
+
+msgctxt "Languages::is2or_ai_integration.people_also_bought"
+msgid "is2or_ai_integration.people_also_bought"
+msgstr "اشترى العملاء أيضًا"
+
+msgctxt "Languages::is2or_ai_integration.also_bought_products_description"
+msgid "is2or_ai_integration.also_bought_products_description"
+msgstr "اكتشف المزيد من المنتجات التي قد تعجبك"
+
+msgctxt "Languages::is2or_ai_integration.for_customer_products"
+msgid "is2or_ai_integration.for_customer_products"
+msgstr "مختارات لك"
+
+msgctxt "Languages::is2or_ai_integration.for_customer_products_description"
+msgid "is2or_ai_integration.for_customer_products_description"
+msgstr "اختيارات مخصصة بناءً على نشاطك في التسوق"
+
+msgctxt "Languages::is2or_ai_integration.is2or_for_customer_products"
+msgid "is2or_for_customer_products"
+msgstr "مختارات لك (توصيات الذكاء الاصطناعي)"
+
+msgctxt "Languages::is2or_ai_integration.risky_listings"
+msgid "is2or_ai_integration.risky_listings"
+msgstr "الإعلانات الخطرة"
+
+msgctxt "Languages::is2or_ai_integration.risk"
+msgid "is2or_ai_integration.risk"
+msgstr "مستوى الخطورة"
+
+msgctxt "Languages::is2or_ai_integration.suggested_action"
+msgid "is2or_ai_integration.suggested_action"
+msgstr "الإجراء المقترح"
+
+msgctxt "Languages::is2or_ai_integration.reason"
+msgid "is2or_ai_integration.reason"
+msgstr "السبب"
+
+msgctxt "Languages::is2or_ai_integration.review_saved"
+msgid "is2or_ai_integration.review_saved"
+msgstr "تم حفظ قرار المراجعة."
+
+msgctxt "Languages::is2or_ai_integration.review_error"
+msgid "is2or_ai_integration.review_error"
+msgstr "تعذر الاتصال بخدمة الإشراف."
+
+msgctxt "Languages::is2or_ai_integration.risk_high"
+msgid "is2or_ai_integration.risk_high"
+msgstr "مرتفع"
+
+msgctxt "Languages::is2or_ai_integration.risk_medium"
+msgid "is2or_ai_integration.risk_medium"
+msgstr "متوسط"
+
+msgctxt "Languages::is2or_ai_integration.risk_low"
+msgid "is2or_ai_integration.risk_low"
+msgstr "منخفض"
+
+msgctxt "Languages::is2or_ai_integration.action_block"
+msgid "is2or_ai_integration.action_block"
+msgstr "حظر"
+
+msgctxt "Languages::is2or_ai_integration.action_review"
+msgid "is2or_ai_integration.action_review"
+msgstr "مراجعة"
+
+msgctxt "Languages::is2or_ai_integration.action_allow"
+msgid "is2or_ai_integration.action_allow"
+msgstr "السماح"
+
+msgctxt "Languages::is2or_ai_integration.no_risky_listings"
+msgid "is2or_ai_integration.no_risky_listings"
+msgstr "لا توجد إعلانات خطرة قيد المراجعة."
+
+msgctxt "Languages::is2or_ai_integration.status_pending_review"
+msgid "is2or_ai_integration.status_pending_review"
+msgstr "قيد المراجعة"
+
+msgctxt "Languages::is2or_ai_integration.status_approved"
+msgid "is2or_ai_integration.status_approved"
+msgstr "تمت الموافقة"
+
+msgctxt "Languages::is2or_ai_integration.status_rejected"
+msgid "is2or_ai_integration.status_rejected"
+msgstr "مرفوض"
+
+msgctxt "Languages::is2or_ai_integration.generate_product_features_tooltip"
+msgid "is2or_ai_integration.generate_product_features_tooltip"
+msgstr "يقوم تلقائيًا بإنشاء تفاصيل المنتج في تبويب \"الميزات\""
+
+msgctxt "Languages::is2or_ai_integration.generate_product_features"
+msgid "is2or_ai_integration.generate_product_features"
+msgstr "إنشاء ميزات المنتج"
+
+msgctxt "Languages::is2or_ai_integration.generate_ai_product_detail"
+msgid "is2or_ai_integration.generate_ai_product_detail"
+msgstr "إنشاء وصف المنتج بالذكاء الاصطناعي"
+
+msgctxt "Languages::is2or_ai_integration.risky_listing_warning"
+msgid "is2or_ai_integration.risky_listing_warning"
+msgstr "تنبيه: تم وضع علامة على هذا المنتج"
+
+msgctxt "Languages::is2or_ai_integration.chat_title"
+msgid "is2or_ai_integration.chat_title"
+msgstr "مساعد التسوق"
+
+msgctxt "Languages::is2or_ai_integration.chat_placeholder"
+msgid "is2or_ai_integration.chat_placeholder"
+msgstr "اسألني عن أي شيء..."
+
+msgctxt "Languages::is2or_ai_integration.chat_send"
+msgid "is2or_ai_integration.chat_send"
+msgstr "إرسال"
+
+msgctxt "Languages::is2or_ai_integration.chat_open"
+msgid "is2or_ai_integration.chat_open"
+msgstr "فتح المحادثة"
+
+msgctxt "Languages::is2or_ai_integration.draft_reply"
+msgid "is2or_ai_integration.draft_reply"
+msgstr "مسودة الرد (بالذكاء الاصطناعي)"
+
+msgctxt "Languages::is2or_ai_integration.drafting"
+msgid "is2or_ai_integration.drafting"
+msgstr "جارٍ إنشاء المسودة..."
+
+msgctxt "Languages::is2or_ai_integration.draft_ready"
+msgid "is2or_ai_integration.draft_ready"
+msgstr "تمت إضافة المسودة. يرجى مراجعتها قبل الإرسال."
+
+msgctxt "Languages::is2or_ai_integration.needs_human"
+msgid "is2or_ai_integration.needs_human"
+msgstr "تعذر على الذكاء الاصطناعي إنشاء رد موثوق لهذه الحالة. يرجى الرد يدويًا."
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo_title"
+msgid "is2or_ai_integration.tidy_photo_title"
+msgstr "تنظيم الصور"
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo"
+msgid "is2or_ai_integration.tidy_photo"
+msgstr "تنظيم الصورة"
+
+msgctxt "Languages::is2or_ai_integration.use_this"
+msgid "is2or_ai_integration.use_this"
+msgstr "استخدام هذه الصورة"
+
+msgctxt "Languages::is2or_ai_integration.keep_original"
+msgid "is2or_ai_integration.keep_original"
+msgstr "الاحتفاظ بالصورة الأصلية"
+
+msgctxt "Languages::is2or_ai_integration.tidying"
+msgid "is2or_ai_integration.tidying"
+msgstr "جارٍ تنظيم الصورة..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_ready"
+msgid "is2or_ai_integration.tidy_ready"
+msgstr "الصورة جاهزة للمراجعة."
+
+msgctxt "Languages::is2or_ai_integration.tidy_failed"
+msgid "is2or_ai_integration.tidy_failed"
+msgstr "تعذر تنظيم الصورة."
+
+msgctxt "Languages::is2or_ai_integration.saving"
+msgid "is2or_ai_integration.saving"
+msgstr "جارٍ الحفظ..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo_title"
+msgid "is2or_ai_integration.tidy_photo_title"
+msgstr "تنظيف الصورة"
+
+msgctxt "Languages::is2or_ai_integration.tidy_photo"
+msgid "is2or_ai_integration.tidy_photo"
+msgstr "تنظيف الصورة"
+
+msgctxt "Languages::is2or_ai_integration.use_this"
+msgid "is2or_ai_integration.use_this"
+msgstr "استخدام هذه الصورة"
+
+msgctxt "Languages::is2or_ai_integration.keep_original"
+msgid "is2or_ai_integration.keep_original"
+msgstr "الاحتفاظ بالأصلية"
+
+msgctxt "Languages::is2or_ai_integration.error_bad_response"
+msgid "is2or_ai_integration.error_bad_response"
+msgstr "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+
+msgctxt "Languages::is2or_ai_integration.tidying"
+msgid "is2or_ai_integration.tidying"
+msgstr "جارٍ تنظيف الصورة..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_failed"
+msgid "is2or_ai_integration.tidy_failed"
+msgstr "فشل تنظيف الصورة."
+
+msgctxt "Languages::is2or_ai_integration.tidy_ready"
+msgid "is2or_ai_integration.tidy_ready"
+msgstr "الصورة جاهزة للمراجعة."
+
+msgctxt "Languages::is2or_ai_integration.saving"
+msgid "is2or_ai_integration.saving"
+msgstr "جارٍ الحفظ..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_no_pair"
+msgid "is2or_ai_integration.tidy_no_pair"
+msgstr "لا تتوفر نسخة مرتبطة من الصورة."
+
+msgctxt "Languages::is2or_ai_integration.preview"
+msgid "is2or_ai_integration.preview"
+msgstr "معاينة"
+
+msgctxt "Languages::is2or_ai_integration.load_preview"
+msgid "is2or_ai_integration.load_preview"
+msgstr "تحميل المعاينة"
+
+msgctxt "Languages::is2or_ai_integration.loading"
+msgid "is2or_ai_integration.loading"
+msgstr "جارٍ التحميل..."
+
+msgctxt "Languages::is2or_ai_integration.tidy_expired"
+msgid "is2or_ai_integration.tidy_expired"
+msgstr "انتهت صلاحية المعاينة أو لم تعد متاحة."
+
+msgctxt "Languages::is2or_ai_integration.photo_cleanup_queue"
+msgid "is2or_ai_integration.photo_cleanup_queue"
+msgstr "قائمة انتظار تنظيف الصور"
+
+msgctxt "Languages::is2or_ai_integration.documents_verification"
+msgid "is2or_ai_integration.documents_verification"
+msgstr "التحقق من المستندات"
+
+msgctxt "Languages::is2or_ai_integration.document_type"
+msgid "is2or_ai_integration.document_type"
+msgstr "نوع المستند"
+
+msgctxt "Languages::is2or_ai_integration.legible"
+msgid "is2or_ai_integration.legible"
+msgstr "واضح للقراءة"
+
+msgctxt "Languages::is2or_ai_integration.fields_found"
+msgid "is2or_ai_integration.fields_found"
+msgstr "الحقول التي تم العثور عليها"
+
+msgctxt "Languages::is2or_ai_integration.mismatches"
+msgid "is2or_ai_integration.mismatches"
+msgstr "البيانات غير المتطابقة"
+
+msgctxt "Languages::is2or_ai_integration.expected"
+msgid "is2or_ai_integration.expected"
+msgstr "المتوقع"
+
+msgctxt "Languages::is2or_ai_integration.found"
+msgid "is2or_ai_integration.found"
+msgstr "الموجود"
+
+msgctxt "Languages::is2or_ai_integration.match"
+msgid "is2or_ai_integration.match"
+msgstr "متطابق"
+
+msgctxt "Languages::is2or_ai_integration.documents_verification_note"
+msgid "is2or_ai_integration.documents_verification_note"
+msgstr "ملاحظة التحقق من المستندات"
+
+msgctxt "Languages::is2or_ai_integration.document_verification_synced"
+msgid "is2or_ai_integration.document_verification_synced"
+msgstr "تمت مزامنة التحقق من المستند"
+
+msgctxt "Languages::is2or_ai_integration.error_record_not_found"
+msgid "is2or_ai_integration.error_record_not_found"
+msgstr "لم يتم العثور على السجل"
+
+msgctxt "Languages::is2or_ai_integration.error_engine_sync_failed"
+msgid "is2or_ai_integration.error_engine_sync_failed"
+msgstr "فشلت مزامنة المحرك"
+
+msgctxt "Languages::is2or_ai_integration.document_checks"
+msgid "is2or_ai_integration.document_checks"
+msgstr "فحوصات المستندات"
+
+msgctxt "Languages::is2or_ai_integration.status_failed"
+msgid "is2or_ai_integration.status_failed"
+msgstr "فشل"
+
+msgctxt "Languages::is2or_ai_integration.status_synced_approved"
+msgid "is2or_ai_integration.status_synced_approved"
+msgstr "تمت المزامنة والموافقة"
+
+msgctxt "Languages::is2or_ai_integration.status_synced_rejected"
+msgid "is2or_ai_integration.status_synced_rejected"
+msgstr "تمت المزامنة والرفض"

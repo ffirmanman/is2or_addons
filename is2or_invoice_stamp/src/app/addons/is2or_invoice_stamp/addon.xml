@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_invoice_stamp</id>
+    <name>IS2OR: Invoice Stamp and Sign</name>
+    <version>1.0</version>
+    <priority>5200</priority>
+    <position>1000</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <functions>
+        <item for="install">fn_is2or_invoice_stamp_install</item>
+        <item for="uninstall">fn_is2or_invoice_stamp_uninstall</item>
+    </functions>
+</addon>

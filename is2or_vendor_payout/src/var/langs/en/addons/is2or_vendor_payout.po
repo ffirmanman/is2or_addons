@@ -1,0 +1,198 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsOptions::is2or_vendor_payout::payment_method"
+msgid "is2or_vendor_payout::payment_method"
+msgstr "Payment method"
+
+msgctxt "SettingsOptions::is2or_vendor_payout::auto_complete_days"
+msgid "is2or_vendor_payout::auto_complete_days"
+msgstr "Auto-complete orders after (days)"
+
+msgctxt "SettingsOptions::is2or_vendor_payout::show_confirm_button_status"
+msgid "is2or_vendor_payout::show_confirm_button_status"
+msgstr "Show confirm button status with status "
+
+msgctxt "Languages::is2or_vendor_payout.bank_accounts"
+msgid "is2or_vendor_payout.bank_accounts"
+msgstr "Bank accounts"
+
+msgctxt "Languages::is2or_vendor_payout.add_account"
+msgid "is2or_vendor_payout.add_account"
+msgstr "Add bank account"
+
+msgctxt "Languages::is2or_vendor_payout.edit_account"
+msgid "is2or_vendor_payout.edit_account"
+msgstr "Edit bank account"
+
+msgctxt "Languages::is2or_vendor_payout.bank_name"
+msgid "is2or_vendor_payout.bank_name"
+msgstr "Bank name"
+
+msgctxt "Languages::is2or_vendor_payout.account_name"
+msgid "is2or_vendor_payout.account_name"
+msgstr "Account name"
+
+msgctxt "Languages::is2or_vendor_payout.account_number"
+msgid "is2or_vendor_payout.account_number"
+msgstr "Account number"
+
+msgctxt "Languages::is2or_vendor_payout.swift_code"
+msgid "is2or_vendor_payout.swift_code"
+msgstr "Swift code"
+
+msgctxt "Languages::is2or_vendor_payout.iban"
+msgid "is2or_vendor_payout.iban"
+msgstr "IBAN"
+
+msgctxt "Languages::is2or_vendor_payout.mobile"
+msgid "is2or_vendor_payout.mobile"
+msgstr "Mobile"
+
+msgctxt "Languages::is2or_vendor_payout.text_bank_account_deleted"
+msgid "is2or_vendor_payout.text_bank_account_deleted"
+msgstr "Bank account deleted successfully"
+
+msgctxt "Languages::is2or_vendor_payout.complete_order"
+msgid "is2or_vendor_payout.complete_order"
+msgstr "Complete order"
+
+msgctxt "Languages::is2or_vendor_payout.order_completed"
+msgid "is2or_vendor_payout.order_completed"
+msgstr "Order completed"
+
+msgctxt "Languages::is2or_vendor_payout.available_balance"
+msgid "is2or_vendor_payout.available_balance"
+msgstr "Available balance"
+
+msgctxt "Languages::is2or_vendor_payout.pending_balance"
+msgid "is2or_vendor_payout.pending_balance"
+msgstr "Pending balance"
+
+msgctxt "Languages::is2or_vendor_payout.total_balance"
+msgid "is2or_vendor_payout.total_balance"
+msgstr "Total balance"
+
+msgctxt "Languages::is2or_vendor_payout.bank_account"
+msgid "is2or_vendor_payout.bank_account"
+msgstr "Bank account"
+
+msgctxt "Languages::is2or_vendor_payout.select_bank"
+msgid "is2or_vendor_payout.select_bank"
+msgstr "Select bank"
+
+msgctxt "Languages::is2or_vendor_payout.manage_banks"
+msgid "is2or_vendor_payout.manage_banks"
+msgstr "Manage banks"
+
+msgctxt "Languages::is2or_vendor_payout.insufficient_balance"
+msgid "is2or_vendor_payout.insufficient_balance"
+msgstr "Insufficient balance"
+
+msgctxt "Languages::is2or_vendor_payout.pay_with_payment"
+msgid "is2or_vendor_payout.pay_with_payment"
+msgstr "Pay with [payment]"
+
+msgctxt "Languages::is2or_vendor_payout.payout_details"
+msgid "is2or_vendor_payout.payout_details"
+msgstr "Payout details"
+
+msgctxt "Languages::is2or_vendor_payout.payout_success"
+msgid "is2or_vendor_payout.payout_success"
+msgstr "Payout success"
+
+msgctxt "Languages::is2or_vendor_payout.payout_failed"
+msgid "is2or_vendor_payout.payout_failed"
+msgstr "Payout failed"
+
+msgctxt "Languages::is2or_vendor_payout.update_details"
+msgid "is2or_vendor_payout.update_details"
+msgstr "Update details"
+
+msgctxt "Languages::is2or_vendor_payout.update_details_success"
+msgid "is2or_vendor_payout.update_details_success"
+msgstr "Update details success"
+
+msgctxt "Languages::is2or_vendor_payout.update_details_failed"
+msgid "is2or_vendor_payout.update_details_failed"
+msgstr "Update details failed"
+
+msgctxt "Languages::is2or_vendor_payout.pay_with_bank_account"
+msgid "is2or_vendor_payout.pay_with_bank_account"
+msgstr "Pay with Bank Account"
+
+
+msgctxt "Languages::is2or_vendor_payout.transfer_receipt"
+msgid "is2or_vendor_payout.transfer_receipt"
+msgstr "Transfer Receipt"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_image"
+msgid "is2or_vendor_payout.receipt_image"
+msgstr "Upload Receipt Image"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_image_hint"
+msgid "is2or_vendor_payout.receipt_image_hint"
+msgstr "Accepted formats: JPG, PNG, GIF, WEBP. Max size: 5 MB."
+
+msgctxt "Languages::is2or_vendor_payout.receipt_image_replace_hint"
+msgid "is2or_vendor_payout.receipt_image_replace_hint"
+msgstr "A receipt image already exists. Choose a new file to replace it."
+
+msgctxt "Languages::is2or_vendor_payout.receipt_bank_name"
+msgid "is2or_vendor_payout.receipt_bank_name"
+msgstr "Bank Name (Admin's Bank)"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_bank_name_placeholder"
+msgid "is2or_vendor_payout.receipt_bank_name_placeholder"
+msgstr "Bank Name"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_account_name_placeholder"
+msgid "is2or_vendor_payout.receipt_account_name_placeholder"
+msgstr "Account Name"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_iban_placeholder"
+msgid "is2or_vendor_payout.receipt_iban_placeholder"
+msgstr "IBAN"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_comment_placeholder"
+msgid "is2or_vendor_payout.receipt_comment_placeholder"
+msgstr "Optional notes about this transfer"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_saved"
+msgid "is2or_vendor_payout.receipt_saved"
+msgstr "Transfer receipt has been saved successfully."
+
+msgctxt "Languages::is2or_vendor_payout.receipt_save_failed"
+msgid "is2or_vendor_payout.receipt_save_failed"
+msgstr "Failed to save transfer receipt. Please try again."
+
+msgctxt "Languages::is2or_vendor_payout.receipt_invalid_payout"
+msgid "is2or_vendor_payout.receipt_invalid_payout"
+msgstr "Invalid payout. Cannot save receipt."
+
+msgctxt "Languages::is2or_vendor_payout.receipt_invalid_image_type"
+msgid "is2or_vendor_payout.receipt_invalid_image_type"
+msgstr "Invalid image type. Please upload JPG, PNG, GIF, or WEBP."
+
+msgctxt "Languages::is2or_vendor_payout.receipt_upload_failed"
+msgid "is2or_vendor_payout.receipt_upload_failed"
+msgstr "Failed to upload receipt image. Please check server permissions."
+
+msgctxt "Languages::is2or_vendor_payout.detail_section_request"
+msgid "is2or_vendor_payout.detail_section_request"
+msgstr "Request"
+
+msgctxt "Languages::is2or_vendor_payout.detail_section_admin"
+msgid "is2or_vendor_payout.detail_section_admin"
+msgstr "Detail by Admin"
+
+msgctxt "Languages::is2or_vendor_payout.receipt_transaction_date"
+msgid "is2or_vendor_payout.receipt_transaction_date"
+msgstr "Transaction date"
+
+msgctxt "Languages::is2or_vendor_payout.no_receipt_yet"
+msgid "is2or_vendor_payout.no_receipt_yet"
+msgstr "No transfer receipt submitted yet."

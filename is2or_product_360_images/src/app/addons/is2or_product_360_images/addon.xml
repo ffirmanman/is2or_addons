@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_product_360_images</id>
+    <name>IS2OR: Product's 360 Images</name>
+    <version>1.0</version>
+    <priority>1000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_360_images` (
+                `image_id` INT(11) NOT NULL AUTO_INCREMENT,
+                `object_type` VARCHAR(30) NOT NULL DEFAULT '',
+                `object_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                `position` INT(11) NOT NULL DEFAULT '0',
+                `prefix` VARCHAR(255) NOT NULL DEFAULT '',
+                `extension` VARCHAR(255) NOT NULL DEFAULT '',
+                PRIMARY KEY(`image_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+    </queries>
+</addon>

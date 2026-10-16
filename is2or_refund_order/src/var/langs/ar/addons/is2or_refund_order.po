@@ -1,0 +1,9 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+
+msgctxt "SettingsOptions::is2or_refund_order::tab_refunded_statuses"
+msgid "tab_refunded_statuses"
+msgstr "حالات الطلب المسموح بها للاسترداد"

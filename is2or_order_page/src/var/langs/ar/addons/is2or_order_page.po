@@ -1,0 +1,45 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_order_page\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "Languages::my_orders"
+msgid "my_orders"
+msgstr "طلباتي"
+
+msgctxt "Languages::find_your_order"
+msgid "find_your_order"
+msgstr "ابحث عن طلبك..."
+
+msgctxt "Languages::filter_by_order_date"
+msgid "filter_by_order_date"
+msgstr "تصفية حسب تاريخ الطلب"
+
+msgctxt "Languages::ordered"
+msgid "ordered"
+msgstr "تاريخ الطلب"
+
+msgctxt "Languages::order_again"
+msgid "order_again"
+msgstr "إعادة الطلب"
+
+msgctxt "Languages::request_return_refund"
+msgid "request_return_refund"
+msgstr "طلب إرجاع/استرداد"
+
+msgctxt "Languages::confirm_order"
+msgid "confirm_order"
+msgstr "تأكيد الطلب"
+
+msgctxt "Languages::order_details"
+msgid "order_details"
+msgstr "تفاصيل الطلب"
+
+msgctxt "Languages::text_no_orders"
+msgid "text_no_orders"
+msgstr "لا توجد طلبات"
+
+msgctxt "Languages::store"
+msgid "store"
+msgstr "المتجر"

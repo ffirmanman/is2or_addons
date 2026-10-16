@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
+    <id>dineropay_payment</id>
+    <supplier>IS2OR</supplier>
+    <supplier_link>https://www.dineropay.com/</supplier_link>
+    <version>1.0.0</version>
+    <priority>0</priority>
+    <position>0</position>
+    <default_language>en</default_language>
+    <status>disabled</status>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="merchantKey">
+                        <type>input</type>
+                    </item>
+                    <item id="merchantPassword">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item type="file">database/data.sql</item>
+    </queries>
+    <functions>
+        <item for="install">dineropay_install</item>
+        <item for="uninstall">dineropay_uninstall</item>
+    </functions>
+    <authors>
+        <author>
+            <name>Mohammad Gifaary</name>
+            <email>muhammadgifary@gmail.com</email>
+        </author>
+    </authors>
+</addon>

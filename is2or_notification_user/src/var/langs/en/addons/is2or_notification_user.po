@@ -1,0 +1,97 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::block_is2or_notification_user"
+msgid "IS2OR: Notification User"
+msgstr "IS2OR: Notification User"
+
+msgctxt "Languages::block_is2or_notification_user_description"
+msgid "Displays a notification preference panel where customers can choose which email notifications they receive."
+msgstr "Displays a notification preference panel where customers can choose which email notifications they receive."
+
+msgctxt "Languages::is2or_notification_user.template_name"
+msgid "Notification Settings"
+msgstr "Notification Settings"
+
+msgctxt "Languages::is2or_notification_user.title"
+msgid "Notifications"
+msgstr "Notifications"
+
+msgctxt "Languages::is2or_notification_user.subtitle"
+msgid "Manage the notifications you want to receive"
+msgstr "Manage the notifications you want to receive"
+
+msgctxt "Languages::is2or_notification_user.col_notification"
+msgid "Notification"
+msgstr "Notification"
+
+msgctxt "Languages::is2or_notification_user.col_email"
+msgid "E-mail"
+msgstr "E-mail"
+
+msgctxt "Languages::is2or_notification_user.save"
+msgid "Save settings"
+msgstr "Save settings"
+
+msgctxt "Languages::is2or_notification_user.saved"
+msgid "Notification preferences saved."
+msgstr "Notification preferences saved."
+
+msgctxt "Languages::is2or_notification_user.not_logged_in"
+msgid "You must be logged in to manage your notifications."
+msgstr "You must be logged in to manage your notifications."
+
+msgctxt "Languages::is2or_notification_user.group_purchase"
+msgid "Purchase Transactions"
+msgstr "Purchase Transactions"
+
+msgctxt "Languages::is2or_notification_user.group_promo"
+msgid "Promo"
+msgstr "Promo"
+
+msgctxt "Languages::is2or_notification_user.group_account"
+msgid "Account"
+msgstr "Account"
+
+msgctxt "Languages::is2or_notification_user.type_order_placed"
+msgid "Awaiting Payment"
+msgstr "Awaiting Payment"
+
+msgctxt "Languages::is2or_notification_user.type_order_paid"
+msgid "Awaiting Confirmation"
+msgstr "Awaiting Confirmation"
+
+msgctxt "Languages::is2or_notification_user.type_order_processing"
+msgid "Order Being Processed"
+msgstr "Order Being Processed"
+
+msgctxt "Languages::is2or_notification_user.type_order_shipped"
+msgid "Order Shipped"
+msgstr "Order Shipped"
+
+msgctxt "Languages::is2or_notification_user.type_order_completed"
+msgid "Order Completed"
+msgstr "Order Completed"
+
+msgctxt "Languages::is2or_notification_user.type_order_reminder"
+msgid "Reminder"
+msgstr "Reminder"
+
+msgctxt "Languages::is2or_notification_user.type_newsletter"
+msgid "Newsletter"
+msgstr "Newsletter"
+
+msgctxt "Languages::is2or_notification_user.type_promo_coupon"
+msgid "Coupons & Promotions"
+msgstr "Coupons & Promotions"
+
+msgctxt "Languages::is2or_notification_user.type_account_password"
+msgid "Password Change"
+msgstr "Password Change"
+
+msgctxt "Languages::is2or_notification_user.type_account_profile"
+msgid "Profile Update"
+msgstr "Profile Update"

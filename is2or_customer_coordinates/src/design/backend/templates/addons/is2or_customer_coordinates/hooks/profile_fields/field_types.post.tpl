@@ -1,0 +1,1 @@
+<option value="L" {if $field.field_type === 'L'}selected{/if}>{__('coordinates')}</option>

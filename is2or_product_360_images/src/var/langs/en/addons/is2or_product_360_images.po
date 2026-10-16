@@ -1,0 +1,22 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::is2or_product_360_images.360_images"
+msgid "is2or_product_360_images.360_images"
+msgstr "360º images"
+
+msgctxt "Languages::is2or_product_360_images.mismatch_extension"
+msgid "is2or_product_360_images.mismatch_extension"
+msgstr "All uploaded files must have the same extension"
+
+msgctxt "Languages::is2or_product_360_images.only_image_allowed"
+msgid "is2or_product_360_images.only_image_allowed"
+msgstr "Only image file allowed"
+
+msgctxt "Languages::is2or_product_360_images.360_images_tooltip"
+msgid "is2or_product_360_images.360_images_tooltip"
+msgstr "Upload images in the correct sequence for proper 360° rotation. Drag and drop to reorder."
+

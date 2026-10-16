@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_spl_integration</id>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <name>IS2OR: SPL Integration</name>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <settings>
+        <sections>
+            <section id="api">
+                <name>API</name>
+                <items>
+                    <item id="api_key">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+            <section id="autofill">
+                <name>Auto-fill</name>
+                <items>
+                    <item id="s_header">
+                        <type>header</type>
+                        <name>Shipping address</name>
+                    </item>
+                    <item id="s_address">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="s_country">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="s_state">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="s_city">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="s_zipcode">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="b_header">
+                        <type>header</type>
+                        <name>Billing address</name>
+                    </item>
+                    <item id="b_address">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="b_country">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="b_state">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="b_city">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="b_zipcode">
+                        <type>selectbox</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <queries>        
+        <item for="install">UPDATE ?:profile_fields SET position = 10 WHERE field_name = 's_firstname'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 20 WHERE field_name = 's_lastname'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 21 WHERE field_name = 's_spl_short_address'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 25 WHERE field_name = 's_building_no'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 30 WHERE field_name = 's_address'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 40 WHERE field_name = 's_address_2'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 50 WHERE field_name = 's_city'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 60 WHERE field_name = 's_country'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 70 WHERE field_name = 's_state'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 80 WHERE field_name = 's_zipcode'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 81 WHERE field_name = 's_coordinates'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 90 WHERE field_name = 's_phone'</item>
+
+        <item for="install">UPDATE ?:profile_fields SET position = 10 WHERE field_name = 'b_firstname'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 20 WHERE field_name = 'b_lastname'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 21 WHERE field_name = 'b_spl_short_address'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 25 WHERE field_name = 'b_building_no'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 30 WHERE field_name = 'b_address'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 50 WHERE field_name = 'b_city'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 60 WHERE field_name = 'b_country'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 70 WHERE field_name = 'b_state'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 80 WHERE field_name = 'b_zipcode'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 81 WHERE field_name = 'b_coordinates'</item>
+        <item for="install">UPDATE ?:profile_fields SET position = 90 WHERE field_name = 'b_phone'</item>
+
+        <!-- <item for="uninstall">
+            ALTER TABLE ?:companies 
+            DROP COLUMN `spl_short_address`,
+            DROP COLUMN `spl_building_no`,
+            DROP COLUMN `spl_street`,
+            DROP COLUMN `spl_district`,
+            DROP COLUMN `spl_additional_number`;
+        </item> -->
+    </queries>
+</addon>

@@ -1,0 +1,525 @@
+/* ==== Layout 3 kolom ==== */
+.ty-vc-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.ty-vc-layout__menu {
+    flex: 0 0 220px;
+}
+
+.ty-vc-layout__threads {
+    flex: 0 0 340px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.ty-vc-layout__threads-header {
+    padding: 15px 15px 0;
+}
+
+.ty-vc-layout__chat {
+    flex: 1 1 auto;
+    min-height: 500px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+@media (max-width: 991px) {
+    .ty-vc-layout {
+        flex-direction: column;
+    }
+    .ty-vc-layout__menu,
+    .ty-vc-layout__threads,
+    .ty-vc-layout__chat {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
+
+/* ==== Menu sidebar akun ==== */
+.ty-vc-account-menu {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.ty-vc-account-menu__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.ty-vc-account-menu__user-name {
+    font-weight: 600;
+}
+
+.ty-vc-account-menu__user-email {
+    font-size: 12px;
+    color: #999;
+    word-break: break-all;
+}
+
+.ty-vc-account-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.ty-vc-account-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.ty-vc-account-menu li a:hover,
+.ty-vc-account-menu li a.active {
+    color: #e5433d;
+    background: #fff;
+}
+
+/* ==== List thread (kolom tengah) ==== */
+.ty-vc-thread-list {
+    max-height: 650px;
+    overflow-y: auto;
+}
+
+.ty-vc-thread-item {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding: 12px 15px;
+    border-left: 3px solid transparent;
+    border-bottom: 1px solid #f2f2f2;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.ty-vc-thread-item:hover {
+    background: #fafafa;
+}
+
+.ty-vc-thread-item.active {
+    background: #fdeeee;
+    border-left-color: #e5433d;
+}
+
+.ty-vc-thread-item__new-dot {
+    position: absolute;
+    top: 14px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e5433d;
+}
+
+.ty-vc-thread-item__avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ty-vc-thread-item__body {
+    flex: 1;
+    min-width: 0;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.ty-vc-thread-item__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.ty-vc-thread-item__name {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ty-vc-thread-item__time {
+    font-size: 11px;
+    color: #999;
+    white-space: nowrap;
+}
+
+.ty-vc-thread-item__msg {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ==== Chat panel (kolom kanan) ==== */
+.ty-vc-chat-panel__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 460px;
+    color: #999;
+}
+
+.ty-vc-chat-panel__header {
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #eee;
+}
+
+/* ==== Profile page layout ==== */
+.ty-vc-profile-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.ty-vc-profile-layout__menu {
+    flex: 0 0 260px;
+}
+.ty-vc-profile-layout__content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+@media (max-width: 767px) {
+    .ty-vc-profile-layout {
+        flex-direction: column;
+    }
+    .ty-vc-profile-layout__menu {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
+
+/* grid 2 kolom untuk pasangan field (password/confirm, first/last name) */
+.ty-vc-profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+}
+.ty-vc-profile-grid .ty-control-group {
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+    .ty-vc-profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* rapikan label & input biar sama seperti gambar 2 */
+.ty-vc-profile-layout .ty-control-group__title,
+.ty-vc-profile-layout label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.ty-vc-profile-layout .ty-input-text,
+.ty-vc-profile-layout .ty-profile-field__select {
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+/* tombol Save (hitam) & Discard (abu-abu) */
+.ty-vc-profile-layout .ty-profile-field__buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+.ty-vc-profile-layout .ty-profile-field__buttons .ty-btn__secondary {
+    background: #111;
+    border-color: #111;
+    color: #fff;
+    border-radius: 6px;
+}
+.ty-vc-profile-layout .ty-profile-field__reset {
+    background: #eee;
+    color: #333;
+    border-radius: 6px;
+    border: none;
+}
+
+.ty-vc-account-menu__user-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.ty-vc-account-menu__user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Account detail (Block)
+   ========================================================================== */
+.ty-account {
+    margin-top: 30px;
+}
+.ty-account--nopadding {
+    margin: 0;
+}
+.ty-account .ty-input-text {
+    width: 100%;
+}
+.ty-account-detail {
+    margin: 0 0 0 40px;
+    color: #555;
+}
+
+/* Deskripsi & List (Sisi Kanan Atas) */
+.ty-account-detail__description p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.ty-account-detail__description strong {
+    color: #222;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.ty-account-detail__description ul {
+    margin-bottom: 20px;
+}
+.ty-account-detail__description ul li {
+    list-style-type: disc;
+    margin: 10px 0 0 17px;
+    font-size: 14px;
+}
+
+/* Gambar Profile Bulat */
+.ty-account-detail__image-wrapper {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ty-profile-image-container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+.ty-profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #d8d8d8; /* Warna abu-abu placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.ty-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ty-profile-image__text {
+    color: #333;
+    font-weight: 500;
+}
+.ty-profile-image__camera-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #ff4a4a; /* Warna merah is2or */
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.rp-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.rp-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: linear-gradient(135deg, #ff7a3d 0%, #ff5f2e 100%);
+    border-radius: 14px;
+    padding: 28px 32px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.rp-hero__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rp-hero__label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    opacity: .9;
+}
+
+.rp-hero__points {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.rp-hero__value {
+    font-size: 13px;
+    opacity: .9;
+}
+
+.rp-hero__btn {
+    background: #fff;
+    color: #ff5f2e;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+        opacity: .9;
+        text-decoration: none;
+        color: #ff5f2e;
+    }
+}
+
+.rp-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rp-card {
+    background: #f6f7f9;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.rp-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+    &--orange {
+        background: #ffe4d6;
+        color: #ff5f2e;
+    }
+}
+
+.rp-card__title {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.rp-card__text {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+.rp-history {
+    background: #fff;
+    border: 1px solid #eceef1;
+    border-radius: 12px;
+    padding: 20px 20px 8px;
+}
+
+.rp-history__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.rp-history__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.rp-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead th {
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: .03em;
+        color: #9aa0a6;
+        font-weight: 600;
+        padding: 10px 8px;
+        border-bottom: 1px solid #eceef1;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    td {
+        padding: 14px 8px;
+        border-bottom: 1px solid #f1f2f4;
+        font-size: 14px;
+        color: #1a1a1a;
+        vertical-align: middle;
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+}
+
+.rp-table__points {
+    text-align: right;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.rp-points--pos {
+    color: #16a34a;
+}
+
+.rp-points--neg {
+    color: #dc2626;
+}

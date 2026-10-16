@@ -1,0 +1,49 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+
+msgctxt "Languages::is2or_spl_integration.verification_status"
+msgid "is2or_spl_integration.verification_status"
+msgstr "التحقق من العنوان"
+
+msgctxt "Languages::is2or_spl_integration.status_verified"
+msgid "is2or_spl_integration.status_verified"
+msgstr "تم التحقق"
+
+msgctxt "Languages::is2or_spl_integration.status_failed"
+msgid "is2or_spl_integration.status_failed"
+msgstr "فشل التحقق"
+
+msgctxt "Languages::is2or_spl_integration.status_overridden"
+msgid "is2or_spl_integration.status_overridden"
+msgstr "تجاوز يدوي"
+
+msgctxt "Languages::is2or_spl_integration.status_pending"
+msgid "is2or_spl_integration.status_pending"
+msgstr "قيد الانتظار"
+
+msgctxt "Languages::is2or_spl_integration.verified_at"
+msgid "is2or_spl_integration.verified_at"
+msgstr "تاريخ التحقق"
+
+msgctxt "Languages::is2or_spl_integration.verification_message"
+msgid "is2or_spl_integration.verification_message"
+msgstr "التفاصيل"
+
+msgctxt "Languages::is2or_spl_integration.reverify"
+msgid "is2or_spl_integration.reverify"
+msgstr "إعادة التحقق"
+
+msgctxt "Languages::is2or_spl_integration.override_publish"
+msgid "is2or_spl_integration.override_publish"
+msgstr "تجاوز ونشر"
+
+msgctxt "Languages::is2or_spl_integration.clear_override"
+msgid "is2or_spl_integration.clear_override"
+msgstr "إزالة التجاوز"
+
+msgctxt "Languages::is2or_spl_integration.spl_status"
+msgid "is2or_spl_integration.spl_status"
+msgstr "حالة العنوان الوطني"

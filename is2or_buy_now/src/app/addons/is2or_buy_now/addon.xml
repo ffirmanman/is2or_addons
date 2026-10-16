@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_buy_now</id>
+    <name>IS2OR: Buy Now</name>
+    <version>1.0</version>
+    <priority>1</priority>
+    <position>1000</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+</addon>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
+    <id>moyasar_payment</id>
+    <name>IS2OR: Moyasar Payment Method</name>
+    <supplier>IS2OR</supplier>
+    <supplier_link>https://www.moyasar.com/</supplier_link>
+    <version>1.0.0</version>
+    <priority>0</priority>
+    <position>0</position>
+    <default_language>en</default_language>
+    <status>disabled</status>
+    <has_icon>Y</has_icon>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="publicKey">
+                        <type>input</type>
+                    </item>
+                    <item id="secretKey">
+                        <type>input</type>
+                    </item>
+                    <item id="secretTokenWebhook">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+            <section id="payout">
+                <items>
+                    <item id="iban">
+                        <type>hidden</type>
+                    </item>
+                    <item id="payout_id">
+                        <type>hidden</type>
+                    </item>
+                    <item id="currency">
+                        <type>hidden</type>
+                    </item>
+                    <item id="payout_tpl">
+                        <type>template</type>
+                        <default_value>payout.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item type="file">database/data.sql</item>
+    </queries>
+    <functions>
+        <item for="install">moyasar_install</item>
+        <item for="uninstall">moyasar_uninstall</item>
+    </functions>
+    <authors>
+        <author>
+            <name>Mohammad Gifaary</name>
+            <email>muhammadgifary@gmail.com</email>
+        </author>
+    </authors>
+</addon>

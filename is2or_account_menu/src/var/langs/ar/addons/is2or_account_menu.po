@@ -1,0 +1,145 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_account_menu\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "Languages::discard_changes"
+msgid "discard_changes"
+msgstr "تجاهل التغييرات"
+
+msgctxt "Languages::save_profile_details"
+msgid "save_profile_details"
+msgstr "حفظ تفاصيل الملف الشخصي"
+
+msgctxt "Languages::text_profile_image_updated"
+msgid "text_profile_image_updated"
+msgstr "تم تحديث صورة الملف الشخصي بنجاح."
+
+msgctxt "Languages::total_points_balance"
+msgid "total_points_balance"
+msgstr "إجمالي رصيد النقاط"
+
+msgctxt "Languages::estimated_value"
+msgid "estimated_value"
+msgstr "القيمة التقديرية"
+
+msgctxt "Languages::redeem_now"
+msgid "redeem_now"
+msgstr "استبدل الآن"
+
+msgctxt "Languages::rp_shop_and_earn"
+msgid "rp_shop_and_earn"
+msgstr "تسوق واكسب"
+
+msgctxt "Languages::rp_shop_and_earn_text"
+msgid "rp_shop_and_earn_text"
+msgstr "اكسب نقطة واحدة مقابل كل 10 ريال سعودي يتم إنفاقها على أي فئة."
+
+msgctxt "Languages::rp_review_products"
+msgid "rp_review_products"
+msgstr "مراجعة المنتجات"
+
+msgctxt "Languages::rp_review_products_text"
+msgid "rp_review_products_text"
+msgstr "احصل على 50 نقطة مقابل كل مراجعة لعملية شراء مؤكدة."
+
+msgctxt "Languages::rp_refer_friends"
+msgid "rp_refer_friends"
+msgstr "دعوة الأصدقاء"
+
+msgctxt "Languages::rp_refer_friends_text"
+msgid "rp_refer_friends_text"
+msgstr "اكسب 500 نقطة عندما يُجري صديقك أول عملية شراء."
+
+msgctxt "Languages::my_points"
+msgid "my_points"
+msgstr "نقاطي"
+
+msgctxt "Languages::move_to_cart"
+msgid "move_to_cart"
+msgstr "نقل إلى سلة التسوق"
+
+msgctxt "Languages::sold_by"
+msgid "sold_by"
+msgstr "يباع بواسطة"
+
+msgctxt "Languages::text_only_x_left_in_stock"
+msgid "text_only_x_left_in_stock"
+msgstr "متبقي [amount] فقط في المخزون"
+
+msgctxt "Languages::text_x_units_left_in_stock"
+msgid "text_x_units_left_in_stock"
+msgstr "متوفر [amount] وحدة في المخزون"
+
+msgctxt "Languages::comparison_list_subtitle"
+msgid "comparison_list_subtitle"
+msgstr "قارن المنتجات جنبًا إلى جنب لاختيار الأفضل."
+
+msgctxt "Languages::key_features"
+msgid "key_features"
+msgstr "الميزات الرئيسية"
+
+msgctxt "Languages::add_product"
+msgid "add_product"
+msgstr "إضافة منتج"
+
+msgctxt "Languages::add_product_subtitle"
+msgid "add_product_subtitle"
+msgstr "تابع التسوق لإضافة منتج آخر إلى المقارنة."
+
+msgctxt "Languages::no_products_selected"
+msgid "no_products_selected"
+msgstr "لم يتم اختيار أي منتجات للمقارنة."
+
+msgctxt "Languages::profile_update_description"
+msgid "profile_update_description"
+msgstr "في هذه الصفحة، يمكنك تعديل بيانات الدخول الخاصة بك والبيانات الشخصية لاستخدامها في عمليات الشراء المستقبلية."
+
+msgctxt "Languages::security_recommendations"
+msgid "security_recommendations"
+msgstr "توصيات أمنية"
+
+msgctxt "Languages::security_rec_dictionary_words"
+msgid "security_rec_dictionary_words"
+msgstr "كلمات القاموس بأي لغة."
+
+msgctxt "Languages::security_rec_spelled_backwards"
+msgid "security_rec_spelled_backwards"
+msgstr "الكلمات المكتوبة بالعكس، الأخطاء الإملائية الشائعة، والاختصارات."
+
+msgctxt "Languages::security_rec_sequences"
+msgid "security_rec_sequences"
+msgstr "التسلسلات أو الحروف المتكررة (مثل 123456، abcdefg)."
+
+msgctxt "Languages::security_rec_personal_info"
+msgid "security_rec_personal_info"
+msgstr "المعلومات الشخصية مثل الأسماء، تواريخ الميلاد، أو أرقام جوازات السفر."
+
+msgctxt "Languages::profile_picture"
+msgid "profile_picture"
+msgstr "الصورة الشخصية"
+
+msgctxt "Languages::image_abbr"
+msgid "image_abbr"
+msgstr "صورة"
+
+msgctxt "Languages::change_profile_picture"
+msgid "change_profile_picture"
+msgstr "تغيير الصورة الشخصية"
+
+msgctxt "Languages::need_help"
+msgid "need_help"
+msgstr "هل تحتاج إلى المساعدة؟"
+
+msgctxt "Languages::profile_update_help_text"
+msgid "profile_update_help_text"
+msgstr "إذا كنت تواجه مشكلة في تحديث ملفك الشخصي، فإن فريق الدعم لدينا متاح على مدار الساعة طوال أيام الأسبوع."
+
+msgctxt "Languages::contact_support"
+msgid "contact_support"
+msgstr "تواصل مع الدعم"
+
+msgctxt "Languages::find_your_order_number"
+msgid "find_your_order_number"
+msgstr "اعثر على رقم طلبك..."

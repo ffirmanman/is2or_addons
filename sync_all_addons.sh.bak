@@ -1,0 +1,99 @@
+#!/bin/bash
+
+# --- KONFIGURASI ---
+# Defaults (can be overridden by .env)
+BASE_SOURCE_DIR="/home/gifary/Documents/web/addons-cscart"
+TARGET_DIR="/home/gifary/Documents/web/multivendor"
+TARGET_OWNER="www-data"
+TARGET_GROUP="www-data"
+TARGET_PERMS="755"
+
+# Load overrides from .env if present (prefer script directory)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ENV_FILE=""
+if [ -f "$SCRIPT_DIR/.env" ]; then
+    ENV_FILE="$SCRIPT_DIR/.env"
+elif [ -f ".env" ]; then
+    ENV_FILE=".env"
+fi
+
+if [ -n "$ENV_FILE" ]; then
+    set -a
+    # shellcheck disable=SC1091
+    . "$ENV_FILE"
+    set +a
+fi
+
+echo "Addon Synscronization Script"
+echo "Sumber Addon: $BASE_SOURCE_DIR"
+echo "Target Multivendor: $TARGET_DIR"
+echo "------------------------------------------------"
+
+for ADDON_PATH in "$BASE_SOURCE_DIR"/*; do
+    if [ -d "$ADDON_PATH" ]; then
+        ADDON_NAME=$(basename "$ADDON_PATH")
+        SRC_DIR="$ADDON_PATH/src"
+
+        echo "------------------------------------------------"
+        echo "Processing: $ADDON_NAME"
+
+        # Cari semua direktori bernama sesuai nama addon di dalam src
+        # Ini mencakup app/addons/name, design/.../addons/name, js/addons/name
+        find "$SRC_DIR" -type d -name "$ADDON_NAME" | while read -r subfolder; do
+            # Ambil path relatif (misal: design/backend/media/images/addons/my_addon)
+            RELATIVE_PATH=${subfolder#$SRC_DIR/}
+
+            # Tentukan folder induk di target (multivendor)
+            TARGET_SUB_DIR=$(dirname "$TARGET_DIR/$RELATIVE_PATH")
+
+            echo "  [Dir]  Copying: $RELATIVE_PATH"
+
+            # Buat folder induk jika belum ada
+            mkdir -p "$TARGET_SUB_DIR"
+
+            # Hapus jika sebelumnya folder asli atau broken link
+            rm -rf "$TARGET_DIR/$RELATIVE_PATH"
+
+            # Copy directory
+            cp -a "$subfolder" "$TARGET_DIR/$RELATIVE_PATH"
+            chown -R "$TARGET_OWNER:$TARGET_GROUP" "$TARGET_DIR/$RELATIVE_PATH"
+            chmod -R "$TARGET_PERMS" "$TARGET_DIR/$RELATIVE_PATH"
+
+             case "$RELATIVE_PATH" in
+               var/themes_repository*)
+                   # Ekstrak path setelah var/themes_repository/
+                   # Kita buat dinamis agar tidak hanya terbatas pada theme 'responsive'
+                   THEME_NAME_PATH=${RELATIVE_PATH#var/themes_repository/}
+
+                   # ACTIVE_THEME_PATH akan menjadi design/themes/responsive/templates/addons/...
+                   ACTIVE_THEME_PATH="design/themes/$THEME_NAME_PATH"
+                   TARGET_ACTIVE_DIR=$(dirname "$TARGET_DIR/$ACTIVE_THEME_PATH")
+
+                   echo "  [Theme] Copying Active: $ACTIVE_THEME_PATH"
+                   mkdir -p "$TARGET_ACTIVE_DIR"
+                   rm -rf "$TARGET_DIR/$ACTIVE_THEME_PATH"
+                   cp -a "$subfolder" "$TARGET_DIR/$ACTIVE_THEME_PATH"
+                   chown -R "$TARGET_OWNER:$TARGET_GROUP" "$TARGET_DIR/$ACTIVE_THEME_PATH"
+                   chmod -R "$TARGET_PERMS" "$TARGET_DIR/$ACTIVE_THEME_PATH"
+                   ;;
+           esac
+        done
+
+        # Cari file bahasa (.po) secara spesifik
+        find "$SRC_DIR/var/langs" -type f -name "$ADDON_NAME.po" 2>/dev/null | while read -r langfile; do
+            RELATIVE_PATH=${langfile#$SRC_DIR/}
+            TARGET_SUB_DIR=$(dirname "$TARGET_DIR/$RELATIVE_PATH")
+
+            echo "  [File] Copying: $RELATIVE_PATH"
+
+            mkdir -p "$TARGET_SUB_DIR"
+            rm -f "$TARGET_DIR/$RELATIVE_PATH"
+            cp -a "$langfile" "$TARGET_DIR/$RELATIVE_PATH"
+            chown "$TARGET_OWNER:$TARGET_GROUP" "$TARGET_DIR/$RELATIVE_PATH"
+            chmod "$TARGET_PERMS" "$TARGET_DIR/$RELATIVE_PATH"
+        done
+    fi
+done
+
+echo "------------------------------------------------"
+echo "Completed all addons has been synchronized."

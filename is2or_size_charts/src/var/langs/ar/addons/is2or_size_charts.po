@@ -1,0 +1,185 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_size_charts\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "Languages::is2or_size_charts.templates"
+msgid "is2or_size_charts.templates"
+msgstr "القوالب"
+
+msgctxt "Languages::is2or_size_charts.template"
+msgid "is2or_size_charts.template"
+msgstr "قالب"
+
+msgctxt "Languages::is2or_size_charts.size_charts"
+msgid "is2or_size_charts.size_charts"
+msgstr "جداول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.size_chart"
+msgid "is2or_size_charts.size_chart"
+msgstr "جدول المقاسات"
+
+msgctxt "Languages::size_chart"
+msgid "size_chart"
+msgstr "جدول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.charts"
+msgid "is2or_size_charts.charts"
+msgstr "جداول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.title"
+msgid "is2or_size_charts.title"
+msgstr "العنوان"
+
+msgctxt "Languages::is2or_size_charts.columns"
+msgid "is2or_size_charts.columns"
+msgstr "الأعمدة"
+
+msgctxt "Languages::is2or_size_charts.editing_template"
+msgid "is2or_size_charts.editing_template"
+msgstr "تعديل القالب"
+
+msgctxt "Languages::is2or_size_charts.new_template"
+msgid "is2or_size_charts.new_template"
+msgstr "قالب جديد"
+
+msgctxt "Languages::is2or_size_charts.code"
+msgid "is2or_size_charts.code"
+msgstr "الكود"
+
+msgctxt "Languages::is2or_size_charts.comment"
+msgid "is2or_size_charts.comment"
+msgstr "تعليق"
+
+msgctxt "Languages::is2or_size_charts.variants"
+msgid "is2or_size_charts.variants"
+msgstr "الأنواع / المتغيرات"
+
+msgctxt "Languages::is2or_size_charts.editing_size_chart"
+msgid "is2or_size_charts.editing_size_chart"
+msgstr "تعديل جدول المقاسات"
+
+msgctxt "Languages::is2or_size_charts.new_size_chart"
+msgid "is2or_size_charts.new_size_chart"
+msgstr "جدول مقاسات جديد"
+
+msgctxt "Languages::is2or_size_charts.sample_chart"
+msgid "is2or_size_charts.sample_chart"
+msgstr "نموذج الجدول"
+
+msgctxt "Languages::is2or_size_charts.applies"
+msgid "is2or_size_charts.applies"
+msgstr "ينطبق على"
+
+msgctxt "Languages::is2or_size_charts.brands"
+msgid "is2or_size_charts.brands"
+msgstr "العلامات التجارية"
+
+msgctxt "Languages::is2or_size_charts.all_brands"
+msgid "is2or_size_charts.all_brands"
+msgstr "جميع العلامات التجارية"
+
+msgctxt "Languages::is2or_size_charts.all_categories"
+msgid "is2or_size_charts.all_categories"
+msgstr "جميع الفئات"
+
+msgctxt "Languages::is2or_size_charts.any_product"
+msgid "is2or_size_charts.any_product"
+msgstr "أي منتج"
+
+msgctxt "Languages::is2or_size_charts.add_brands"
+msgid "is2or_size_charts.add_brands"
+msgstr "إضافة علامات تجارية"
+
+msgctxt "Languages::is2or_size_charts.add_brands_and_close"
+msgid "is2or_size_charts.add_brands_and_close"
+msgstr "إضافة علامات تجارية وإغلاق"
+
+msgctxt "Languages::is2or_size_charts.brand_id"
+msgid "is2or_size_charts.brand_id"
+msgstr "معرف العلامة التجارية"
+
+msgctxt "Languages::is2or_size_charts.chart_applies_text"
+msgid "is2or_size_charts.chart_applies_text"
+msgstr "يمكنك تحديد العلامة التجارية، الفئة، ومنتجات معينة ينطبق عليها هذا الجدول. إذا اخترت مزيجاً (مثلاً: العلامة التجارية والفئة)، فيجب أن تكون جميعها صالحة حتى يتم تطبيق الجدول. على سبيل المثال، إذا اخترت ماركة Adidas وفئة الأحذية، فسيتم تطبيق الجدول فقط على منتجات Adidas ضمن فئة الأحذية."
+
+msgctxt "Languages::is2or_size_charts.applied_size_chart"
+msgid "is2or_size_charts.applied_size_chart"
+msgstr "جدول المقاسات المطبق"
+
+msgctxt "Languages::is2or_size_charts.no_size_chart_applies"
+msgid "is2or_size_charts.no_size_chart_applies"
+msgstr "لا يوجد جدول مقاسات منطبق"
+
+msgctxt "Languages::is2or_size_charts.text_before"
+msgid "is2or_size_charts.text_before"
+msgstr "النص قبل"
+
+msgctxt "Languages::is2or_size_charts.text_after"
+msgid "is2or_size_charts.text_after"
+msgstr "النص بعد"
+
+msgctxt "Languages::is2or_size_charts.product_tab_info"
+msgid "is2or_size_charts.product_tab_info"
+msgstr "يوجد أيضاً خيار متاح في (التصميم -> تبويبات المنتجات) لتمكين أو تعطيل تبويب جدول المقاسات ليظهر في الأسفل مع الميزات والمعلومات الأخرى. إذا كنت ترغب في التبويب فقط، فاختر 'لا شيء' في الإعداد أعلاه."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_product_page"
+msgid "Select the location in product page to display size chart."
+msgstr "اختر موقع العرض في صفحة المنتج لإظهار جدول المقاسات."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_product_page_type"
+msgid "In case you set a product page location you can select if the chart will be shown in the page or a link to show chart in popup."
+msgstr "في حال قمت بتحديد موقع في صفحة المنتج، يمكنك اختيار ما إذا كان الجدول سيظهر مباشرة في الصفحة أو كرابط يفتح الجدول في نافذة منبثقة (Popup)."
+
+msgctxt "SettingsTooltips::is2or_size_charts::show_in_table_mode_texts"
+msgid "This applies only if chart is shown inside product information and type is table."
+msgstr "ينطبق هذا فقط إذا كان الجدول معروضاً داخل معلومات المنتج ونوعه 'جدول'."
+
+msgctxt "Languages::is2or_size_charts.shoulder_width"
+msgid "Shoulder width"
+msgstr "عرض الكتف"
+
+msgctxt "Languages::is2or_size_charts.chest_bust_size"
+msgid "Chest/Bust size"
+msgstr "مقاس الصدر"
+
+msgctxt "Languages::is2or_size_charts.waist_size"
+msgid "Waist size"
+msgstr "مقاس الخصر"
+
+msgctxt "Languages::is2or_size_charts.hips_size"
+msgid "Hips size"
+msgstr "مقاس الأرداف"
+
+msgctxt "Languages::is2or_size_charts.thigh_size"
+msgid "Thigh size"
+msgstr "مقاس الفخذ"
+
+msgctxt "Languages::is2or_size_charts.inseam_length"
+msgid "Inseam length"
+msgstr "طول الدرز الداخلي"
+
+msgctxt "Languages::is2or_size_charts.outseam_length"
+msgid "Outseam length"
+msgstr "طول الدرز الخارجي"
+
+msgctxt "Languages::is2or_size_charts.foot_width"
+msgid "Foot width"
+msgstr "عرض القدم"
+
+msgctxt "Languages::is2or_size_charts.foot_length"
+msgid "Foot length"
+msgstr "طول القدم"
+
+msgctxt "Languages::is2or_size_charts.customer_size_recomendation"
+msgid "Customer size recomendation"
+msgstr "توصية المقاس للعميل"
+
+msgctxt "Languages::is2or_size_charts.my_size"
+msgid "My size"
+msgstr "مقاسي"
+
+msgctxt "Languages::is2or_size_charts.recommended_size"
+msgid "Recommended Size: <strong>[size]</strong>"
+msgstr "المقاس الموصى به: <strong>[size]</strong>"

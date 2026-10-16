@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ar\n"
+
+msgctxt "Languages::refund_status"
+msgid "حالة الاسترداد"
+msgstr "حالة الاسترداد"
+
+msgctxt "Languages::refund_action"
+msgid "إجراء الاسترداد"
+msgstr "إجراء الاسترداد"
+
+msgctxt "Languages::refund_total"
+msgid "إجمالي مبلغ الاسترداد"
+msgstr "إجمالي مبلغ الاسترداد"
+
+msgctxt "Languages::refund_url"
+msgid "رابط الاسترداد"
+msgstr "رابط الاسترداد"
+
+msgctxt "Languages::refund_description"
+msgid "تفاصيل الاسترداد"
+msgstr "تفاصيل الاسترداد"
+
+msgctxt "Languages::view_refund_details"
+msgid "عرض تفاصيل الاسترداد"
+msgstr "عرض تفاصيل الاسترداد"

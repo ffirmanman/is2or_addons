@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<addon scheme="4.0">
+    <id>sg_quotation</id>
+    <version>1.0</version>
+    <priority>10020</priority>
+    <position>598901</position>
+    <status>active</status>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>Ecartify Solutions</supplier>
+    <supplier_link>https://www.ecartify.com</supplier_link>
+    <autoload>
+        <psr4 prefix="Tygh\Addons\SgQuotation\">src</psr4>
+    </autoload>
+    <bootstrap>\Tygh\Addons\SgQuotation\Bootstrap</bootstrap>
+    <installer>\Tygh\Addons\SgQuotation\Installer</installer>
+    <settings edition_type="ROOT,ULT:VENDOR">
+		<sections>
+			<section id="general">
+				<items>
+                    <item id="sg_email_notification">
+						<type>input</type>
+						<default_value>example@email.com</default_value>
+					</item>
+                    <item id="expire_days">
+						<type>input</type>
+						<default_value>7</default_value>
+					</item>
+                    <item id="allow_vendor_wise_quotation">
+						<type>checkbox</type>
+					</item>
+				</items>
+			</section>
+		</sections>
+	</settings>
+    <queries>
+        <item for="install">
+            ALTER TABLE ?:products ADD `allow_sg_quotation` CHAR(1) NOT NULL DEFAULT 'Y';
+        </item>
+
+        <item for="uninstall">
+            ALTER TABLE ?:products DROP `allow_sg_quotation`;
+        </item>
+
+        <item for="install">
+            ALTER TABLE ?:products ADD `sg_quotation_note` text NOT NULL DEFAULT '';
+        </item>
+
+        <item for="uninstall">
+            ALTER TABLE ?:products DROP `sg_quotation_note`;
+        </item>
+
+        <item for="install">DROP TABLE IF EXISTS ?:sg_quotations;</item>
+        <item for="install">
+            CREATE TABLE `?:sg_quotations` (
+                `quotation_id` int(11) unsigned NOT NULL auto_increment,
+                `user_id` int(11) unsigned NOT NULL,
+                `product_id` text NULL,
+                `company_id` text NOT NULL,
+                `price` decimal(11,2) NULL,
+                `customer_name` varchar(128) NOT NULL default '',
+                `customer_email` varchar(128) NOT NULL default '',
+                `customer_phone` varchar(128) NOT NULL default '',
+                `required_qty` text NULL,
+                `note` text NULL,
+                `created_at` text NULL,
+                `approved_at` text NULL,
+                `order_id` int(11) NULL,
+                `order_placed_at` text NULL,
+                `discounted_price` float NULL,
+                `discount` float NULL,
+                `discount_type` char(1) NULL,
+                `disapproved_reason` text NULL,
+                `approved_by` int(11) NULL,
+                `status` char(11) NULL,
+                PRIMARY KEY  (`quotation_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:sg_quotations;</item>
+    </queries>
+    <email_templates>
+        <templates>
+
+            <!-- 1️⃣ Quotation Created -->
+
+<item>
+                <code><![CDATA[quotation_created_admin]]></code>
+                <area><![CDATA[A]]></area>
+                <status><![CDATA[A]]></status>
+                <default_subject><![CDATA[{{ __("quotation_created_subject_admin") }}]]></default_subject>
+                <default_template><![CDATA[
+                    {{ snippet("header") }}
+
+                    <p>{{ __("hello_name", {"[name]": customer_name}) }},</p>
+                    <p>{{ __("quotation_created_message_admin") }}</p>
+
+                    {% if products %}
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 3px solid #444; color: #444;  text-transofrm: uppercase; border-collapse: separate; font-family: Helvetica, Arial, sans-serif;">
+                        <tbody>
+                            <tr style="font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-transform: uppercase; text-align: center; vertical-aling: top;">
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("product_name") }}</td>
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("quantity") }}</td>
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("price") }}</td>
+                            </tr>
+                            {% for  row in products %}
+                                <tr style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; text-align: center; vertical-aling: middle;">
+                                    {% for  column in row %}
+                                        <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">{{ column }}</td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% endif %}
+                    <p>{{ __("quotation_created_by") }}:- </p><a href="{{ userurl }}" tartget='_blank' >{{ username}}</a>
+                    <p>{{ __("we_will_review_and_get_back_admin") }}</p>
+
+                    {{ snippet("footer") }}
+                
+                ]]></default_template>
+                <addon><![CDATA[sg_quotation]]></addon>
+            </item>
+
+            <item>
+                <code><![CDATA[quotation_created]]></code>
+                <area><![CDATA[C]]></area>
+                <status><![CDATA[A]]></status>
+                <default_subject><![CDATA[{{ __("quotation_created_subject") }}]]></default_subject>
+                <default_template><![CDATA[
+                    {{ snippet("header") }}
+
+                    <p>{{ __("hello_name", {"[name]": customer_name}) }},</p>
+                    <p>{{ __("quotation_created_message") }}</p>
+
+                    {% if products %}
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 3px solid #444; color: #444;  text-transofrm: uppercase; border-collapse: separate; font-family: Helvetica, Arial, sans-serif;">
+                        <tbody>
+                            <tr style="font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-transform: uppercase; text-align: center; vertical-aling: top;">
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("product_name") }}</td>
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("quantity") }}</td>
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("price") }}</td>
+                            </tr>
+                            {% for  row in products %}
+                                <tr style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; text-align: center; vertical-aling: middle;">
+                                    {% for  column in row %}
+                                        <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">{{ column }}</td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% endif %}
+                    <p>{{ __("we_will_review_and_get_back") }}</p>
+
+                    {{ snippet("footer") }}
+                
+                ]]></default_template>
+                <addon><![CDATA[sg_quotation]]></addon>
+            </item>
+
+            <!-- 2️⃣ Quotation Approved -->
+            <item>
+                <code><![CDATA[quotation_approved]]></code>
+                <area><![CDATA[C]]></area>
+                <status><![CDATA[A]]></status>
+                <default_subject><![CDATA[{{ __("quotation_approved_subject") }}]]></default_subject>
+                <default_template><![CDATA[
+                {{ snippet("header") }}
+
+                    <p>{{ __("hello_name", {"[name]": customer_name}) }},</p>
+                    <p>{{ __("quotation_approved_message") }}</p>
+
+                    <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+                        <tr>
+                            <th style="text-align:left; border-bottom:1px solid #ccc; padding:8px;">{{ __("product_name") }}</th>
+                            <th style="text-align:left; border-bottom:1px solid #ccc; padding:8px;">{{ __("quantity") }}</th>
+                            <th style="text-align:left; border-bottom:1px solid #ccc; padding:8px;">{{ __("price") }}</th>
+                        </tr>
+                        {% for  row in products %}
+                            <tr style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; text-align: center; vertical-aling: middle;">
+                                {% for  column in row %}
+                                    <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">{{ column }}</td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                        {% if quotation_total %}
+                                <tr style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; text-align: center; vertical-aling: middle;">
+                                    <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">{% if quotation_discount %}{{__('subtotal')}} {% else %} {{__('total')}} {% endif %}</td>
+                                        <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;"></td>
+                                        <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">{{ quotation_total }}</td>
+                                </tr>
+                        {% endif %}
+                        {% if quotation_discount %}
+                                    <tr style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; text-align: center; vertical-aling: middle;">
+                                    <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">Discounted Price</td>
+                                        <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;"></td>
+                                        <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">{{ quotation_discount }}</td>
+                                </tr>
+                        {% endif %}
+
+                    </table>
+
+                    <p>{{ __("quotation_approved_next_steps") }}</p><a href="{{ placeorderhref }}" target="_blank">{{__("proceed_to_payment")}}</a>
+
+                    {{ snippet("footer") }}
+                
+                ]]></default_template>
+                <addon><![CDATA[sg_quotation]]></addon>
+            </item>
+
+            <!-- 3️⃣ Quotation Declined -->
+            <item>
+                <code><![CDATA[quotation_declined]]></code>
+                <area><![CDATA[C]]></area>
+                <status><![CDATA[A]]></status>
+                <default_subject><![CDATA[{{ __("quotation_declined_subject") }}]]></default_subject>
+                <default_template><![CDATA[
+                    {{ snippet("header") }}
+
+                    <p>{{ __("hello_name", {"[name]": customer_name}) }},</p>
+                    <p>{{ __("quotation_declined_message") }}</p>
+
+                    {% if products %}
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 3px solid #444; color: #444;  text-transofrm: uppercase; border-collapse: separate; font-family: Helvetica, Arial, sans-serif;">
+                        <tbody>
+                            <tr style="font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-transform: uppercase; text-align: center; vertical-aling: top;">
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("product_name") }}</td>
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("quantity") }}</td>
+                                <td style="padding:10px; font-family: Helvetica, Arial, sans-serif;">{{ __("price") }}</td>
+                            </tr>
+                            {% for  row in products %}
+                                <tr style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-transform: uppercase; text-align: center; vertical-aling: middle;">
+                                    {% for  column in row %}
+                                        <td style="padding:10px 0px; border-bottom: 1px solid #ebebeb; font-family: Helvetica, Arial, sans-serif;">{{ column }}</td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% endif %}
+
+                    <p>{{ __("quotation_declined_reason", {"[reason]": decline_reason}) }}</p>
+
+                    <p>{{ __("quotation_contact_support") }}</p>
+
+                    {{ snippet("footer") }}
+                
+                ]]></default_template>
+                <addon><![CDATA[sg_quotation]]></addon>
+            </item>
+
+        </templates>
+    </email_templates>
+</addon>

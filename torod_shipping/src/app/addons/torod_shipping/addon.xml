@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>torod_shipping</id>
+    <version>1.0</version>
+    <priority>60000</priority>
+    <position>0</position>
+    <status>disabled</status>
+    <supplier>IS2OR</supplier>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <settings edition_type="ROOT,STOREFRONT">
+        <sections>
+            <section id="general">
+                <name>General Settings</name>
+                <items>
+                    <item id="torod_client_id">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="torod_client_secret">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="torod_api_url">
+                        <type>input</type>
+                        <default_value>https://demo.stage.torod.co/en/api</default_value>
+                    </item>
+                    <item id="torod_production_api_url">
+                        <type>input</type>
+                        <default_value>https://api.torod.co/en/api</default_value>
+                    </item>
+                    <item id="torod_mode">
+                        <type>selectbox</type>
+                        <default_value>staging</default_value>
+                        <variants>
+                            <item id="staging">
+                            </item>
+                            <item id="production">
+                            </item>
+                        </variants>
+                    </item>
+                    <item id="torod_webhook_secret_key">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="torod_cod_payment_method_id">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                </items>
+            </section>
+            <section id="status_mapping">
+                <name>Webhook Status Mapping</name>
+                <items>
+                    <item id="webhook_ready_for_pickup">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_in_transit">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_delivered">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_failed_to_deliver">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_failed_to_attempt">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_cancelled">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_rto">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_damage">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_pending_pickup">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_picked_up">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_out_for_delivery">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_partial_delivery">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_rescheduled">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_rto_in_progress">
+                        <type>selectbox</type>
+                    </item>
+                    <item id="webhook_lost">
+                        <type>selectbox</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <functions>
+        <item for="install">fn_torod_shipping_install</item>
+        <item for="uninstall">fn_torod_shipping_uninstall</item>
+    </functions>
+    <queries>
+        <item>DROP TABLE IF EXISTS ?:torod_shipments;</item>
+        <item>
+            CREATE TABLE IF NOT EXISTS `?:torod_shipments` (
+            `id` int(11) unsigned NOT NULL auto_increment,
+            `shipment_id` int(12) NOT NULL default 0,
+            `order_id` int(12) NOT NULL,
+            `company_id` int(12) NOT NULL,
+            `torod_order_id` varchar(255) NOT NULL default '',
+            `torod_tracking_id` varchar(255) NOT NULL default '',
+            `courier_name` varchar(64) NOT NULL default '',
+            `delivery_tracking_url` varchar(512) NOT NULL default '',
+            `awb_url` varchar(512) NOT NULL default '',
+            `status` varchar(32) NOT NULL default '',
+            `created_at` int(11) unsigned NOT NULL default 0,
+            `updated_at` int(11) unsigned NOT NULL default 0,
+            PRIMARY KEY  (`id`),
+            KEY `shipment_id` (`shipment_id`),
+            KEY `order_id` (`order_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">ALTER TABLE ?:companies ADD COLUMN `warehouse_code` VARCHAR(6) NOT NULL DEFAULT ''</item>
+        <item for="install">ALTER TABLE ?:companies ADD COLUMN `warehouse_code_created_at` INT(11) UNSIGNED NOT NULL DEFAULT 0</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:torod_shipments;</item>
+        <item for="uninstall">ALTER TABLE ?:companies DROP COLUMN `warehouse_code`, DROP COLUMN `warehouse_code_created_at`</item>
+    </queries>
+</addon>

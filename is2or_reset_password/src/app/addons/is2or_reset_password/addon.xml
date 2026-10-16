@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_reset_password</id>
+    <version>1.0</version>
+    <priority>100</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <name>IS2OR: Reset Password</name>
+    <description>Redirect password recovery link to a dedicated reset password page instead of profile update page.</description>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+</addon>

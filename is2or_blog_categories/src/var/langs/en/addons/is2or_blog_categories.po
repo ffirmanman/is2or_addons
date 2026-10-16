@@ -1,0 +1,17 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::blog_categories"
+msgid "Blog categories"
+msgstr "Blog categories"
+
+msgctxt "Languages::is2or_blog_categories.create_category"
+msgid "Create new category"
+msgstr "Create new category"
+
+msgctxt "Languages::is2or_blog_categories.text_category_deleted"
+msgid "Category has been deleted"
+msgstr "Category has been deleted"

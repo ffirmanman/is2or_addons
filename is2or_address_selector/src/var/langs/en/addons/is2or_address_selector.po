@@ -1,0 +1,93 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::is2or_address_selector"
+msgid "IS2OR: Address Selector"
+msgstr "IS2OR: Address Selector"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "English"
+
+msgctxt "Addons::description::is2or_address_selector"
+msgid "Lets customers manage saved delivery addresses and use them as their active location."
+msgstr "Lets customers manage saved delivery addresses and use them as their active location."
+
+msgctxt "Languages::is2or_address_selector.addresses"
+msgid "is2or_address_selector.addresses"
+msgstr "Addresses"
+
+msgctxt "Languages::is2or_address_selector.manage_addresses"
+msgid "is2or_address_selector.manage_addresses"
+msgstr "Manage addresses"
+
+msgctxt "Languages::is2or_address_selector.add_address"
+msgid "is2or_address_selector.add_address"
+msgstr "Add address"
+
+msgctxt "Languages::is2or_address_selector.edit_address"
+msgid "is2or_address_selector.edit_address"
+msgstr "Edit address"
+
+msgctxt "Languages::is2or_address_selector.saved_addresses"
+msgid "is2or_address_selector.saved_addresses"
+msgstr "Saved addresses"
+
+msgctxt "Languages::is2or_address_selector.selected_address"
+msgid "is2or_address_selector.selected_address"
+msgstr "Selected"
+
+msgctxt "Languages::is2or_address_selector.primary_address"
+msgid "is2or_address_selector.primary_address"
+msgstr "Primary"
+
+msgctxt "Languages::is2or_address_selector.use_this_address"
+msgid "is2or_address_selector.use_this_address"
+msgstr "Use this address"
+
+msgctxt "Languages::is2or_address_selector.complete_address_to_select"
+msgid "is2or_address_selector.complete_address_to_select"
+msgstr "Complete the required shipping fields before using this address."
+
+msgctxt "Languages::is2or_address_selector.delivery_address_selected"
+msgid "is2or_address_selector.delivery_address_selected"
+msgstr "Delivery address selected."
+
+msgctxt "Languages::is2or_address_selector.address_saved"
+msgid "is2or_address_selector.address_saved"
+msgstr "Address saved."
+
+msgctxt "Languages::is2or_address_selector.address_deleted"
+msgid "is2or_address_selector.address_deleted"
+msgstr "Address deleted."
+
+msgctxt "Languages::is2or_address_selector.cannot_delete_primary"
+msgid "is2or_address_selector.cannot_delete_primary"
+msgstr "The primary address cannot be deleted."
+
+msgctxt "Languages::is2or_address_selector.no_address_details"
+msgid "is2or_address_selector.no_address_details"
+msgstr "Add the address details to make this profile usable."
+
+msgctxt "Languages::is2or_address_selector.manage_your_addresses"
+msgid "is2or_address_selector.manage_your_addresses"
+msgstr "Choose the address that should drive delivery location and checkout."
+
+msgctxt "Languages::is2or_address_selector.back_to_addresses"
+msgid "is2or_address_selector.back_to_addresses"
+msgstr "Back to addresses"
+
+msgctxt "Languages::is2or_address_selector.address_label"
+msgid "is2or_address_selector.address_label"
+msgstr "Address label"
+
+msgctxt "Languages::is2or_address_selector.manage_from_account"
+msgid "is2or_address_selector.manage_from_account"
+msgstr "Manage from account"
+
+msgctxt "Languages::is2or_address_selector.incomplete_address"
+msgid "is2or_address_selector.incomplete_address"
+msgstr "Needs completion"

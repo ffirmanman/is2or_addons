@@ -1,0 +1,161 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::checkout"
+msgid "checkout"
+msgstr "Checkout"
+
+msgctxt "Languages::delivering_to"
+msgid "delivering_to"
+msgstr "Delivering to"
+
+msgctxt "Languages::change"
+msgid "change"
+msgstr "Change"
+
+msgctxt "Languages::your_order"
+msgid "your_order"
+msgstr "Your Order"
+
+msgctxt "Languages::edit"
+msgid "edit"
+msgstr "Edit"
+
+msgctxt "Languages::unit_price"
+msgid "unit_price"
+msgstr "Unit Price"
+
+msgctxt "Languages::quantity"
+msgid "quantity"
+msgstr "Quantity"
+
+msgctxt "Languages::vendor"
+msgid "vendor"
+msgstr "Vendor"
+
+msgctxt "Languages::remove"
+msgid "remove"
+msgstr "Remove"
+
+msgctxt "Languages::choose_delivery_option"
+msgid "choose_delivery_option"
+msgstr "Choose delivery option"
+
+msgctxt "Languages::estimated_delivery"
+msgid "estimated_delivery"
+msgstr "Estimated delivery"
+
+msgctxt "Languages::free"
+msgid "free"
+msgstr "Free"
+
+msgctxt "Languages::no_shipping_methods"
+msgid "no_shipping_methods"
+msgstr "No shipping methods available"
+
+msgctxt "Languages::pay_with"
+msgid "pay_with"
+msgstr "Pay With"
+
+msgctxt "Languages::use_promo"
+msgid "use_promo"
+msgstr "Use Promo"
+
+msgctxt "Languages::insert_promotion_code"
+msgid "insert_promotion_code"
+msgstr "Insert promotion code"
+
+msgctxt "Languages::order_summary"
+msgid "order_summary"
+msgstr "Order Summary"
+
+msgctxt "Languages::amount"
+msgid "amount"
+msgstr "Amount"
+
+msgctxt "Languages::item"
+msgid "item"
+msgstr "item"
+
+msgctxt "Languages::items"
+msgid "items"
+msgstr "items"
+
+msgctxt "Languages::shipping"
+msgid "shipping"
+msgstr "Shipping"
+
+msgctxt "Languages::included"
+msgid "included"
+msgstr "included"
+
+msgctxt "Languages::payment_surcharge"
+msgid "payment_surcharge"
+msgstr "Payment surcharge"
+
+msgctxt "Languages::discount"
+msgid "discount"
+msgstr "Discount"
+
+msgctxt "Languages::order_total"
+msgid "order_total"
+msgstr "Order Total"
+
+msgctxt "Languages::place_order"
+msgid "place_order"
+msgstr "Place Order"
+
+msgctxt "Languages::by_placing_order_agree"
+msgid "by_placing_order_agree"
+msgstr "By placing an order, you agree to our"
+
+msgctxt "Languages::terms_and_conditions"
+msgid "terms_and_conditions"
+msgstr "Terms and Conditions"
+
+msgctxt "Languages::recipient"
+msgid "recipient"
+msgstr "Recipient"
+
+msgctxt "Languages::phone"
+msgid "phone"
+msgstr "Phone"
+
+msgctxt "Languages::instant"
+msgid "instant"
+msgstr "Instant"
+
+msgctxt "Languages::same_day"
+msgid "same_day"
+msgstr "Same Day"
+
+msgctxt "Languages::regular"
+msgid "regular"
+msgstr "Regular"
+
+msgctxt "Languages::bulky_shipping"
+msgid "bulky_shipping"
+msgstr "Bulky Shipping"
+
+msgctxt "Languages::change_delivery_address"
+msgid "change_delivery_address"
+msgstr "Change Delivery Address"
+
+msgctxt "Languages::add_new_address"
+msgid "add_new_address"
+msgstr "Add new address"
+
+msgctxt "Languages::edit_address"
+msgid "edit_address"
+msgstr "Edit address"
+
+msgctxt "Languages::selected"
+msgid "selected"
+msgstr "Selected"
+
+msgctxt "Languages::choose"
+msgid "choose"
+msgstr "Choose"

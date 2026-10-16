@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_communication_guard</id>
+    <version>1.0</version>
+    <priority>100</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <name>IS2OR: Communication Guard</name>
+    <description>Automatically masks contact information (emails, phone numbers, URLs, and messaging app keywords) in vendor-buyer communication message threads to prevent off-platform contact.</description>
+    <supplier>IS2OR</supplier>
+</addon>

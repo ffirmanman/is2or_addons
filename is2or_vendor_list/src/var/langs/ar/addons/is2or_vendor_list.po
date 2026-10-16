@@ -1,0 +1,78 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_checkout_page\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+
+msgctxt "Languages::block_is2or_vendor_list"
+msgid "IS2OR: قائمة البائعين"
+msgstr "IS2OR: قائمة البائعين"
+
+msgctxt "Languages::block_is2or_vendor_list_description"
+msgid "قائمة بائعين قابلة للتخصيص بتخطيط تمرير أو شبكة"
+msgstr "قائمة بائعين قابلة للتخصيص بتخطيط تمرير أو شبكة"
+
+msgctxt "Languages::block_is2or_vendor_catalog_list"
+msgid "IS2OR: قائمة كتالوج البائعين"
+msgstr "IS2OR: قائمة كتالوج البائعين"
+
+msgctxt "Languages::is2or_vendor_list.scrolled_list"
+msgid "قائمة تمرير"
+msgstr "قائمة تمرير"
+
+msgctxt "Languages::is2or_vendor_list.grid_layout"
+msgid "تخطيط شبكة"
+msgstr "تخطيط شبكة"
+
+msgctxt "Languages::is2or_vendor_list.limit"
+msgid "الحد"
+msgstr "الحد"
+
+msgctxt "Languages::is2or_vendor_list.limit.tooltip"
+msgid "ضع 0 لعرض جميع البائعين المطابقين."
+msgstr "ضع 0 لعرض جميع البائعين المطابقين."
+
+msgctxt "Languages::is2or_vendor_list.sort"
+msgid "الترتيب"
+msgstr "الترتيب"
+
+msgctxt "Languages::is2or_vendor_list.sort.company"
+msgid "اسم الشركة"
+msgstr "اسم الشركة"
+
+msgctxt "Languages::is2or_vendor_list.category_filter"
+msgid "تصنيفات البائع"
+msgstr "تصنيفات البائع"
+
+msgctxt "Languages::is2or_vendor_list.category_filter.tooltip"
+msgid "سيتم عرض البائعين المرتبطين بأحد التصنيفات المحددة فقط."
+msgstr "سيتم عرض البائعين المرتبطين بأحد التصنيفات المحددة فقط."
+
+msgctxt "Languages::is2or_vendor_list.use_block_title"
+msgid "استخدام عنوان الكتلة"
+msgstr "استخدام عنوان الكتلة"
+
+msgctxt "Languages::is2or_vendor_list.use_block_title.tooltip"
+msgid "اعرض عنوان الكتلة المحدد من لوحة الإدارة بدلاً من عنوان البائعين المختارين الافتراضي."
+msgstr "اعرض عنوان الكتلة المحدد من لوحة الإدارة بدلاً من عنوان البائعين المختارين الافتراضي."
+
+msgctxt "Languages::is2or_vendor_list.vendor_categories"
+msgid "تصنيفات البائع"
+msgstr "تصنيفات البائع"
+
+msgctxt "Languages::is2or_vendor_list.vendor_categories.tooltip"
+msgid "تستخدم هذه التصنيفات في فلتر كتلة قائمة البائعين من IS2OR."
+msgstr "تستخدم هذه التصنيفات في فلتر كتلة قائمة البائعين من IS2OR."
+
+msgctxt "Languages::is2or_vendor_list.all_categories"
+msgid "كل التصنيفات"
+msgstr "كل التصنيفات"
+
+msgctxt "Languages::is2or_vendor_list.selected_sellers"
+msgid "البائعون المختارون"
+msgstr "البائعون المختارون"
+
+msgctxt "Languages::is2or_vendor_list.see_all"
+msgid "عرض الكل"
+msgstr "عرض الكل"

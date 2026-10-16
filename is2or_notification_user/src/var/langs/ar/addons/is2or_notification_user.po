@@ -1,0 +1,97 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_notification_user\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "Languages::block_is2or_notification_user"
+msgid "IS2OR: Notification User"
+msgstr "IS2OR: إشعارات المستخدم"
+
+msgctxt "Languages::block_is2or_notification_user_description"
+msgid "Displays a notification preference panel where customers can choose which email notifications they receive."
+msgstr "يعرض لوحة تفضيلات الإشعارات حيث يمكن للعملاء اختيار إشعارات البريد الإلكتروني التي يرغبون في تلقيها."
+
+msgctxt "Languages::is2or_notification_user.template_name"
+msgid "Notification Settings"
+msgstr "إعدادات الإشعارات"
+
+msgctxt "Languages::is2or_notification_user.title"
+msgid "Notifications"
+msgstr "الإشعارات"
+
+msgctxt "Languages::is2or_notification_user.subtitle"
+msgid "Manage the notifications you want to receive"
+msgstr "إدارة الإشعارات التي ترغب في تلقيها"
+
+msgctxt "Languages::is2or_notification_user.col_notification"
+msgid "Notification"
+msgstr "الإشعار"
+
+msgctxt "Languages::is2or_notification_user.col_email"
+msgid "E-mail"
+msgstr "البريد الإلكتروني"
+
+msgctxt "Languages::is2or_notification_user.save"
+msgid "Save settings"
+msgstr "حفظ الإعدادات"
+
+msgctxt "Languages::is2or_notification_user.saved"
+msgid "Notification preferences saved."
+msgstr "تم حفظ تفضيلات الإشعارات."
+
+msgctxt "Languages::is2or_notification_user.not_logged_in"
+msgid "You must be logged in to manage your notifications."
+msgstr "يجب تسجيل الدخول لإدارة إشعاراتك."
+
+msgctxt "Languages::is2or_notification_user.group_purchase"
+msgid "Purchase Transactions"
+msgstr "معاملات الشراء"
+
+msgctxt "Languages::is2or_notification_user.group_promo"
+msgid "Promo"
+msgstr "العروض الترويجية"
+
+msgctxt "Languages::is2or_notification_user.group_account"
+msgid "Account"
+msgstr "الحساب"
+
+msgctxt "Languages::is2or_notification_user.type_order_placed"
+msgid "Awaiting Payment"
+msgstr "بانتظار الدفع"
+
+msgctxt "Languages::is2or_notification_user.type_order_paid"
+msgid "Awaiting Confirmation"
+msgstr "بانتظار التأكيد"
+
+msgctxt "Languages::is2or_notification_user.type_order_processing"
+msgid "Order Being Processed"
+msgstr "الطلب قيد المعالجة"
+
+msgctxt "Languages::is2or_notification_user.type_order_shipped"
+msgid "Order Shipped"
+msgstr "تم شحن الطلب"
+
+msgctxt "Languages::is2or_notification_user.type_order_completed"
+msgid "Order Completed"
+msgstr "اكتمل الطلب"
+
+msgctxt "Languages::is2or_notification_user.type_order_reminder"
+msgid "Reminder"
+msgstr "تذكير"
+
+msgctxt "Languages::is2or_notification_user.type_newsletter"
+msgid "Newsletter"
+msgstr "النشرة الإخبارية"
+
+msgctxt "Languages::is2or_notification_user.type_promo_coupon"
+msgid "Coupons & Promotions"
+msgstr "القسائم والعروض الترويجية"
+
+msgctxt "Languages::is2or_notification_user.type_account_password"
+msgid "Password Change"
+msgstr "تغيير كلمة المرور"
+
+msgctxt "Languages::is2or_notification_user.type_account_profile"
+msgid "Profile Update"
+msgstr "تحديث الملف الشخصي"

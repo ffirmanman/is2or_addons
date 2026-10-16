@@ -1,0 +1,125 @@
+msgid ""
+msgstr "Project-Id-Version: Moyasar-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Moyasar Plugins Support <tech@Moyasar.com>\n"
+"Language: en_US"
+
+msgctxt "SettingsSections::moyasar_payment::general"
+msgid "general"
+msgstr "General"
+
+msgctxt "SettingsSections::moyasar_payment::payout"
+msgid "payout"
+msgstr "Payout"
+
+msgctxt "SettingsOptions::moyasar_payment::publicKey"
+msgid "publicKey"
+msgstr "Public Key"
+
+msgctxt "SettingsOptions::moyasar_payment::secretKey"
+msgid "secretKey"
+msgstr "Secret Key"
+
+msgctxt "SettingsOptions::moyasar_payment::secretTokenWebhook"
+msgid "secretTokenWebhook"
+msgstr "Secret Token Webhook"
+
+msgctxt "Languages::cardholder_name"
+msgid "cardholder_name"
+msgstr "Card holder name."
+
+msgctxt "Languages::card_number"
+msgid "card_number"
+msgstr "Card number."
+
+msgctxt "Languages::expiry_date"
+msgid "expiry_date"
+msgstr "Expiry Date."
+
+msgctxt "Languages::expiry_month"
+msgid "expiry_month"
+msgstr "Expiry Month."
+
+msgctxt "Languages::expiry_year"
+msgid "expiry_year"
+msgstr "Expiry Year."
+
+msgctxt "Languages::cvv"
+msgid "cvv"
+msgstr "CVV."
+
+msgctxt "Languages::text_installation_warning"
+msgid "text_installation_warning"
+msgstr "You need to configure Moyasar to activate it."
+
+msgctxt "Languages::pay_with_card"
+msgid "pay_with_card"
+msgstr "Pay with Card"
+
+msgctxt "Languages::pay_with_stcpay"
+msgid "pay_with_stcpay"
+msgstr "Pay with STC Pay"
+
+msgctxt "Languages::stcpay_mobile_number"
+msgid "stcpay_mobile_number"
+msgstr "STC Mobile Number"
+
+msgctxt "Languages::enter_your_registered_stcpay_number"
+msgid "enter_your_registered_stcpay_number"
+msgstr "Enter Registered STC Pay Number"
+
+msgctxt "Languages::verify"
+msgid "verify"
+msgstr "Verify"
+
+msgctxt "Languages::stcpay_otp_verification"
+msgid "stcpay_otp_verification"
+msgstr "STC Pay OTP Verification"
+
+msgctxt "Languages::please_enter_otp_sent"
+msgid "please_enter_otp_sent"
+msgstr "Please Enter OTP Sent"
+
+msgctxt "Languages::stcpay.session_expired"
+msgid "stcpay.session_expired"
+msgstr "STC session expired"
+
+msgctxt "Languages::stcpay.stcpay_otp_verification"
+msgid "stcpay_otp_verification"
+msgstr "STC Pay OTP Verification"
+
+msgctxt "Languages::stcpay.invalid_otp_format"
+msgid "stcpay.invalid_otp_format"
+msgstr "STC invalid OTP format"
+
+msgctxt "Languages::moyasar_payment.iban"
+msgid "moyasar_payment.iban"
+msgstr "IBAN"
+
+msgctxt "Languages::moyasar_payment.payout_id"
+msgid "moyasar_payment.payout_id"
+msgstr "Payout ID"
+
+msgctxt "Languages::moyasar_payment.generate_payout_id"
+msgid "moyasar_payment.generate_payout_id"
+msgstr "Generate Payout ID"
+
+msgctxt "Languages::moyasar_payment.regenerate_payout_id"
+msgid "moyasar_payment.regenerate_payout_id"
+msgstr "Regenerate Payout ID"
+
+msgctxt "Languages::moyasar_payment.iban_required"
+msgid "moyasar_payment.iban_required"
+msgstr "IBAN is required"
+
+msgctxt "Languages::moyasar_payment.create_payout_success"
+msgid "moyasar_payment.create_payout_success"
+msgstr "Payout created successfully"
+
+msgctxt "Languages::moyasar_payment.create_payout_error"
+msgid "moyasar_payment.create_payout_error"
+msgstr "Failed to create Payout"
+
+msgctxt "Languages::moyasar_payment.payout_account_not_configured"
+msgid "moyasar_payment.payout_account_not_configured"
+msgstr "Payout account not configured"

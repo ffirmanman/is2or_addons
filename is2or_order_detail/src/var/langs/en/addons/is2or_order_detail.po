@@ -1,0 +1,30 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+
+msgctxt "Languages::refund_status"
+msgid "Refund Status"
+msgstr "Refund Status"
+
+msgctxt "Languages::refund_action"
+msgid "Refund Action"
+msgstr "Refund Action"
+
+msgctxt "Languages::refund_total"
+msgid "Refund Total Amount"
+msgstr "Refund Total Amount"
+
+msgctxt "Languages::refund_url"
+msgid "Refund URL"
+msgstr "Refund URL"
+
+msgctxt "Languages::refund_description"
+msgid "Refund Details"
+msgstr "Refund Details"
+
+msgctxt "Languages::view_refund_details"
+msgid "View Refund Details"
+msgstr "View Refund Details"

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_symbol_sar</id>
+    <version>1.0</version>
+    <priority>6001</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <name>IS2OR: SAR Currency Symbol</name>
+    <description>Adds the official Saudi Riyal (SAR) currency symbol font and styles for both frontend and backend, including correct rendering on order invoices and email fallback.</description>
+    <supplier>IS2OR</supplier>
+</addon>

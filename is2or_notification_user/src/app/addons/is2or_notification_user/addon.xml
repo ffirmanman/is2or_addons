@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_notification_user</id>
+    <version>1.0</version>
+    <priority>5020</priority>
+    <position>1</position>
+    <status>active</status>
+    <auto_install>MULTIVENDOR</auto_install>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <name>IS2OR: Notification User</name>
+    <description>IS2OR: Notification User — lets customers manage which email notifications they want to receive (order updates, promotions, account alerts).</description>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `cscart_is2or_notification_user` (
+                `user_id`   int(11)      NOT NULL DEFAULT 0,
+                `type`      varchar(64)  NOT NULL DEFAULT '',
+                `channel`   varchar(16)  NOT NULL DEFAULT 'email',
+                `enabled`   tinyint(1)   NOT NULL DEFAULT 1,
+                PRIMARY KEY (`user_id`, `type`, `channel`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS `cscart_is2or_notification_user`;
+        </item>
+    </queries>
+    <settings>
+    </settings>
+</addon>

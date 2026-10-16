@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_user_profile</id>
+    <version>1.0</version>
+    <priority>6003</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <name>IS2OR: User Profile Page</name>
+    <description>Extends the user profile page with custom field type renderers: SPL integration address generator (type J) and map-based coordinate picker (type L).</description>
+    <supplier>IS2OR</supplier>
+</addon>

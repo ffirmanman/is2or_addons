@@ -1,0 +1,1 @@
+{style src="addons/is2or_blog_categories/styles.less"}

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_ai_integration</id>
+    <version>1.0</version>
+    <priority>90</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <name>IS2OR: AI Integration</name>
+    <description>Replaces the default CS-Cart storefront search with semantic AI-powered search. Falls back to native CS-Cart search automatically when the AI service is unavailable or returns no results.</description>
+    <supplier>IS2OR</supplier>
+
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="api_base_url">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="api_token">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="search_limit">
+                        <type>input</type>
+                        <default_value>10</default_value>
+                    </item>
+                    <item id="listing_timeout">
+                        <type>input</type>
+                        <default_value>1800</default_value>
+                    </item>
+                    <item id="debug_mode">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_risky_products` (
+                `product_id` int(11) NOT NULL,
+                `suggestion_id` int(11) NOT NULL DEFAULT 0,
+                `risk` varchar(20) NOT NULL DEFAULT '',
+                `action` varchar(20) NOT NULL DEFAULT '',
+                `detail_en` text,
+                `detail_ar` text,
+                `prev_status` char(1) NOT NULL DEFAULT '',
+                `applied_status` char(1) NOT NULL DEFAULT '',
+                `created_at` int(11) NOT NULL DEFAULT 0,
+                `resolved_at` int(11) NOT NULL DEFAULT 0,
+                PRIMARY KEY (`product_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_document_verifications` (
+                `id` int(11) NOT NULL AUTO_INCREMENT,
+                `company_id` int(11) NOT NULL DEFAULT 0,
+                `field_id` int(11) NOT NULL DEFAULT 0,
+                `document_type` varchar(40) NOT NULL DEFAULT '',
+                `filename` varchar(255) NOT NULL DEFAULT '',
+                `suggestion_id` int(11) NOT NULL DEFAULT 0,
+                `status` varchar(30) NOT NULL DEFAULT 'pending_review',
+                `output` text,
+                `error` varchar(255) NOT NULL DEFAULT '',
+                `timestamp` int(11) NOT NULL DEFAULT 0,
+                PRIMARY KEY (`id`),
+                KEY `company_id` (`company_id`),
+                KEY `suggestion_id` (`suggestion_id`),
+                KEY `status` (`status`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS `?:is2or_risky_products`;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS `?:is2or_document_verifications`;
+        </item>
+    </queries>
+</addon>

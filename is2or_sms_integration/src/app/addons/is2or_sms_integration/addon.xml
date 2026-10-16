@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_sms_integration</id>
+    <version>1.0</version>
+    <priority>90</priority>
+    <position>1</position>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR</auto_install>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <name>IS2OR: SMS Integration (Twilio)</name>
+    <description>Base addon for sending SMS notifications via Twilio. Currently supports order status change SMS notifications. Foundation for future OTP / verification SMS features.</description>
+    <supplier>IS2OR</supplier>
+
+    <settings>
+        <sections>
+            <section id="general_twilio">
+                <items>
+                    <item id="twilio_account_sid">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="twilio_auth_token">
+                        <type>password</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="twilio_from_number">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="default_country_code">
+                        <type>input</type>
+                        <default_value>+966</default_value>
+                    </item>
+                    <item id="enabled">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="debug_mode">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="order_notifications">
+                <items>
+                    <item id="order_status_sms_enabled">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="order_status_sms_statuses">
+                        <type>input</type>
+                        <default_value>P</default_value>
+                    </item>
+                    <item id="order_status_sms_template">
+                        <type>textarea</type>
+                        <default_value>Hi {firstname}, your order #{order_id} at {company_name} status has been updated to: {status}.</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="login_otp">
+                <items>
+                    <item id="login_otp_mode">
+                        <type>selectbox</type>
+                        <variants>
+                            <item id="email_only">
+                                <value></value>
+                            </item>
+                            <item id="email_or_otp">
+                                <value></value>
+                            </item>
+                            <item id="email_and_otp">
+                                <value></value>
+                            </item>
+                        </variants>
+                        <default_value>email_only</default_value>
+                    </item>
+                    <item id="login_otp_ttl_minutes">
+                        <type>input</type>
+                        <default_value>5</default_value>
+                    </item>
+                    <item id="login_otp_sms_template">
+                        <type>textarea</type>
+                        <default_value>Your login verification code is {otp_code}. It is valid for {minutes} minutes. Do not share this code with anyone.</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_sms_logs` (
+                `id` int(11) NOT NULL AUTO_INCREMENT,
+                `order_id` int(11) NOT NULL DEFAULT 0,
+                `phone` varchar(30) NOT NULL DEFAULT '',
+                `message` text,
+                `status` varchar(20) NOT NULL DEFAULT '',
+                `response` text,
+                `created_at` int(11) NOT NULL DEFAULT 0,
+                PRIMARY KEY (`id`),
+                KEY `order_id` (`order_id`),
+                KEY `status` (`status`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:is2or_sms_otp_codes` (
+                `id` int(11) NOT NULL AUTO_INCREMENT,
+                `user_id` int(11) NOT NULL DEFAULT 0,
+                `code` varchar(10) NOT NULL DEFAULT '',
+                `phone` varchar(30) NOT NULL DEFAULT '',
+                `is_used` char(1) NOT NULL DEFAULT 'N',
+                `expires_at` int(11) NOT NULL DEFAULT 0,
+                `created_at` int(11) NOT NULL DEFAULT 0,
+                PRIMARY KEY (`id`),
+                KEY `user_id` (`user_id`),
+                KEY `code` (`code`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS `?:is2or_sms_logs`;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS `?:is2or_sms_otp_codes`;
+        </item>
+    </queries>
+</addon>

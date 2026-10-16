@@ -1,0 +1,177 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::is2or_sms_integration.sms_user"
+msgid "SMS User"
+msgstr "SMS User"
+
+msgctxt "Languages::is2or_sms_integration.sms_integration"
+msgid "SMS Integration (Twilio)"
+msgstr "SMS Integration (Twilio)"
+
+msgctxt "Languages::is2or_sms_integration.sms_logs"
+msgid "SMS Logs"
+msgstr "SMS Logs"
+
+msgctxt "Languages::is2or_sms_integration.test_send_sms"
+msgid "Send a SMS"
+msgstr "Send a SMS"
+
+msgctxt "Languages::is2or_sms_integration.test_message_default"
+msgid "This is a SMS from IS2OR SMS Integration."
+msgstr "This is a SMS from IS2OR SMS Integration."
+
+msgctxt "Languages::is2or_sms_integration.phone_number"
+msgid "Phone Number"
+msgstr "Phone Number"
+
+msgctxt "Languages::is2or_sms_integration.message"
+msgid "Message"
+msgstr "Message"
+
+msgctxt "Languages::is2or_sms_integration.send"
+msgid "Send"
+msgstr "Send"
+
+msgctxt "Languages::is2or_sms_integration.log_id"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "Languages::is2or_sms_integration.order_id"
+msgid "Order ID"
+msgstr "Order ID"
+
+msgctxt "Languages::is2or_sms_integration.sms_sent_successfully"
+msgid "SMS has been sent successfully."
+msgstr "SMS has been sent successfully."
+
+msgctxt "Languages::is2or_sms_integration.sms_failed_to_send"
+msgid "Failed to send SMS. Please check your Twilio configuration and the SMS logs."
+msgstr "Failed to send SMS. Please check your Twilio configuration and the SMS logs."
+
+msgctxt "Languages::is2or_sms_integration.phone_and_message_required"
+msgid "Phone number and message are required."
+msgstr "Phone number and message are required."
+
+msgctxt "SettingsSections::general_twilio"
+msgid "General (Twilio Account)"
+msgstr "General (Twilio Account)"
+
+msgctxt "SettingsOptions::twilio_account_sid"
+msgid "Twilio Account SID"
+msgstr "Twilio Account SID"
+
+msgctxt "SettingsOptions::twilio_auth_token"
+msgid "Twilio Auth Token"
+msgstr "Twilio Auth Token"
+
+msgctxt "SettingsOptions::twilio_from_number"
+msgid "Twilio \"From\" Number"
+msgstr "Twilio \"From\" Number"
+
+msgctxt "SettingsOptions::default_country_code"
+msgid "Default Country Code (used when phone number has no leading +)"
+msgstr "Default Country Code (used when phone number has no leading +)"
+
+msgctxt "SettingsOptions::enabled"
+msgid "Enable SMS sending"
+msgstr "Enable SMS sending"
+
+msgctxt "SettingsOptions::debug_mode"
+msgid "Debug mode (log Twilio requests/responses to the event log)"
+msgstr "Debug mode (log Twilio requests/responses to the event log)"
+
+msgctxt "SettingsSections::order_notifications"
+msgid "Order Status Notifications"
+msgstr "Order Status Notifications"
+
+msgctxt "SettingsOptions::order_status_sms_enabled"
+msgid "Send SMS when order status changes"
+msgstr "Send SMS when order status changes"
+
+msgctxt "SettingsOptions::order_status_sms_statuses"
+msgid "Order statuses that trigger SMS (comma-separated status codes, e.g. P,C)"
+msgstr "Order statuses that trigger SMS (comma-separated status codes, e.g. P,C)"
+
+msgctxt "SettingsOptions::order_status_sms_template"
+msgid "SMS template (available variables: {order_id}, {status}, {firstname}, {lastname}, {company_name}, {shop_name})"
+msgstr "SMS template (available variables: {order_id}, {status}, {firstname}, {lastname}, {company_name}, {shop_name})"
+
+msgctxt "SettingsSections::login_otp"
+msgid "Login Method"
+msgstr "Login Method"
+
+msgctxt "SettingsOptions::login_otp_mode"
+msgid "How should customers log in?"
+msgstr "How should customers log in?"
+
+msgctxt "SettingsVariants::is2or_sms_integration::login_otp_mode::email_only"
+msgid "Email only (default, no OTP)"
+msgstr "Email only (default, no OTP)"
+
+msgctxt "SettingsVariants::is2or_sms_integration::login_otp_mode::email_or_otp"
+msgid "Email OR SMS OTP (customer can choose either method)"
+msgstr "Email OR SMS OTP (customer can choose either method)"
+
+msgctxt "SettingsVariants::is2or_sms_integration::login_otp_mode::email_and_otp"
+msgid "Email AND SMS OTP (two-factor: password, then OTP)"
+msgstr "Email AND SMS OTP (two-factor: password, then OTP)"
+
+msgctxt "SettingsOptions::login_otp_ttl_minutes"
+msgid "OTP validity duration (minutes)"
+msgstr "OTP validity duration (minutes)"
+
+msgctxt "SettingsOptions::login_otp_sms_template"
+msgid "Login OTP SMS template (available variables: {otp_code}, {minutes})"
+msgstr "Login OTP SMS template (available variables: {otp_code}, {minutes})"
+
+msgctxt "Languages::is2or_sms_integration.otp_verify_title"
+msgid "Verify Your Identity"
+msgstr "Verify Your Identity"
+
+msgctxt "Languages::is2or_sms_integration.otp_verify_subtitle"
+msgid "We've sent a 6-digit verification code to your registered phone number. Please enter it below to complete your login."
+msgstr "We've sent a 6-digit verification code to your registered phone number. Please enter it below to complete your login."
+
+msgctxt "Languages::is2or_sms_integration.otp_verify_button"
+msgid "Verify & Continue"
+msgstr "Verify & Continue"
+
+msgctxt "Languages::is2or_sms_integration.otp_expires_in"
+msgid "Code expires in"
+msgstr "Code expires in"
+
+msgctxt "Languages::is2or_sms_integration.otp_resend"
+msgid "Resend code"
+msgstr "Resend code"
+
+msgctxt "Languages::is2or_sms_integration.otp_cancel"
+msgid "Cancel and log out"
+msgstr "Cancel and log out"
+
+msgctxt "Languages::is2or_sms_integration.otp_verified"
+msgid "Verification successful. Welcome back!"
+msgstr "Verification successful. Welcome back!"
+
+msgctxt "Languages::is2or_sms_integration.otp_invalid"
+msgid "The code you entered is invalid or has expired. Please try again."
+msgstr "The code you entered is invalid or has expired. Please try again."
+
+msgctxt "Languages::is2or_sms_integration.otp_resent"
+msgid "A new verification code has been sent to your phone."
+msgstr "A new verification code has been sent to your phone."
+
+msgctxt "Languages::is2or_sms_integration.otp_no_phone"
+msgid "No phone number is registered on this account."
+msgstr "No phone number is registered on this account."
+
+msgctxt "Languages::is2or_sms_integration.otp_no_phone_blocked"
+msgid "Your account has no phone number on file, so we can't send a verification code. Please contact support to add a phone number to your account."
+msgstr "Your account has no phone number on file, so we can't send a verification code. Please contact support to add a phone number to your account."
+
+msgctxt "Languages::is2or_sms_integration.otp_resend_failed"
+msgid "We couldn't send a new verification code right now. Please try again in a moment."
+msgstr "We couldn't send a new verification code right now. Please try again in a moment."

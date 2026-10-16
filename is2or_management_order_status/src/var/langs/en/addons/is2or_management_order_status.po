@@ -1,0 +1,137 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsOptions::is2or_management_order_status::packing_status"
+msgid "packing_status"
+msgstr "Packing Status"
+
+msgctxt "SettingsOptions::is2or_management_order_status::declined_status"
+msgid "declined_status"
+msgstr "Declined Status"
+
+msgctxt "SettingsOptions::is2or_management_order_status::shipping_status"
+msgid "shipping_status"
+msgstr "Shipping Status"
+
+msgctxt "SettingsOptions::is2or_management_order_status::paid_status"
+msgid "paid_status"
+msgstr "Paid Status"
+
+msgctxt "SettingsOptions::is2or_management_order_status::delivered_status"
+msgid "delivered_status"
+msgstr "Delivered Status"
+
+msgctxt "SettingsOptions::is2or_management_order_status::cancelled_status"
+msgid "cancelled_status"
+msgstr "Cancelled Status"
+
+msgctxt "SettingsOptions::is2or_management_order_status::complete_status"
+msgid "complete_status"
+msgstr "Complete Status"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_paid_statuses"
+msgid "tab_paid_statuses"
+msgstr "Tab Paid"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_packing_statuses"
+msgid "tab_packing_statuses"
+msgstr "Tab Packing"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_shipping_statuses"
+msgid "tab_shipping_statuses"
+msgstr "Tab Shipping"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_delivered_statuses"
+msgid "tab_delivered_statuses"
+msgstr "Tab Delivered"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_complete_statuses"
+msgid "tab_complete_statuses"
+msgstr "Tab Completed"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_declined_statuses"
+msgid "tab_declined_statuses"
+msgstr "Tab Declined"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_cancelled_statuses"
+msgid "tab_cancelled_statuses"
+msgstr "Tab Cancelled"
+
+msgctxt "SettingsOptions::is2or_management_order_status::tab_return_statuses"
+msgid "tab_return_statuses"
+msgstr "Tab Returned"
+
+msgctxt "Languages::is2or_error_invalid_transition"
+msgid "is2or_error_invalid_transition"
+msgstr "Invalid workflow: Status [from] cannot be changed to [to]."
+
+msgctxt "Languages::is2or_error_webhook_only"
+msgid "is2or_error_webhook_only"
+msgstr "Status 'Delivered' can only be updated via system (Webhook)."
+
+msgctxt "Languages::status_transitions"
+msgid "status_transitions"
+msgstr "Order Status Transitions"
+
+msgctxt "Languages::tt_addon_is2or_management_order_status_status_transitions"
+msgid "tt_addon_is2or_management_order_status_status_transitions"
+msgstr "Define the allowed flow. Format: Origin:Destination1,Destination2 (e.g., P:Y,D)"
+
+msgctxt "Languages::is2or_management_order_status.tab_paid"
+msgid "is2or_management_order_status.tab_paid"
+msgstr "Paid"
+
+msgctxt "Languages::is2or_management_order_status.tab_packing"
+msgid "is2or_management_order_status.tab_packing"
+msgstr "Packing"
+
+msgctxt "Languages::is2or_management_order_status.tab_shipping"
+msgid "is2or_management_order_status.tab_shipping"
+msgstr "Shipping"
+
+msgctxt "Languages::is2or_management_order_status.tab_delivered"
+msgid "is2or_management_order_status.tab_delivered"
+msgstr "Delivered"
+
+msgctxt "Languages::is2or_management_order_status.tab_completed"
+msgid "is2or_management_order_status.tab_completed"
+msgstr "Completed"
+
+msgctxt "Languages::is2or_management_order_status.tab_cancelled"
+msgid "is2or_management_order_status.tab_cancelled"
+msgstr "Cancelled"
+
+msgctxt "Languages::is2or_management_order_status.tab_declined"
+msgid "is2or_management_order_status.tab_declined"
+msgstr "Declined"
+
+msgctxt "Languages::is2or_management_order_status.tab_returned"
+msgid "is2or_management_order_status.tab_returned"
+msgstr "Returned"
+
+msgctxt "Languages::is2or_management_order_status.tab_incomplete"
+msgid "is2or_management_order_status.tab_incomplete"
+msgstr "Pending"
+
+msgctxt "Languages::move_to_packing"
+msgid "move_to_packing"
+msgstr "Packing"
+
+msgctxt "Languages::move_to_declined"
+msgid "move_to_declined"
+msgstr "Declined"
+
+msgctxt "Languages::create_shipments"
+msgid "create_shipments"
+msgstr "Create Shipments"
+
+msgctxt "Languages::is2or_management_order_status.cancel_order"
+msgid "is2or_management_order_status.cancel_order"
+msgstr "Cancel Order"
+
+msgctxt "Languages::is2or_management_order_status.cancel_order_success"
+msgid "is2or_management_order_status.cancel_order_success"
+msgstr "Cancelled"

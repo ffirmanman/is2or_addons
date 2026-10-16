@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>api2cart</id>
+    <version>1.0</version>
+    <priority>60000</priority>
+    <position>100</position>
+    <supplier>IS2OR</supplier>
+    <default_language>en</default_language>
+    <status>disabled</status>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <name>API2Cart Product Sync</name>
+    <description>Syncs CS-Cart products to API2Cart</description>
+    <settings edition_type="ROOT,STOREFRONT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="api_url">
+                        <type>input</type>
+                        <name>API2Cart URL</name>
+                        <tooltip>Ex: https://api.api2cart.com/v1.0/</tooltip>
+                    </item>
+                    <item id="api_key">
+                        <type>input</type>
+                        <name>API Key</name>
+                    </item>
+                    <item id="api_store_key">
+                        <type>input</type>
+                        <name>API Store Key</name>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <queries>
+        <item>DROP TABLE IF EXISTS ?:product_integration;</item>
+        <item>DROP TABLE IF EXISTS ?:category_integration;</item>
+        <item>DROP TABLE IF EXISTS ?:order_integration;</item>
+        <item>
+            CREATE TABLE `?:product_integration` (
+            `id` int(11) unsigned NOT NULL auto_increment,
+            `product_id` int(12) NOT NULL,
+            `reference_product_id` varchar(64) NOT NULL,
+            `source` varchar(32) NOT NULL,
+            PRIMARY KEY (`id`)
+            )Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item>
+            CREATE TABLE `?:category_integration` (
+            `id` int(11) unsigned NOT NULL auto_increment,
+            `category_id` int(12) NOT NULL,
+            `reference_category_id` varchar(64) NOT NULL,
+            `source` varchar(32) NOT NULL,
+            PRIMARY KEY (`id`)
+            )Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item>
+            CREATE TABLE `?:order_integration` (
+            `id` int(11) unsigned NOT NULL auto_increment,
+            `order_id` int(12) NOT NULL,
+            `external_order_id` varchar(64) NOT NULL,
+            `source` varchar(32) NOT NULL,
+            PRIMARY KEY (`id`)
+            )Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:product_integration;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:category_integration;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:order_integration;</item>
+    </queries>
+</addon>

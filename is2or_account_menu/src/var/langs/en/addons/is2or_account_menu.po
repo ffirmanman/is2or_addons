@@ -1,0 +1,145 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Languages::discard_changes"
+msgid "discard_changes"
+msgstr "Discard Changes"
+
+msgctxt "Languages::save_profile_details"
+msgid "save_profile_details"
+msgstr "Save Profile Detail"
+
+msgctxt "Languages::text_profile_image_updated"
+msgid "text_profile_image_updated"
+msgstr "Profile image has been updated successfully."
+
+msgctxt "Languages::total_points_balance"
+msgid "total_points_balance"
+msgstr "TOTAL POINTS BALANCE"
+
+msgctxt "Languages::estimated_value"
+msgid "estimated_value"
+msgstr "Estimated Value"
+
+msgctxt "Languages::redeem_now"
+msgid "redeem_now"
+msgstr "Redeem Now"
+
+msgctxt "Languages::rp_shop_and_earn"
+msgid "rp_shop_and_earn"
+msgstr "Shop & Earn"
+
+msgctxt "Languages::rp_shop_and_earn_text"
+msgid "rp_shop_and_earn_text"
+msgstr "Earn 1 point for every SAR 10 spent on any category."
+
+msgctxt "Languages::rp_review_products"
+msgid "rp_review_products"
+msgstr "Review Products"
+
+msgctxt "Languages::rp_review_products_text"
+msgid "rp_review_products_text"
+msgstr "Get 50 points for every verified purchase review."
+
+msgctxt "Languages::rp_refer_friends"
+msgid "rp_refer_friends"
+msgstr "Refer Friends"
+
+msgctxt "Languages::rp_refer_friends_text"
+msgid "rp_refer_friends_text"
+msgstr "Earn 500 points when a friend makes their first purchase."
+
+msgctxt "Languages::my_points"
+msgid "my_points"
+msgstr "My Points"
+
+msgctxt "Languages::move_to_cart"
+msgid "move_to_cart"
+msgstr "Move to Cart"
+
+msgctxt "Languages::sold_by"
+msgid "sold_by"
+msgstr "Sold by"
+
+msgctxt "Languages::text_only_x_left_in_stock"
+msgid "text_only_x_left_in_stock"
+msgstr "Only [amount] left in stock"
+
+msgctxt "Languages::text_x_units_left_in_stock"
+msgid "text_x_units_left_in_stock"
+msgstr "[amount] units left in stock"
+
+msgctxt "Languages::comparison_list_subtitle"
+msgid "comparison_list_subtitle"
+msgstr "Compare products side by side to find the best choice."
+
+msgctxt "Languages::key_features"
+msgid "key_features"
+msgstr "Key Features"
+
+msgctxt "Languages::add_product"
+msgid "add_product"
+msgstr "Add Product"
+
+msgctxt "Languages::add_product_subtitle"
+msgid "add_product_subtitle"
+msgstr "Continue shopping to compare another product."
+
+msgctxt "Languages::no_products_selected"
+msgid "no_products_selected"
+msgstr "No products have been selected for comparison."
+
+msgctxt "Languages::profile_update_description"
+msgid "profile_update_description"
+msgstr "On this page you can modify your login credentials and personal data to be used during future purchases."
+
+msgctxt "Languages::security_recommendations"
+msgid "security_recommendations"
+msgstr "Security recommendations"
+
+msgctxt "Languages::security_rec_dictionary_words"
+msgid "security_rec_dictionary_words"
+msgstr "Dictionary words in any language."
+
+msgctxt "Languages::security_rec_spelled_backwards"
+msgid "security_rec_spelled_backwards"
+msgstr "Words spelled backwards, common misspellings, and abbreviations."
+
+msgctxt "Languages::security_rec_sequences"
+msgid "security_rec_sequences"
+msgstr "Sequences or repeated characters (e.g., 123456, abcdefg)."
+
+msgctxt "Languages::security_rec_personal_info"
+msgid "security_rec_personal_info"
+msgstr "Personal information like names, birthdays, or passport numbers."
+
+msgctxt "Languages::profile_picture"
+msgid "profile_picture"
+msgstr "Profile Picture"
+
+msgctxt "Languages::image_abbr"
+msgid "image_abbr"
+msgstr "img"
+
+msgctxt "Languages::change_profile_picture"
+msgid "change_profile_picture"
+msgstr "Change Profile Picture"
+
+msgctxt "Languages::need_help"
+msgid "need_help"
+msgstr "NEED HELP?"
+
+msgctxt "Languages::profile_update_help_text"
+msgid "profile_update_help_text"
+msgstr "If you're having trouble updating your profile, our support team is available 24/7."
+
+msgctxt "Languages::contact_support"
+msgid "contact_support"
+msgstr "Contact Support"
+
+msgctxt "Languages::find_your_order_number"
+msgid "find_your_order_number"
+msgstr "Find your order number..."

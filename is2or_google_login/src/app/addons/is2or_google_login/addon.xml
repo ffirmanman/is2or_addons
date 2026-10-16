@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_google_login</id>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <status>active</status>
+    <auto_install>MULTIVENDOR</auto_install>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <name>IS2OR: Google Login</name>
+    <description>IS2OR: Google Login</description>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="google_client_id_android">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                    <item id="google_client_id_ios">
+                        <type>input</type>
+                        <default_value></default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>

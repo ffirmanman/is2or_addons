@@ -1,0 +1,125 @@
+msgid ""
+msgstr "Project-Id-Version: is2or_checkout_page\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: IS2OR\n"
+"Language: ar_SA"
+
+msgctxt "Languages::checkout"
+msgid "checkout"
+msgstr "إتمام الطلب"
+
+msgctxt "Languages::delivering_to"
+msgid "delivering_to"
+msgstr "التوصيل إلى"
+
+msgctxt "Languages::change"
+msgid "change"
+msgstr "تغيير"
+
+msgctxt "Languages::your_order"
+msgid "your_order"
+msgstr "طلبك"
+
+msgctxt "Languages::edit"
+msgid "edit"
+msgstr "تعديل"
+
+msgctxt "Languages::unit_price"
+msgid "unit_price"
+msgstr "سعر الوحدة"
+
+msgctxt "Languages::quantity"
+msgid "quantity"
+msgstr "الكمية"
+
+msgctxt "Languages::vendor"
+msgid "vendor"
+msgstr "البائع"
+
+msgctxt "Languages::remove"
+msgid "remove"
+msgstr "إزالة"
+
+msgctxt "Languages::choose_delivery_option"
+msgid "choose_delivery_option"
+msgstr "اختر خيار التوصيل"
+
+msgctxt "Languages::estimated_delivery"
+msgid "estimated_delivery"
+msgstr "التوصيل المتوقع"
+
+msgctxt "Languages::free"
+msgid "free"
+msgstr "مجاني"
+
+msgctxt "Languages::no_shipping_methods"
+msgid "no_shipping_methods"
+msgstr "لا توجد طرق شحن متاحة"
+
+msgctxt "Languages::pay_with"
+msgid "pay_with"
+msgstr "الدفع بواسطة"
+
+msgctxt "Languages::use_promo"
+msgid "use_promo"
+msgstr "استخدام كود الخصم"
+
+msgctxt "Languages::insert_promotion_code"
+msgid "insert_promotion_code"
+msgstr "أدخل رمز الترويجي"
+
+msgctxt "Languages::order_summary"
+msgid "order_summary"
+msgstr "ملخص الطلب"
+
+msgctxt "Languages::amount"
+msgid "amount"
+msgstr "المبلغ"
+
+msgctxt "Languages::item"
+msgid "item"
+msgstr "منتج"
+
+msgctxt "Languages::items"
+msgid "items"
+msgstr "منتجات"
+
+msgctxt "Languages::shipping"
+msgid "shipping"
+msgstr "الشحن"
+
+msgctxt "Languages::included"
+msgid "included"
+msgstr "مشمول"
+
+msgctxt "Languages::payment_surcharge"
+msgid "payment_surcharge"
+msgstr "رسوم إضافية للدفع"
+
+msgctxt "Languages::discount"
+msgid "discount"
+msgstr "الخصم"
+
+msgctxt "Languages::order_total"
+msgid "order_total"
+msgstr "إجمالي الطلب"
+
+msgctxt "Languages::place_order"
+msgid "place_order"
+msgstr "إتمام الشراء"
+
+msgctxt "Languages::by_placing_order_agree"
+msgid "by_placing_order_agree"
+msgstr "بإتمامك للطلب، أنت توافق على"
+
+msgctxt "Languages::terms_and_conditions"
+msgid "terms_and_conditions"
+msgstr "الشروط والأحكام"
+
+msgctxt "Languages::recipient"
+msgid "recipient"
+msgstr "المستلم"
+
+msgctxt "Languages::phone"
+msgid "phone"
+msgstr "رقم الهاتف"

@@ -1,0 +1,18 @@
+msgid ""
+msgstr "Project-Id-Version: Moyasar-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: dineropay Plugins Support <tech@dineropay.com>\n"
+"Language: en_US"
+
+msgctxt "Languages::text_installation_warning"
+msgid "text_installation_warning"
+msgstr "You need to configure dineropay to activate it."
+
+
+msgctxt "SettingsOptions::dineropay_payment::merchantKey"
+msgid "merchantKey"
+msgstr "Merchant Key"
+
+msgctxt "SettingsOptions::dineropay_payment::merchantPassword"
+msgid "merchantPassword"
+msgstr "Merchant Password"

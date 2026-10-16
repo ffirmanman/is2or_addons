@@ -1,0 +1,1 @@
+{include file="addons/is2or_voice_search/components/voice_search.tpl"}

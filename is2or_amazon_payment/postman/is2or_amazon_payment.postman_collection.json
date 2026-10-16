@@ -1,0 +1,648 @@
+{
+  "info": {
+    "_postman_id": "0ff41184-bfbe-4c1b-b4bf-cc67b8f5dd5f",
+    "name": "is2or_amazon_payment - API & APS Flow",
+    "description": "Postman collection generated from `Tygh\\Api\\Entities\\Is2orAmazonPayments` and related routes in `amazon_payment_services` package.\n\nMain API entity operations:\n- POST /api/{{entity_path}} (create)\n- PUT /api/{{entity_path}}/:order_id (update)\n- GET /api/{{entity_path}} (expected 405)\n- DELETE /api/{{entity_path}}/:order_id (expected 405)\n\nIf your CS-Cart route name is singular, set `entity_path` to `is2or_amazon_payment`. Default is `is2or_amazon_payments`.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Is2orAmazonPayments Entity",
+      "item": [
+        {
+          "name": "Create Payment Session (POST /api/{{entity_path}})",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{api_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"order_id\": {{order_id}}\n}"
+            },
+            "url": "{{base_url}}/api/{{entity_path}}",
+            "description": "Mapped to `create($params)` in `Is2orAmazonPayments`. Requires authenticated customer and owned `order_id`. Returns checkout payload (`checkout_url`, `post_params`, `webview_direct_url`)."
+          },
+          "response": []
+        },
+        {
+          "name": "Verify / Finalize Payment (PUT /api/{{entity_path}}/:order_id)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{api_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "url": "{{base_url}}/api/{{entity_path}}/{{order_id}}",
+            "description": "Mapped to `update($id, $params)` in `Is2orAmazonPayments`. `id` is the order id. Checks APS status and finalizes order payment when successful."
+          },
+          "response": []
+        },
+        {
+          "name": "Index (GET /api/{{entity_path}}) - Expected 405",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{api_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/{{entity_path}}",
+            "description": "Mapped to `index()` in `Is2orAmazonPayments`, which returns METHOD_NOT_ALLOWED (405)."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete (DELETE /api/{{entity_path}}/:order_id) - Expected 405",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{api_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": "{{base_url}}/api/{{entity_path}}/{{order_id}}",
+            "description": "Mapped to `delete()` in `Is2orAmazonPayments`, which returns METHOD_NOT_ALLOWED (405)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Related amazon_payment_services Routes",
+      "item": [
+        {
+          "name": "Webview Redirect URL (GET amazon_payment_services.redirect_url)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/index.php?dispatch=amazon_payment_services.redirect_url&order_id={{order_id_b64}}&user_id={{user_id_b64}}",
+            "description": "Related route used by `webview_direct_url` returned from `create()` in `Is2orAmazonPayments`."
+          },
+          "response": []
+        },
+        {
+          "name": "Callback Landing (GET amazon_payment_services.callback)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/index.php?dispatch=amazon_payment_services.callback&order_id={{order_id_b64}}",
+            "description": "Return URL configured by APS checkout form."
+          },
+          "response": []
+        },
+        {
+          "name": "Gateway Notify (POST amazon_payment_services.notify)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"command\": \"AUTHORIZATION\",\n  \"merchant_reference\": \"ORDER_{{order_id}}\",\n  \"fort_id\": \"123456789\",\n  \"status\": \"14\",\n  \"response_code\": \"14000\",\n  \"response_message\": \"Success\",\n  \"signature\": \"<APS_SIGNATURE>\"\n}"
+            },
+            "url": "{{base_url}}/index.php?dispatch=amazon_payment_services.notify",
+            "description": "Webhook-style endpoint consumed by APS package (`mode == notify`)."
+          },
+          "response": []
+        },
+        {
+          "name": "Return Handler (GET amazon_payment_services.return)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/index.php?dispatch=amazon_payment_services.return&order_id={{order_id_b64}}",
+            "description": "Alternate return processor route in APS controller (`mode == return`)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Amazon Payment Services APIs (Direct)",
+      "item": [
+        {
+          "name": "Checkout Page (POST /FortAPI/paymentPage)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "command",
+                  "value": "AUTHORIZATION",
+                  "type": "text"
+                },
+                {
+                  "key": "access_code",
+                  "value": "{{aps_access_code}}",
+                  "type": "text"
+                },
+                {
+                  "key": "merchant_identifier",
+                  "value": "{{aps_merchant_identifier}}",
+                  "type": "text"
+                },
+                {
+                  "key": "merchant_reference",
+                  "value": "{{aps_merchant_reference}}",
+                  "type": "text"
+                },
+                {
+                  "key": "amount",
+                  "value": "{{aps_amount_minor}}",
+                  "type": "text"
+                },
+                {
+                  "key": "currency",
+                  "value": "{{aps_currency}}",
+                  "type": "text"
+                },
+                {
+                  "key": "language",
+                  "value": "{{aps_language}}",
+                  "type": "text"
+                },
+                {
+                  "key": "customer_email",
+                  "value": "{{aps_customer_email}}",
+                  "type": "text"
+                },
+                {
+                  "key": "customer_name",
+                  "value": "{{aps_customer_name}}",
+                  "type": "text"
+                },
+                {
+                  "key": "return_url",
+                  "value": "{{aps_return_url}}",
+                  "type": "text"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{aps_signature}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{aps_checkout_url}}",
+            "description": "Direct browser-style POST to APS checkout endpoint (form-url-encoded). Sandbox URL by default."
+          },
+          "response": []
+        },
+        {
+          "name": "AUTHORIZATION (POST /FortAPI/paymentApi)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"command\": \"AUTHORIZATION\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"amount\": \"{{aps_amount_minor}}\",\n  \"currency\": \"{{aps_currency}}\",\n  \"language\": \"{{aps_language}}\",\n  \"customer_email\": \"{{aps_customer_email}}\",\n  \"customer_name\": \"{{aps_customer_name}}\",\n  \"return_url\": \"{{aps_return_url}}\",\n  \"merchant_extra1\": \"{{order_id}}\",\n  \"merchant_extra2\": \"{{user_id}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "PURCHASE (POST /FortAPI/paymentApi)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"command\": \"PURCHASE\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"amount\": \"{{aps_amount_minor}}\",\n  \"currency\": \"{{aps_currency}}\",\n  \"language\": \"{{aps_language}}\",\n  \"customer_email\": \"{{aps_customer_email}}\",\n  \"customer_name\": \"{{aps_customer_name}}\",\n  \"return_url\": \"{{aps_return_url}}\",\n  \"merchant_extra1\": \"{{order_id}}\",\n  \"merchant_extra2\": \"{{user_id}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "CAPTURE (POST /FortAPI/paymentApi)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"command\": \"CAPTURE\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"fort_id\": \"{{aps_fort_id}}\",\n  \"amount\": \"{{aps_amount_minor}}\",\n  \"currency\": \"{{aps_currency}}\",\n  \"language\": \"{{aps_language}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "REFUND (POST /FortAPI/paymentApi)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"command\": \"REFUND\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"fort_id\": \"{{aps_fort_id}}\",\n  \"amount\": \"{{aps_amount_minor}}\",\n  \"currency\": \"{{aps_currency}}\",\n  \"language\": \"{{aps_language}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "VOID_AUTHORIZATION (POST /FortAPI/paymentApi)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"command\": \"VOID_AUTHORIZATION\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"fort_id\": \"{{aps_fort_id}}\",\n  \"language\": \"{{aps_language}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "CHECK_STATUS (query_command)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query_command\": \"CHECK_STATUS\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"language\": \"{{aps_language}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "TOKENIZATION (service_command)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"service_command\": \"TOKENIZATION\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"language\": \"{{aps_language}}\",\n  \"card_number\": \"4005550000000019\",\n  \"expiry_date\": \"2512\",\n  \"card_security_code\": \"123\",\n  \"card_holder_name\": \"{{aps_customer_name}}\",\n  \"return_url\": \"{{aps_return_url}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "UPDATE_TOKEN (service_command)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"service_command\": \"UPDATE_TOKEN\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"language\": \"{{aps_language}}\",\n  \"token_name\": \"{{aps_token_name}}\",\n  \"token_status\": \"INACTIVE\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "GET_INSTALLMENTS_PLANS (query_command)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query_command\": \"GET_INSTALLMENTS_PLANS\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"language\": \"{{aps_language}}\",\n  \"amount\": \"{{aps_amount_minor}}\",\n  \"currency\": \"{{aps_currency}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "VALU CUSTOMER_VERIFY (service_command)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"service_command\": \"CUSTOMER_VERIFY\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"payment_option\": \"VALU\",\n  \"phone_number\": \"{{aps_phone_number}}\",\n  \"language\": \"{{aps_language}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "VALU OTP_GENERATE (service_command)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"service_command\": \"OTP_GENERATE\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"merchant_order_id\": \"{{order_id}}\",\n  \"payment_option\": \"VALU\",\n  \"currency\": \"EGP\",\n  \"amount\": \"{{aps_amount_minor}}\",\n  \"customer_code\": \"{{aps_phone_number}}\",\n  \"language\": \"{{aps_language}}\",\n  \"products\": [\n    {\n      \"product_name\": \"Order{{order_id}}\",\n      \"product_price\": \"{{aps_amount_minor}}\",\n      \"product_category\": \"General\"\n    }\n  ],\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        },
+        {
+          "name": "VALU OTP_VERIFY (service_command)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"service_command\": \"OTP_VERIFY\",\n  \"access_code\": \"{{aps_access_code}}\",\n  \"merchant_identifier\": \"{{aps_merchant_identifier}}\",\n  \"merchant_reference\": \"{{aps_merchant_reference}}\",\n  \"merchant_order_id\": \"{{order_id}}\",\n  \"payment_option\": \"VALU\",\n  \"currency\": \"EGP\",\n  \"amount\": \"{{aps_amount_minor}}\",\n  \"otp\": \"{{aps_otp}}\",\n  \"transaction_id\": \"{{aps_transaction_id}}\",\n  \"total_downpayment\": \"0\",\n  \"language\": \"{{aps_language}}\",\n  \"signature\": \"{{aps_signature}}\"\n}"
+            },
+            "url": "{{aps_payment_api_url}}"
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://your-store.example.com",
+      "type": "string"
+    },
+    {
+      "key": "api_token",
+      "value": "YOUR_API_TOKEN",
+      "type": "string"
+    },
+    {
+      "key": "entity_path",
+      "value": "is2or_amazon_payments",
+      "type": "string"
+    },
+    {
+      "key": "order_id",
+      "value": "1001",
+      "type": "string"
+    },
+    {
+      "key": "user_id",
+      "value": "1",
+      "type": "string"
+    },
+    {
+      "key": "order_id_b64",
+      "value": "MTAwMQ==",
+      "type": "string"
+    },
+    {
+      "key": "user_id_b64",
+      "value": "MQ==",
+      "type": "string"
+    },
+    {
+      "key": "aps_payment_api_url",
+      "value": "https://sbpaymentservices.payfort.com/FortAPI/paymentApi",
+      "type": "string"
+    },
+    {
+      "key": "aps_checkout_url",
+      "value": "https://sbcheckout.payfort.com/FortAPI/paymentPage",
+      "type": "string"
+    },
+    {
+      "key": "aps_payment_api_url_production",
+      "value": "https://paymentservices.payfort.com/FortAPI/paymentApi",
+      "type": "string"
+    },
+    {
+      "key": "aps_checkout_url_production",
+      "value": "https://checkout.payfort.com/FortAPI/paymentPage",
+      "type": "string"
+    },
+    {
+      "key": "aps_access_code",
+      "value": "APS_ACCESS_CODE",
+      "type": "string"
+    },
+    {
+      "key": "aps_merchant_identifier",
+      "value": "APS_MERCHANT_IDENTIFIER",
+      "type": "string"
+    },
+    {
+      "key": "aps_request_sha_phrase",
+      "value": "APS_REQUEST_SHA_PHRASE",
+      "type": "string"
+    },
+    {
+      "key": "aps_sha_type",
+      "value": "sha256",
+      "type": "string"
+    },
+    {
+      "key": "aps_signature",
+      "value": "GENERATE_SIGNATURE_PER_REQUEST",
+      "type": "string"
+    },
+    {
+      "key": "aps_merchant_reference",
+      "value": "ORDER_1001_REF",
+      "type": "string"
+    },
+    {
+      "key": "aps_fort_id",
+      "value": "123456789",
+      "type": "string"
+    },
+    {
+      "key": "aps_amount_minor",
+      "value": "1000",
+      "type": "string"
+    },
+    {
+      "key": "aps_currency",
+      "value": "AED",
+      "type": "string"
+    },
+    {
+      "key": "aps_language",
+      "value": "en",
+      "type": "string"
+    },
+    {
+      "key": "aps_customer_email",
+      "value": "customer@example.com",
+      "type": "string"
+    },
+    {
+      "key": "aps_customer_name",
+      "value": "John Doe",
+      "type": "string"
+    },
+    {
+      "key": "aps_return_url",
+      "value": "{{base_url}}/index.php?dispatch=amazon_payment_services.callback&order_id={{order_id_b64}}",
+      "type": "string"
+    },
+    {
+      "key": "aps_token_name",
+      "value": "TOKEN_NAME",
+      "type": "string"
+    },
+    {
+      "key": "aps_phone_number",
+      "value": "01008606003",
+      "type": "string"
+    },
+    {
+      "key": "aps_transaction_id",
+      "value": "VALU_TXN_ID",
+      "type": "string"
+    },
+    {
+      "key": "aps_otp",
+      "value": "123456",
+      "type": "string"
+    }
+  ]
+}

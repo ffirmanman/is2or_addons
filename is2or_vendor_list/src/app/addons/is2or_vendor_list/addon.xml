@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_vendor_list</id>
+    <version>1.0</version>
+    <priority>5000</priority>
+    <position>1</position>
+    <status>active</status>
+    <auto_install>MULTIVENDOR</auto_install>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+    <supplier>IS2OR</supplier>
+    <name>IS2OR: Vendor List</name>
+    <description>IS2OR: Vendor List</description>
+    <settings>
+    </settings>
+    <functions>
+        <item for="install">fn_is2or_vendor_list_install</item>
+    </functions>
+</addon>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>is2or_design_template</id>
+    <name>IS2OR: Design Template</name>
+    <version>1.0</version>
+    <priority>50</priority>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <auto_install>MULTIVENDOR</auto_install>
+    <supplier>IS2OR</supplier>
+</addon>

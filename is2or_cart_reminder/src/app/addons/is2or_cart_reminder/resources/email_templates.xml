@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<email_templates scheme="1.0">
+    <templates>
+        <item>
+            <code><![CDATA[abandoned_cart_reminder]]></code>
+            <area><![CDATA[C]]></area>
+            <status><![CDATA[A]]></status>
+            <default_subject><![CDATA[{{ company_name }}: {{ __('is2or_cart_reminder.abandoned_cart_email_subject') }}]]></default_subject>
+            <default_template><![CDATA[{{ snippet("header") }}
+<div style="text-align: center; background: #171717; padding: 40px;">
+    <h3 style="color: white; font-size: 30px;">{{ __('is2or_cart_reminder.abandoned_cart_email_title') }}</h3>
+    <p style="color: white; font-size: 18px;">{{ __('is2or_cart_reminder.abandoned_cart_email_text') }}</p>
+</div>
+<br />
+
+<p style="text-align: center; text-transform: uppercase; font-weight: bold;">{{ __('is2or_cart_reminder.your_cart') }}</p>
+<br />
+
+<table style="width: 90%; margin: 0 auto; border-collapse: collapse;" cellpadding="10" cellpadding="10">
+    {% for cart in carts %}
+    <tr>
+        <td style="border-bottom: 1px solid #ededed;">
+            {% if cart.main_pair %}
+            <img style="height: 80px;" src="{{ cart.main_pair.detailed.image_path }}">
+            {% endif %}
+        </td>
+        <td style="border-bottom: 1px solid #ededed;">{{ cart.product }}</td>
+        <td style="border-bottom: 1px solid #ededed;">{{ cart.amount }}</td>
+        <td style="border-bottom: 1px solid #ededed;">{{ currency_data.symbol }}{{ cart.display_price|number_format(2, '.', ',') }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br />
+<br />
+<br />
+
+<div style="text-align: center;">
+    <a href="{{ url }}" style="background: #00d9b2; text-decoration: none; color: white; text-transform: uppercase; padding: 10px 30px; border: 1px solid #20c0a6;">{{ __('is2or_cart_reminder.url_text') }}</a>
+</div>
+
+{{ snippet("footer") }}]]></default_template>
+            <addon><![CDATA[is2or_cart_reminder]]></addon>
+        </item>
+    </templates>
+</email_templates>

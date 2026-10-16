@@ -1,0 +1,53 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "SettingsSections::is2or_cart_reminder::email"
+msgid "is2or_cart_reminder::email"
+msgstr "Email"
+
+msgctxt "SettingsOptions::is2or_cart_reminder::cc_email"
+msgid "is2or_cart_reminder::cc_email"
+msgstr "CC Email Address"
+
+msgctxt "SettingsOptions::is2or_cart_reminder::cc_email_name"
+msgid "is2or_cart_reminder::cc_email_name"
+msgstr "CC Email Name"
+
+msgctxt "SettingsSections::is2or_cart_reminder::cron"
+msgid "is2or_cart_reminder::cron"
+msgstr "Cron"
+
+msgctxt "Languages::cart_reminder"
+msgid "cart_reminder"
+msgstr "Cart reminder"
+
+msgctxt "Languages::abandoned_cart_reminder"
+msgid "abandoned_cart_reminder"
+msgstr "Abandoned cart reminder"
+
+msgctxt "Languages::email_template.abandoned_cart_reminder"
+msgid "email_template.abandoned_cart_reminder"
+msgstr "Abandoned cart reminder"
+
+msgctxt "Languages::is2or_cart_reminder.abandoned_cart_email_subject"
+msgid "is2or_cart_reminder.abandoned_cart_email_subject"
+msgstr "Abandoned cart"
+
+msgctxt "Languages::is2or_cart_reminder.abandoned_cart_email_title"
+msgid "is2or_cart_reminder.abandoned_cart_email_title"
+msgstr "Still Thinking it Over?"
+
+msgctxt "Languages::is2or_cart_reminder.abandoned_cart_email_text"
+msgid "is2or_cart_reminder.abandoned_cart_email_text"
+msgstr "We're holding the items in your cart for you, don't wait too long! Order today!"
+
+msgctxt "Languages::is2or_cart_reminder.your_cart"
+msgid "is2or_cart_reminder.your_cart"
+msgstr "Your cart"
+
+msgctxt "Languages::is2or_cart_reminder.url_text"
+msgid "is2or_cart_reminder.url_text"
+msgstr "Return to your cart"
